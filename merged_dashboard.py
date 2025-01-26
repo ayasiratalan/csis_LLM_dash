@@ -61,7 +61,7 @@ def domain_dashboard():
             x="percentage",
             y="model",
             color="answer",
-            orientation="h",
+            orientation="v",
             title="Model vs. Response Distribution",
             hover_data=["percentage"],
             labels={"percentage": "Percentage", "model": "Model", "answer": "Answer"}
