@@ -66,7 +66,7 @@ def domain_dashboard():
             hover_data=["percentage"],
             labels={"percentage": "Percentage", "model": "Model", "answer": "Answer"}
         )
-        fig.update_layout(xaxis=dict(range=[0, 100]))
+        fig.update_layout(yaxis=dict(range=[0, 100]))
 
         st.plotly_chart(fig, use_container_width=True)
 
