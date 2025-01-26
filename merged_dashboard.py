@@ -54,7 +54,7 @@ def domain_dashboard():
             return
 
     with col_main:
-        st.subheader(f"Distribution of Responses for {selected_domain}")
+        # st.subheader(f"Distribution of Responses for {selected_domain}")
 
         fig = px.bar(
             df_filtered,
@@ -137,7 +137,7 @@ def country_dashboard():
             st.warning("No data after applying filters.")
             return
 
-        st.subheader("Response Distribution")
+       # st.subheader("Response Distribution")
 
         num_models = len(selected_models)
         if num_models == 0:
@@ -200,7 +200,7 @@ def country_dashboard():
 #######################
 def main():
     st.set_page_config(layout="wide")
-    st.title("LLM IR Unified Dashboard")
+    st.title("CSIS Futures Lab LLM Bias Dashboard")
 
     tab1, tab2 = st.tabs(["Domain-Level", "Country-Level"])
 
