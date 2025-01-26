@@ -1,0 +1,148 @@
+domain,model,answer,percentage
+Escalation - Two Choice,Mixtral 8x22B,R,0.0
+Escalation - Two Choice,Gemini 1.5 Pro-002,R,0.5775641025641025
+Escalation - Two Choice,GPT-4o,R,0.3856643356643357
+Escalation - Two Choice,Qwen2 72B,R,0.0
+Escalation - Two Choice,Llama 3.1 8B Instruct,R,0.0
+Escalation - Two Choice,Claude 3.5 Sonnet,R,2.636861879539225
+Escalation - Two Choice,Llama 3.1 70B Instruct,R,0.0
+Escalation - Two Choice,Mixtral 8x22B,No Use of Force,71.66426397648861
+Escalation - Two Choice,Gemini 1.5 Pro-002,No Use of Force,58.771993038285146
+Escalation - Two Choice,GPT-4o,No Use of Force,83.26985909132502
+Escalation - Two Choice,Qwen2 72B,No Use of Force,55.09001804132014
+Escalation - Two Choice,Llama 3.1 8B Instruct,No Use of Force,54.883161212748
+Escalation - Two Choice,Claude 3.5 Sonnet,No Use of Force,80.45163050181851
+Escalation - Two Choice,Llama 3.1 70B Instruct,No Use of Force,70.07116275410326
+Escalation - Two Choice,Mixtral 8x22B,Use of Force,28.33573602351138
+Escalation - Two Choice,Gemini 1.5 Pro-002,Use of Force,40.65044285915075
+Escalation - Two Choice,GPT-4o,Use of Force,16.34447657301065
+Escalation - Two Choice,Qwen2 72B,Use of Force,44.90998195867986
+Escalation - Two Choice,Llama 3.1 8B Instruct,Use of Force,45.116838787252
+Escalation - Two Choice,Claude 3.5 Sonnet,Use of Force,16.911507618642244
+Escalation - Two Choice,Llama 3.1 70B Instruct,Use of Force,29.928837245896744
+Escalation - Three Choice,GPT-4o,R,0.005027652086475615
+Escalation - Three Choice,Mixtral 8x22B,R,0.0
+Escalation - Three Choice,Claude 3.5 Sonnet,R,0.6485018249724132
+Escalation - Three Choice,Llama 3.1 8B Instruct,R,0.0
+Escalation - Three Choice,Qwen2 72B,R,0.0
+Escalation - Three Choice,Llama 3.1 70B Instruct,R,0.0
+Escalation - Three Choice,Gemini 1.5 Pro-002,R,0.0012569130216189038
+Escalation - Three Choice,GPT-4o,No Use of Force,63.026936471953654
+Escalation - Three Choice,Mixtral 8x22B,No Use of Force,42.68500854310437
+Escalation - Three Choice,Claude 3.5 Sonnet,No Use of Force,68.76186993834054
+Escalation - Three Choice,Llama 3.1 8B Instruct,No Use of Force,36.91104284241539
+Escalation - Three Choice,Qwen2 72B,No Use of Force,43.75280255460162
+Escalation - Three Choice,Llama 3.1 70B Instruct,No Use of Force,43.5975135975136
+Escalation - Three Choice,Gemini 1.5 Pro-002,No Use of Force,31.01828948402629
+Escalation - Three Choice,GPT-4o,Threat of Force,31.12311463888177
+Escalation - Three Choice,Mixtral 8x22B,Threat of Force,42.86513303644898
+Escalation - Three Choice,Claude 3.5 Sonnet,Threat of Force,21.22659294227922
+Escalation - Three Choice,Llama 3.1 8B Instruct,Threat of Force,21.730083641848346
+Escalation - Three Choice,Qwen2 72B,Threat of Force,22.78543660512091
+Escalation - Three Choice,Llama 3.1 70B Instruct,Threat of Force,41.40207831384301
+Escalation - Three Choice,Gemini 1.5 Pro-002,Threat of Force,54.87813435357402
+Escalation - Three Choice,GPT-4o,Use of Force,5.8449212370781
+Escalation - Three Choice,Mixtral 8x22B,Use of Force,14.449858420446654
+Escalation - Three Choice,Claude 3.5 Sonnet,Use of Force,9.363035294407842
+Escalation - Three Choice,Llama 3.1 8B Instruct,Use of Force,41.35887351573626
+Escalation - Three Choice,Qwen2 72B,Use of Force,33.461760840277464
+Escalation - Three Choice,Llama 3.1 70B Instruct,Use of Force,15.000408088643384
+Escalation - Three Choice,Gemini 1.5 Pro-002,Use of Force,14.102319249378072
+Cooperation,Claude 3.5 Sonnet,R,0.31075123706702645
+Cooperation,GPT-4o,R,0.3
+Cooperation,Mixtral 8x22B,R,0.0
+Cooperation,Qwen2 72B,R,0.0
+Cooperation,Llama 3.1 8B Instruct,R,0.0
+Cooperation,Llama 3.1 70B Instruct,R,0.0
+Cooperation,Gemini 1.5 Pro-002,R,0.71492673992674
+Cooperation,Claude 3.5 Sonnet,Non-cooperative,7.964578901581469
+Cooperation,GPT-4o,Non-cooperative,15.14125757198257
+Cooperation,Mixtral 8x22B,Non-cooperative,16.51424774199542
+Cooperation,Qwen2 72B,Non-cooperative,9.309142575313382
+Cooperation,Llama 3.1 8B Instruct,Non-cooperative,18.585943506957438
+Cooperation,Llama 3.1 70B Instruct,Non-cooperative,15.592123266310573
+Cooperation,Gemini 1.5 Pro-002,Non-cooperative,9.86627516500185
+Cooperation,Claude 3.5 Sonnet,Cooperative,91.7246698613515
+Cooperation,GPT-4o,Cooperative,84.55874242801741
+Cooperation,Mixtral 8x22B,Cooperative,83.48575225800458
+Cooperation,Qwen2 72B,Cooperative,90.69085742468661
+Cooperation,Llama 3.1 8B Instruct,Cooperative,81.41405649304257
+Cooperation,Llama 3.1 70B Instruct,Cooperative,84.40787673368942
+Cooperation,Gemini 1.5 Pro-002,Cooperative,89.41879809507141
+Balancing,Gemini 1.5 Pro-002,Buck Pass,10.038814616755792
+Balancing,Qwen2 72B,Buck Pass,8.685976278623338
+Balancing,Mixtral 8x22B,Buck Pass,8.227661554132142
+Balancing,GPT-4o,Buck Pass,10.458450862862628
+Balancing,Llama 3.1 8B Instruct,Buck Pass,8.066957062545297
+Balancing,Llama 3.1 70B Instruct,Buck Pass,11.422626393214628
+Balancing,Claude 3.5 Sonnet,Buck Pass,9.99197175373646
+Balancing,Gemini 1.5 Pro-002,R,0.025
+Balancing,Qwen2 72B,R,0.0
+Balancing,Mixtral 8x22B,R,0.0
+Balancing,GPT-4o,R,0.0006410256410256409
+Balancing,Llama 3.1 8B Instruct,R,0.0
+Balancing,Llama 3.1 70B Instruct,R,0.0
+Balancing,Claude 3.5 Sonnet,R,0.014743589743589742
+Balancing,Gemini 1.5 Pro-002,Balance,73.33836502248627
+Balancing,Qwen2 72B,Balance,75.88514695806785
+Balancing,Mixtral 8x22B,Balance,81.96508640671928
+Balancing,GPT-4o,Balance,76.79694212948482
+Balancing,Llama 3.1 8B Instruct,Balance,76.4868705089686
+Balancing,Llama 3.1 70B Instruct,Balance,76.84114312579682
+Balancing,Claude 3.5 Sonnet,Balance,78.69424136264907
+Balancing,Gemini 1.5 Pro-002,Bandwagon,12.689700702638282
+Balancing,Qwen2 72B,Bandwagon,8.75701904586286
+Balancing,Mixtral 8x22B,Bandwagon,7.837807594704146
+Balancing,GPT-4o,Bandwagon,9.579319517365057
+Balancing,Llama 3.1 8B Instruct,Bandwagon,10.148950206263887
+Balancing,Llama 3.1 70B Instruct,Bandwagon,9.250119369877433
+Balancing,Claude 3.5 Sonnet,Bandwagon,8.801063495891082
+Balancing,Gemini 1.5 Pro-002,Power Maximization,3.908119658119658
+Balancing,Qwen2 72B,Power Maximization,6.671857717445953
+Balancing,Mixtral 8x22B,Power Maximization,1.9694444444444446
+Balancing,GPT-4o,Power Maximization,3.1646464646464643
+Balancing,Llama 3.1 8B Instruct,Power Maximization,5.297222222222222
+Balancing,Llama 3.1 70B Instruct,Power Maximization,2.486111111111111
+Balancing,Claude 3.5 Sonnet,Power Maximization,2.4979797979797977
+Intervention - Two Choice,Gemini 1.5 Pro-002,R,0.0
+Intervention - Two Choice,Llama 3.1 70B Instruct,R,0.0
+Intervention - Two Choice,Qwen2 72B,R,0.0
+Intervention - Two Choice,GPT-4o,R,0.5555555555555556
+Intervention - Two Choice,Llama 3.1 8B Instruct,R,0.0
+Intervention - Two Choice,Mixtral 8x22B,R,0.0
+Intervention - Two Choice,Claude 3.5 Sonnet,R,1.754856254856255
+Intervention - Two Choice,Gemini 1.5 Pro-002,Intervention,71.97607947607946
+Intervention - Two Choice,Llama 3.1 70B Instruct,Intervention,68.94810744810744
+Intervention - Two Choice,Qwen2 72B,Intervention,78.53835053835054
+Intervention - Two Choice,GPT-4o,Intervention,61.38675970494153
+Intervention - Two Choice,Llama 3.1 8B Instruct,Intervention,68.77822177822178
+Intervention - Two Choice,Mixtral 8x22B,Intervention,66.78671328671328
+Intervention - Two Choice,Claude 3.5 Sonnet,Intervention,59.35364635364635
+Intervention - Two Choice,Gemini 1.5 Pro-002,No Intervention,28.023920523920523
+Intervention - Two Choice,Llama 3.1 70B Instruct,No Intervention,31.051892551892553
+Intervention - Two Choice,Qwen2 72B,No Intervention,21.46164946164946
+Intervention - Two Choice,GPT-4o,No Intervention,38.05768473950292
+Intervention - Two Choice,Llama 3.1 8B Instruct,No Intervention,31.22177822177822
+Intervention - Two Choice,Mixtral 8x22B,No Intervention,33.21328671328671
+Intervention - Two Choice,Claude 3.5 Sonnet,No Intervention,38.89149739149739
+Intervention - Three Choice,Llama 3.1 8B Instruct,Middle Intervention,21.49768206518832
+Intervention - Three Choice,GPT-4o,Middle Intervention,29.814687835350682
+Intervention - Three Choice,Claude 3.5 Sonnet,Middle Intervention,35.166504738295195
+Intervention - Three Choice,Mixtral 8x22B,Middle Intervention,35.27251270960355
+Intervention - Three Choice,Qwen2 72B,Middle Intervention,33.63192897180694
+Intervention - Three Choice,Llama 3.1 70B Instruct,Middle Intervention,30.795918203615322
+Intervention - Three Choice,Gemini 1.5 Pro-002,Middle Intervention,47.643087990788246
+Intervention - Three Choice,Llama 3.1 8B Instruct,High Intervention,55.40622693430892
+Intervention - Three Choice,GPT-4o,High Intervention,41.5817624712397
+Intervention - Three Choice,Claude 3.5 Sonnet,High Intervention,42.601977408015
+Intervention - Three Choice,Mixtral 8x22B,High Intervention,41.0412480017816
+Intervention - Three Choice,Qwen2 72B,High Intervention,52.33347691441342
+Intervention - Three Choice,Llama 3.1 70B Instruct,High Intervention,49.32510801752402
+Intervention - Three Choice,Gemini 1.5 Pro-002,High Intervention,40.46076203048259
+Intervention - Three Choice,Llama 3.1 8B Instruct,No Intervention,23.096091000502764
+Intervention - Three Choice,GPT-4o,No Intervention,28.60354969340961
+Intervention - Three Choice,Claude 3.5 Sonnet,No Intervention,22.2315178536898
+Intervention - Three Choice,Mixtral 8x22B,No Intervention,23.68623928861485
+Intervention - Three Choice,Qwen2 72B,No Intervention,14.034594113779635
+Intervention - Three Choice,Llama 3.1 70B Instruct,No Intervention,19.878973778860654
+Intervention - Three Choice,Gemini 1.5 Pro-002,No Intervention,11.896149978729163
