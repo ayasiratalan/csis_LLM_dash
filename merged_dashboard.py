@@ -58,11 +58,11 @@ def domain_dashboard():
 
         fig = px.bar(
             df_filtered,
-            x="percentage",
-            y="model",
+            x="model",
+            y="percentage",
             color="answer",
             orientation="v",
-            title="Model vs. Response Distribution",
+            title="Response Distribution by Models",
             hover_data=["percentage"],
             labels={"percentage": "Percentage", "model": "Model", "answer": "Answer"}
         )
