@@ -87,7 +87,7 @@ def domain_dashboard():
 
         fig = px.bar(
             df_filtered,
-            x="LLMs",
+            x="model",
             y="percentage",
             color="answer",
             orientation="v",
