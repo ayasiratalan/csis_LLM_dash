@@ -99,9 +99,7 @@ def domain_dashboard():
 
         st.plotly_chart(fig, use_container_width=True)
 
-        # Optionally, show the underlying data
-        with st.expander("See Tabular Data"):
-            st.dataframe(df_filtered.reset_index(drop=True))
+
 
 
 #######################
