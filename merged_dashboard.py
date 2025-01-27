@@ -175,8 +175,8 @@ def country_dashboard():
             st.warning("No data after applying filters.")
             return
 
-        st.subheader("Response Distribution")
-
+        st.subheader(f"Distribution of Responses for {selected_domain}")
+        
         num_models = len(selected_models)
         if num_models == 0:
             st.warning("No models selected.")
@@ -232,10 +232,7 @@ def country_dashboard():
             with model_cols[i]:
                 st.plotly_chart(fig, use_container_width=False)
 
-        # Optionally, show the underlying data
-        with st.expander("See Filtered Data"):
-            st.dataframe(df_filtered.reset_index(drop=True))
-
+    
 
 #######################
 # 3) MAIN App with Tabs
