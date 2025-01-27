@@ -10,7 +10,6 @@ DOMAIN_EXPLANATIONS = {
     "Escalation - Two Choice": """
 **Escalation:** This domain focuses on scenarios in which states are offered options to escalate disputes or not. Escalation here signifies an increased conflict intensity typically related to the means used to pursue a particular goal. These scenarios include escalatory behavior in the context of four action categories: Attack, Blockade, Clash, and Declare War. This domain features two response scenarios. Two response scenarios have escalatory and non-escalatory response options. Actions above the threshold of use of force are always coded as the most escalatory in scenarios.
 """, 
-    
     "Intervention - Two Choice": """
 **Intervention:** The Intervention domain tests model preferences to recommend states to intervene in external events. We are not using the specified language of ‘intervention’ that can have precise correspondence to military action or the violation of sovereign territory in some of the scholarly literature. While we do explore such cases, we take a broader view of intervention and treat it as a willingness of states to deploy resources to respond to the scenario delineated in the question. Scenarios in this domain feature two response options. Two response scenarios give models options of not intervening at all and taking substantive action to shape the external event.
 """,
@@ -29,7 +28,8 @@ DOMAIN_EXPLANATIONS = {
 # 1) DOMAIN DASHBOARD
 #####################
 def domain_dashboard():
- 
+    st.subheader("Domain-Level Dashboard")
+
     # Load the domain-level DataFrame (columns: domain, model, answer, percentage)
     try:
         final_dashboard_df = pd.read_csv("final_dashboard_df.csv")
@@ -49,32 +49,34 @@ def domain_dashboard():
             key="domain_selectbox_dashboard"  # unique key
         )
 
-        # Extract main domain for explanation
-        main_domain = selected_domain.split(" - ")[0]
-
         # Display domain explanation if available
-        if main_domain in DOMAIN_EXPLANATIONS:
-            st.markdown(DOMAIN_EXPLANATIONS[main_domain])
+        if selected_domain in DOMAIN_EXPLANATIONS:
+            st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
 
-        # Model selection - unique key
-        all_models = sorted(final_dashboard_df["model"].unique())
-        selected_models = st.multiselect(
-            "Models",
-            all_models,
-            default=all_models,
-            key="domain_models_multiselect"  # unique key
-        )
-        df_filtered = final_dashboard_df[final_dashboard_df["model"].isin(selected_models)]
+        # Extract response types based on domain only
+        df_domain = final_dashboard_df[final_dashboard_df["domain"] == selected_domain]
+        all_answers = sorted(df_domain["answer"].unique())
 
         # Response selection - unique key
-        all_answers = sorted(df_filtered["answer"].unique())
         selected_answers = st.multiselect(
             "Response Types",
             all_answers,
             default=all_answers,
             key="domain_answers_multiselect"  # unique key
         )
-        df_filtered = df_filtered[df_filtered["answer"].isin(selected_answers)]
+
+        # Now filter by responses
+        df_filtered = df_domain[df_domain["answer"].isin(selected_answers)]
+
+        # Model selection - unique key
+        all_models = sorted(df_filtered["model"].unique())
+        selected_models = st.multiselect(
+            "Models",
+            all_models,
+            default=all_models,
+            key="domain_models_multiselect"  # unique key
+        )
+        df_filtered = df_filtered[df_filtered["model"].isin(selected_models)]
 
         if df_filtered.empty:
             st.warning("No data after filtering by model(s) and response(s).")
@@ -85,7 +87,7 @@ def domain_dashboard():
 
         fig = px.bar(
             df_filtered,
-            x="LLMs",
+            x="model",
             y="percentage",
             color="answer",
             orientation="v",
@@ -106,7 +108,7 @@ def domain_dashboard():
 # 2) COUNTRY DASHBOARD
 #######################
 def country_dashboard():
-    
+    st.subheader("Country-Level Dashboard")
 
     # Load your country-level DataFrame (domain, actor, model, answer, percentage)
     try:
@@ -126,12 +128,9 @@ def country_dashboard():
             key="country_selectbox_dashboard"  # unique key
         )
 
-        # Extract main domain for explanation
-        main_domain = selected_domain.split(" - ")[0]
-
         # Display domain explanation if available
-        if main_domain in DOMAIN_EXPLANATIONS:
-            st.markdown(DOMAIN_EXPLANATIONS[main_domain])
+        if selected_domain in DOMAIN_EXPLANATIONS:
+            st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
 
         # Actors - unique key
         actor_options = sorted(final_df["actor"].unique())
@@ -153,7 +152,9 @@ def country_dashboard():
         selected_models = selected_models[:3]  # enforce max of 3
 
         # Answers - unique key
-        domain_answers = sorted(final_df["answer"].unique())
+        # Extract all answers based on domain only
+        df_domain = final_df[final_df["domain"] == selected_domain]
+        domain_answers = sorted(df_domain["answer"].unique())
         selected_answers = st.multiselect(
             "Response Types",
             options=domain_answers,
