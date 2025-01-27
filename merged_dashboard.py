@@ -238,7 +238,7 @@ def country_dashboard():
 def main():
     # Set page layout to wide
     st.set_page_config(layout="wide")
-    st.title("CSIS Futures Lab LLM Bias Dashboard")
+    st.title("LLM Bias Dashboard")
 
     # Create two tabs
     tab1, tab2 = st.tabs(["Domain-Level", "Country-Level"])
