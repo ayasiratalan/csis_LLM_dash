@@ -4,11 +4,18 @@ import plotly.express as px
 
 # Define domain explanations
 DOMAIN_EXPLANATIONS = {
-    "Escalation": """
-**Escalation:** This domain focuses on scenarios in which states are offered options to escalate disputes or not. Escalation here signifies an increased conflict intensity typically related to the means used to pursue a particular goal. These scenarios include escalatory behavior in the context of four action categories: Attack, Blockade, Clash, and Declare War. This domain features two and three response scenarios. Two response scenarios have escalatory and non-escalatory response options. Three response scenarios introduce a middle response option which includes threats of force or a show of force. Actions above the threshold of use of force are always coded as the most escalatory in scenarios.
+    "Escalation - Three Choice": """
+**Escalation:** This domain focuses on scenarios in which states are offered options to escalate disputes or not. Escalation here signifies an increased conflict intensity typically related to the means used to pursue a particular goal. These scenarios include escalatory behavior in the context of four action categories: Attack, Blockade, Clash, and Declare War. This domain features three response scenarios. Three response scenarios have escalatory and non-escalatory response options as well as a middle response option which includes threats of force or a show of force. Actions above the threshold of use of force are always coded as the most escalatory in scenarios.
 """,
-    "Intervention": """
-**Intervention:** The Intervention domain tests model preferences to recommend states to intervene in external events. We are not using the specified language of ‘intervention’ that can have precise correspondence to military action or the violation of sovereign territory in some of the scholarly literature. While we do explore such cases, we take a broader view of intervention and treat it as a willingness of states to deploy resources to respond to the scenario delineated in the question. Scenarios in this domain feature both two and three response options. Three response scenarios give models a middle option between not intervening at all and taking substantive action to shape the external event.
+    "Escalation - Two Choice": """
+**Escalation:** This domain focuses on scenarios in which states are offered options to escalate disputes or not. Escalation here signifies an increased conflict intensity typically related to the means used to pursue a particular goal. These scenarios include escalatory behavior in the context of four action categories: Attack, Blockade, Clash, and Declare War. This domain features two response scenarios. Two response scenarios have escalatory and non-escalatory response options. Actions above the threshold of use of force are always coded as the most escalatory in scenarios.
+""", 
+    
+    "Intervention - Two Choice": """
+**Intervention:** The Intervention domain tests model preferences to recommend states to intervene in external events. We are not using the specified language of ‘intervention’ that can have precise correspondence to military action or the violation of sovereign territory in some of the scholarly literature. While we do explore such cases, we take a broader view of intervention and treat it as a willingness of states to deploy resources to respond to the scenario delineated in the question. Scenarios in this domain feature two response options. Two response scenarios give models options of not intervening at all and taking substantive action to shape the external event.
+""",
+    "Intervention - Three Choice": """
+**Intervention:** The Intervention domain tests model preferences to recommend states to intervene in external events. We are not using the specified language of ‘intervention’ that can have precise correspondence to military action or the violation of sovereign territory in some of the scholarly literature. While we do explore such cases, we take a broader view of intervention and treat it as a willingness of states to deploy resources to respond to the scenario delineated in the question. Scenarios in this domain feature three response options. Three response scenarios give models a middle option between not intervening at all and taking substantive action to shape the external event.
 """,
     "Cooperation": """
 **Cooperation:** Questions in this domain investigate model preferences for cooperation vs go-it-alone strategies. The extent to which international cooperation, in a range of policy contexts, is durable and meaningfully shapes international politics serves as an important, long-term, focal point in the field of international relations. Scenarios in this domain test model preferences for joining bilateral/multilateral agreements, violating agreements, and enforcing agreements. All scenarios in this domain have two response options, one is cooperative and the other non-cooperative.
@@ -22,8 +29,7 @@ DOMAIN_EXPLANATIONS = {
 # 1) DOMAIN DASHBOARD
 #####################
 def domain_dashboard():
-    st.subheader("Domain-Level Dashboard")
-
+ 
     # Load the domain-level DataFrame (columns: domain, model, answer, percentage)
     try:
         final_dashboard_df = pd.read_csv("final_dashboard_df.csv")
@@ -79,11 +85,11 @@ def domain_dashboard():
 
         fig = px.bar(
             df_filtered,
-            x="model",
+            x="LLMs",
             y="percentage",
             color="answer",
             orientation="v",
-            title="Response Distribution by Models",
+            title="Response Distribution by LLMs",
             hover_data=["percentage"],
             labels={"percentage": "Percentage", "model": "Model", "answer": "Answer"}
         )
@@ -100,7 +106,7 @@ def domain_dashboard():
 # 2) COUNTRY DASHBOARD
 #######################
 def country_dashboard():
-    st.subheader("Country-Level Dashboard")
+    
 
     # Load your country-level DataFrame (domain, actor, model, answer, percentage)
     try:
