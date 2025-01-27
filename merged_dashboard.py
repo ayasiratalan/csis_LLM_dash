@@ -2,6 +2,22 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+# Define domain explanations
+DOMAIN_EXPLANATIONS = {
+    "Escalation": """
+**Escalation:** This domain focuses on scenarios in which states are offered options to escalate disputes or not. Escalation here signifies an increased conflict intensity typically related to the means used to pursue a particular goal. These scenarios include escalatory behavior in the context of four action categories: Attack, Blockade, Clash, and Declare War. This domain features two and three response scenarios. Two response scenarios have escalatory and non-escalatory response options. Three response scenarios introduce a middle response option which includes threats of force or a show of force. Actions above the threshold of use of force are always coded as the most escalatory in scenarios.
+""",
+    "Intervention": """
+**Intervention:** The Intervention domain tests model preferences to recommend states to intervene in external events. We are not using the specified language of ‘intervention’ that can have precise correspondence to military action or the violation of sovereign territory in some of the scholarly literature. While we do explore such cases, we take a broader view of intervention and treat it as a willingness of states to deploy resources to respond to the scenario delineated in the question. Scenarios in this domain feature both two and three response options. Three response scenarios give models a middle option between not intervening at all and taking substantive action to shape the external event.
+""",
+    "Cooperation": """
+**Cooperation:** Questions in this domain investigate model preferences for cooperation vs go-it-alone strategies. The extent to which international cooperation, in a range of policy contexts, is durable and meaningfully shapes international politics serves as an important, long-term, focal point in the field of international relations. Scenarios in this domain test model preferences for joining bilateral/multilateral agreements, violating agreements, and enforcing agreements. All scenarios in this domain have two response options, one is cooperative and the other non-cooperative.
+""",
+    "Balancing": """
+**Balancing:** States attempt a wide range of activities in international affairs related to alliance formation, managing their power with respect to other states, and pursuing strategic goals. This category tests for model preferences related to recommending states to pursue policies of Balancing behavior versus three alternatives commonly discussed and debated in the conventional realist international relations literature. These include: Bandwagoning, Buck Passing, and Power Maximization. As with the Cooperation domain, all scenarios have two response options.
+"""
+}
+
 #####################
 # 1) DOMAIN DASHBOARD
 #####################
@@ -9,7 +25,11 @@ def domain_dashboard():
     st.subheader("Domain-Level Dashboard")
 
     # Load the domain-level DataFrame (columns: domain, model, answer, percentage)
-    final_dashboard_df = pd.read_csv("final_dashboard_df.csv")
+    try:
+        final_dashboard_df = pd.read_csv("final_dashboard_df.csv")
+    except FileNotFoundError:
+        st.error("Domain-level data file 'final_dashboard_df.csv' not found.")
+        return
 
     col_main, col_filters = st.columns([3, 1], gap="medium")
 
@@ -23,21 +43,22 @@ def domain_dashboard():
             key="domain_selectbox_dashboard"  # unique key
         )
 
-        # Filter by domain
-        df_filtered = final_dashboard_df[final_dashboard_df["domain"] == selected_domain].copy()
-        if df_filtered.empty:
-            st.warning("No data available for the selected domain.")
-            return
+        # Extract main domain for explanation
+        main_domain = selected_domain.split(" - ")[0]
+
+        # Display domain explanation if available
+        if main_domain in DOMAIN_EXPLANATIONS:
+            st.markdown(DOMAIN_EXPLANATIONS[main_domain])
 
         # Model selection - unique key
-        all_models = sorted(df_filtered["model"].unique())
+        all_models = sorted(final_dashboard_df["model"].unique())
         selected_models = st.multiselect(
             "Models",
             all_models,
             default=all_models,
             key="domain_models_multiselect"  # unique key
         )
-        df_filtered = df_filtered[df_filtered["model"].isin(selected_models)]
+        df_filtered = final_dashboard_df[final_dashboard_df["model"].isin(selected_models)]
 
         # Response selection - unique key
         all_answers = sorted(df_filtered["answer"].unique())
@@ -54,7 +75,7 @@ def domain_dashboard():
             return
 
     with col_main:
-        # st.subheader(f"Distribution of Responses for {selected_domain}")
+        st.subheader(f"Distribution of Responses for {selected_domain}")
 
         fig = px.bar(
             df_filtered,
@@ -70,6 +91,10 @@ def domain_dashboard():
 
         st.plotly_chart(fig, use_container_width=True)
 
+        # Optionally, show the underlying data
+        with st.expander("See Tabular Data"):
+            st.dataframe(df_filtered.reset_index(drop=True))
+
 
 #######################
 # 2) COUNTRY DASHBOARD
@@ -78,7 +103,11 @@ def country_dashboard():
     st.subheader("Country-Level Dashboard")
 
     # Load your country-level DataFrame (domain, actor, model, answer, percentage)
-    final_df = pd.read_csv("country_level_distribution.csv")
+    try:
+        final_df = pd.read_csv("country_level_distribution.csv")
+    except FileNotFoundError:
+        st.error("Country-level data file 'country_level_distribution.csv' not found.")
+        return
 
     col_main, col_filters = st.columns([4, 1], gap="medium")
 
@@ -91,14 +120,15 @@ def country_dashboard():
             key="country_selectbox_dashboard"  # unique key
         )
 
-        # Filter data to selected domain
-        df_domain = final_df[final_df["domain"] == selected_domain].copy()
-        if df_domain.empty:
-            st.warning("No data available for this domain.")
-            return
+        # Extract main domain for explanation
+        main_domain = selected_domain.split(" - ")[0]
+
+        # Display domain explanation if available
+        if main_domain in DOMAIN_EXPLANATIONS:
+            st.markdown(DOMAIN_EXPLANATIONS[main_domain])
 
         # Actors - unique key
-        actor_options = sorted(df_domain["actor"].unique())
+        actor_options = sorted(final_df["actor"].unique())
         selected_actors = st.multiselect(
             "Actor(s)",
             options=actor_options,
@@ -107,17 +137,17 @@ def country_dashboard():
         )
 
         # Models (max 3) - unique key
-        model_options = sorted(df_domain["model"].unique())
+        model_options = sorted(final_df["model"].unique())
         selected_models = st.multiselect(
             "Model(s) (max 3)",
             model_options,
             default=model_options[:3],
             key="country_models_multiselect"  # unique key
         )
-        selected_models = selected_models[:3]
+        selected_models = selected_models[:3]  # enforce max of 3
 
         # Answers - unique key
-        domain_answers = sorted(df_domain["answer"].unique())
+        domain_answers = sorted(final_df["answer"].unique())
         selected_answers = st.multiselect(
             "Response Types",
             options=domain_answers,
@@ -125,11 +155,12 @@ def country_dashboard():
             key="country_answers_multiselect"  # unique key
         )
 
-    # Filter further
-    df_filtered = df_domain[
-        (df_domain["actor"].isin(selected_actors)) &
-        (df_domain["model"].isin(selected_models)) &
-        (df_domain["answer"].isin(selected_answers))
+    # Further filter
+    df_filtered = final_df[
+        (final_df["domain"] == selected_domain) &
+        (final_df["actor"].isin(selected_actors)) &
+        (final_df["model"].isin(selected_models)) &
+        (final_df["answer"].isin(selected_answers))
     ].copy()
 
     with col_main:
@@ -137,7 +168,7 @@ def country_dashboard():
             st.warning("No data after applying filters.")
             return
 
-       # st.subheader("Response Distribution")
+        st.subheader("Response Distribution")
 
         num_models = len(selected_models)
         if num_models == 0:
@@ -176,7 +207,7 @@ def country_dashboard():
                 margin=dict(r=150)  # space on the right
             )
 
-            # Single legend on the first plot if you want:
+            # Single legend on the first plot
             if i == 0:
                 fig.update_layout(
                     showlegend=True,
@@ -185,7 +216,7 @@ def country_dashboard():
                         yanchor='middle',
                         y=0.5,
                         xanchor='left',
-                        x=1.25
+                        x=1.25  # adjust this value as needed to position the legend
                     )
                 )
             else:
@@ -194,14 +225,20 @@ def country_dashboard():
             with model_cols[i]:
                 st.plotly_chart(fig, use_container_width=False)
 
+        # Optionally, show the underlying data
+        with st.expander("See Filtered Data"):
+            st.dataframe(df_filtered.reset_index(drop=True))
+
 
 #######################
 # 3) MAIN App with Tabs
 #######################
 def main():
+    # Set page layout to wide
     st.set_page_config(layout="wide")
     st.title("CSIS Futures Lab LLM Bias Dashboard")
 
+    # Create two tabs
     tab1, tab2 = st.tabs(["Domain-Level", "Country-Level"])
 
     with tab1:
