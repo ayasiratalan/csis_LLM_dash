@@ -94,6 +94,8 @@ def show_domain_level_plot(domain_df):
     if domain_df.empty:
         st.warning("No data after filtering.")
         return
+    col_plot, col_filters = st.columns([3, 1], gap="medium")
+
     # Let user pick from all possible answers in this domain
     all_answers = sorted(domain_df["answer"].unique())
     selected_answers = st.multiselect(
@@ -147,6 +149,7 @@ def show_country_level_plot(country_df):
     if country_df.empty:
         st.warning("No data for domain.")
         return
+col_plot, col_filters = st.columns([4, 1], gap="medium")
 
     # Let user pick from all possible actors in domain
     all_actors = sorted(country_df["actor"].unique())
