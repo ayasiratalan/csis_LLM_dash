@@ -82,7 +82,7 @@ def build_echarts_bar_option(
             "type": "category",
             "name": x_label,
             "data": x_data,
-            "nameTextStyle": {
+            "TextStyle": {
                 "fontSize": 14
             },
             "axisLabel": {
