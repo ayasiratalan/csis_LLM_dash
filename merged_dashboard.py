@@ -130,7 +130,7 @@ def country_dashboard():
         selected_actors = st.multiselect(
             "Actor(s) (max 5)",
             options=actor_options,
-            default=actor_options,
+            default=actor_options[:5],
             key="country_actors_multiselect"  # unique key
         )
 
