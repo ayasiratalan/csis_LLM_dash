@@ -367,7 +367,7 @@ This interactive dashboard presents results from CSIS and Scale AI’s benchmark
             # Force domain
             st.session_state["domain_domain_val"] = "Escalation - Two Choice"
             # Optionally clear or set responses / models if you want
-            st.experimental_rerun()
+            st.rerun()
 
     # Pre-set 2
     with col_b:
@@ -379,7 +379,7 @@ This interactive dashboard presents results from CSIS and Scale AI’s benchmark
             st.session_state["country_actors_val"] = ["China"]
             # Force models
             st.session_state["country_models_val"] = ["Llama 3.1 8B Instruct", "GPT-4o"]
-            st.experimental_rerun()
+            st.rerun()
 
     # Pre-set 3
     with col_c:
@@ -387,7 +387,7 @@ This interactive dashboard presents results from CSIS and Scale AI’s benchmark
             # "Are any models more likely to prefer cooperative...?"
             st.session_state["analysis_choice"] = "Domain-Level"
             st.session_state["domain_domain_val"] = "Cooperation"
-            st.experimental_rerun()
+            st.rerun()
 
     # Now show the dashboard based on st.session_state["analysis_choice"]
     if st.session_state["analysis_choice"] == "Domain-Level":
