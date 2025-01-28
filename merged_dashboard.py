@@ -353,11 +353,11 @@ This interactive dashboard presents results from CSIS and Scale AI’s benchmark
         st.session_state["analysis_choice"] = analysis_choice_local
 
     # 3 columns for the preset buttons
-    col_a, col_b, col_c = st.columns(3)
+    col_a, col_b, col_c = st.rows(3)
 
     # Pre-set 1
     with col_a:
-        if st.button("Pre-set 1: Escalation (Two Choice)"):
+        if st.button("Pre-set 1: Which model in the evaluation is most likely to recommend escalatory courses of action for the two response Escalation domain?"):
             # "Which model is most likely to recommend escalatory courses... 2 response Escalation domain"
             # Force domain-level approach
             st.session_state["analysis_choice"] = "Domain-Level"
@@ -371,7 +371,7 @@ This interactive dashboard presents results from CSIS and Scale AI’s benchmark
 
     # Pre-set 2
     with col_b:
-        if st.button("Pre-set 2: China (Escalation - Two Choice)"):
+        if st.button("Pre-set 2: Is China the country most likely to be recommended escalatory responses"):
             # "Is China the country most likely to be recommended escalatory responses?"
             st.session_state["analysis_choice"] = "Country-Level"
             st.session_state["country_domain_val"] = "Escalation - Two Choice"
@@ -383,7 +383,7 @@ This interactive dashboard presents results from CSIS and Scale AI’s benchmark
 
     # Pre-set 3
     with col_c:
-        if st.button("Pre-set 3: Cooperation"):
+        if st.button("Pre-set 3: Are any models more likely to prefer cooperative courses of action than non-cooperative courses of action?"):
             # "Are any models more likely to prefer cooperative...?"
             st.session_state["analysis_choice"] = "Domain-Level"
             st.session_state["domain_domain_val"] = "Cooperation"
