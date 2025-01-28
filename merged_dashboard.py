@@ -126,7 +126,15 @@ def domain_dashboard():
     col_plot, col_filters = st.columns([3, 1], gap="medium")
 
     with col_filters:
-     
+
+                   # Domain
+        domain_options = sorted(final_dashboard_df["domain"].unique())
+        selected_domain = st.selectbox("Domain", domain_options, key="domain_selectbox")
+
+        if selected_domain in DOMAIN_EXPLANATIONS:
+            st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
+
+        df_domain = final_dashboard_df[final_dashboard_df["domain"] == selected_domain]
 
         # Response
         all_answers = sorted(df_domain["answer"].unique())
@@ -148,14 +156,7 @@ def domain_dashboard():
         )
         df_filtered = df_filtered[df_filtered["model"].isin(selected_models)]
 
-           # Domain
-        domain_options = sorted(final_dashboard_df["domain"].unique())
-        selected_domain = st.selectbox("Domain", domain_options, key="domain_selectbox")
 
-        if selected_domain in DOMAIN_EXPLANATIONS:
-            st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
-
-        df_domain = final_dashboard_df[final_dashboard_df["domain"] == selected_domain]
 
         if df_filtered.empty:
             st.warning("No data after filtering.")
