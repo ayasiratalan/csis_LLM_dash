@@ -27,7 +27,7 @@ DOMAIN_EXPLANATIONS = {
 }
 
 ########################
-# 2) Build ECharts Stacked Bar Option with Larger Fonts
+# 2) Build ECharts Stacked Bar
 ########################
 def build_echarts_bar_option(
     x_data,
@@ -36,6 +36,10 @@ def build_echarts_bar_option(
     x_label="",
     y_label="Percentage"
 ):
+    """
+    Returns an ECharts 'option' dict for a stacked vertical bar chart 
+    with larger and bold axis labels.
+    """
     series_list = []
     for name, values in series_data.items():
         series_list.append({
@@ -85,94 +89,98 @@ def build_echarts_bar_option(
     }
     return option
 
+########################
+# 3) Domain-Level Dashboard
+########################
 def domain_dashboard():
+    """
+    Renders the domain-level dashboard on the left, with filters on the right.
+    Resets the answers/models to all possible whenever a different domain is chosen.
+    """
     try:
-        final_dashboard_df = pd.read_csv("final_dashboard_df.csv")
+        df_domain_all = pd.read_csv("final_dashboard_df.csv")
     except FileNotFoundError:
         st.error("Domain-level data file 'final_dashboard_df.csv' not found.")
         return
 
-    col_plot, col_filters = st.columns([3, 1], gap="medium")
+    col_plot, col_filters = st.columns([3,1], gap="medium")
 
     with col_filters:
-        # 1) Domain
-        domain_options = sorted(final_dashboard_df["domain"].unique())
+        domain_options = sorted(df_domain_all["domain"].unique())
 
+        # If we haven't stored the domain-level choice, init to first
         if "domain_select_val" not in st.session_state:
             st.session_state["domain_select_val"] = domain_options[0]
 
-        # Remember the old domain to detect changes
-        old_domain = st.session_state["domain_select_val"]
-
+        old_domain = st.session_state["domain_select_val"]  # store the old domain
         selected_domain = st.selectbox(
             "Domain",
             domain_options,
-            index=domain_options.index(st.session_state["domain_select_val"]) 
-              if st.session_state["domain_select_val"] in domain_options else 0
+            index=domain_options.index(old_domain) if old_domain in domain_options else 0
         )
         st.session_state["domain_select_val"] = selected_domain
 
-        # If the domain changed, we reset the answers so all are selected
+        # If domain changed, reset answers/models to all for the new domain
         if selected_domain != old_domain:
-            # Reset the stored answers in session to show all for this domain
-            new_domain_answers = sorted(final_dashboard_df[final_dashboard_df["domain"] == selected_domain]["answer"].unique())
-            st.session_state["domain_answers_val"] = new_domain_answers
+            new_df = df_domain_all[df_domain_all["domain"] == selected_domain]
+            all_answers = sorted(new_df["answer"].unique())
+            all_models = sorted(new_df["model"].unique())
+
+            st.session_state["domain_answers_val"] = all_answers  # store all
+            st.session_state["domain_models_val"] = all_models    # store all
 
         if selected_domain in DOMAIN_EXPLANATIONS:
             st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
 
-        # 2) Filter data by domain
-        df_domain = final_dashboard_df[final_dashboard_df["domain"] == selected_domain]
+        # Now filter the big DF to just that domain
+        df_domain = df_domain_all[df_domain_all["domain"] == selected_domain]
 
-        # 3) Response
-        all_answers = sorted(df_domain["answer"].unique())
-        # If domain_answers_val not in session, set it to all
+        # All possible answers
+        domain_answers_options = sorted(df_domain["answer"].unique())
+        # If not stored, init
         if "domain_answers_val" not in st.session_state:
-            st.session_state["domain_answers_val"] = all_answers
+            st.session_state["domain_answers_val"] = domain_answers_options
 
-        # (No need to intersect if we want to always show all, but let's at least ensure any old
-        #  values not in this domain are removed automatically to avoid errors.)
-        current_defaults = set(st.session_state["domain_answers_val"])
-        valid_answers = list(current_defaults.intersection(all_answers))
-
+        # Show the multiselect with defaults = session answers
         selected_answers = st.multiselect(
             "Response Types",
-            all_answers,
-            default=valid_answers
+            domain_answers_options,
+            default=st.session_state["domain_answers_val"]
         )
+        # Update session
         st.session_state["domain_answers_val"] = selected_answers
 
+        # Filter by chosen answers
         df_filtered = df_domain[df_domain["answer"].isin(selected_answers)]
 
-        # 4) Model
-        all_models = sorted(df_filtered["model"].unique())
+        # Models
+        domain_models_options = sorted(df_filtered["model"].unique())
         if "domain_models_val" not in st.session_state:
-            st.session_state["domain_models_val"] = all_models
-        # same approach for models intersection
-        valid_models = list(set(st.session_state["domain_models_val"]).intersection(all_models))
-        selected_models = st.multiselect(
-            "Models",
-            all_models,
-            default=valid_models
-        )
-        st.session_state["domain_models_val"] = selected_models
+            st.session_state["domain_models_val"] = domain_models_options
 
-        df_filtered = df_filtered[df_filtered["model"].isin(selected_models)]
+        chosen_models = st.multiselect(
+            "Models",
+            domain_models_options,
+            default=st.session_state["domain_models_val"]
+        )
+        st.session_state["domain_models_val"] = chosen_models
+
+        df_filtered = df_filtered[df_filtered["model"].isin(chosen_models)]
         if df_filtered.empty:
             st.warning("No data after filtering.")
             return
 
+    # Plot
     with col_plot:
         st.subheader(f"Distribution of Responses for {selected_domain}")
-
-        # Build chart
         x_data = sorted(df_filtered["model"].unique())
         answers = sorted(df_filtered["answer"].unique())
+
         series_data = {}
         for ans in answers:
             row_vals = []
-            for mod in x_data:
-                sub_df = df_filtered[(df_filtered["model"] == mod) & (df_filtered["answer"] == ans)]
+            for m in x_data:
+                sub_df = df_filtered[(df_filtered["model"] == m) & (df_filtered["answer"] == ans)]
                 row_vals.append(sub_df["percentage"].mean() if len(sub_df)>0 else 0)
             series_data[ans] = row_vals
 
@@ -185,13 +193,15 @@ def domain_dashboard():
         )
         st_echarts(options=option, height="400px")
 
-
 ########################
-# 4) Country-Level Dashboard (with intersection fix)
+# 4) Country-Level Dashboard
 ########################
 def country_dashboard():
+    """
+    Similar logic for country-level. If domain changes, reset actors, models, answers to 'all' for that domain.
+    """
     try:
-        final_df = pd.read_csv("country_level_distribution.csv")
+        df_country_all = pd.read_csv("country_level_distribution.csv")
     except FileNotFoundError:
         st.error("Country-level data file 'country_level_distribution.csv' not found.")
         return
@@ -199,66 +209,70 @@ def country_dashboard():
     col_plot, col_filters = st.columns([4,1], gap="medium")
 
     with col_filters:
-        # Domain
-        domain_options = sorted(final_df["domain"].unique())
+        domain_options = sorted(df_country_all["domain"].unique())
         if "country_domain_val" not in st.session_state:
             st.session_state["country_domain_val"] = domain_options[0]
 
+        old_domain = st.session_state["country_domain_val"]
         selected_domain = st.selectbox(
             "Domain",
             domain_options,
-            index=domain_options.index(st.session_state["country_domain_val"])
-              if st.session_state["country_domain_val"] in domain_options else 0
+            index=domain_options.index(old_domain) if old_domain in domain_options else 0
         )
         st.session_state["country_domain_val"] = selected_domain
+
+        # If domain changed, reset everything to 'all' for the new domain
+        if selected_domain != old_domain:
+            new_df = df_country_all[df_country_all["domain"] == selected_domain]
+            st.session_state["country_actors_val"]  = sorted(new_df["actor"].unique())
+            st.session_state["country_models_val"]  = sorted(new_df["model"].unique())
+            st.session_state["country_answers_val"] = sorted(new_df["answer"].unique())
 
         if selected_domain in DOMAIN_EXPLANATIONS:
             st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
 
-        df_domain = final_df[final_df["domain"] == selected_domain]
+        # Now filter big DF
+        df_domain = df_country_all[df_country_all["domain"] == selected_domain]
 
         # Actors
-        actor_options = sorted(df_domain["actor"].unique())
+        domain_actor_options = sorted(df_domain["actor"].unique())
         if "country_actors_val" not in st.session_state:
-            st.session_state["country_actors_val"] = actor_options
-        valid_actors = list(set(st.session_state["country_actors_val"]).intersection(actor_options))
-        selected_actors = st.multiselect(
+            st.session_state["country_actors_val"] = domain_actor_options
+        chosen_actors = st.multiselect(
             "Actor(s)",
-            actor_options,
-            default=valid_actors
+            domain_actor_options,
+            default=st.session_state["country_actors_val"]
         )
-        st.session_state["country_actors_val"] = selected_actors
+        st.session_state["country_actors_val"] = chosen_actors
 
         # Models
-        model_options = sorted(df_domain["model"].unique())
+        domain_models_options = sorted(df_domain["model"].unique())
         if "country_models_val" not in st.session_state:
-            st.session_state["country_models_val"] = model_options[:3]
-        valid_models = list(set(st.session_state["country_models_val"]).intersection(model_options))
-        selected_models = st.multiselect(
+            st.session_state["country_models_val"] = domain_models_options[:3]
+        chosen_models = st.multiselect(
             "Model(s) (max 3)",
-            model_options,
-            default=valid_models
+            domain_models_options,
+            default=st.session_state["country_models_val"]
         )[:3]
-        st.session_state["country_models_val"] = selected_models
+        st.session_state["country_models_val"] = chosen_models
 
         # Answers
-        answer_options = sorted(df_domain["answer"].unique())
+        domain_answers_options = sorted(df_domain["answer"].unique())
         if "country_answers_val" not in st.session_state:
-            st.session_state["country_answers_val"] = answer_options
-        valid_answers = list(set(st.session_state["country_answers_val"]).intersection(answer_options))
-        selected_answers = st.multiselect(
+            st.session_state["country_answers_val"] = domain_answers_options
+        chosen_answers = st.multiselect(
             "Response Types",
-            answer_options,
-            default=valid_answers
+            domain_answers_options,
+            default=st.session_state["country_answers_val"]
         )
-        st.session_state["country_answers_val"] = selected_answers
+        st.session_state["country_answers_val"] = chosen_answers
 
     # Filter
-    df_filtered = final_df[
-        (final_df["domain"] == st.session_state["country_domain_val"]) &
-        (final_df["actor"].isin(st.session_state["country_actors_val"])) &
-        (final_df["model"].isin(st.session_state["country_models_val"])) &
-        (final_df["answer"].isin(st.session_state["country_answers_val"]))
+    df_filtered = df_country_all[
+        (df_country_all["domain"] == selected_domain) &
+        (df_country_all["actor"].isin(st.session_state["country_actors_val"])) &
+        (df_country_all["model"].isin(st.session_state["country_models_val"])) &
+        (df_country_all["answer"].isin(st.session_state["country_answers_val"]))
     ].copy()
 
     if df_filtered.empty:
@@ -266,7 +280,7 @@ def country_dashboard():
         return
 
     with col_plot:
-        st.subheader(f"Distribution of Responses for {st.session_state['country_domain_val']}")
+        st.subheader(f"Distribution of Responses for {selected_domain}")
 
         num_models = len(st.session_state["country_models_val"])
         if num_models == 0:
@@ -274,7 +288,6 @@ def country_dashboard():
             return
 
         model_cols = st.columns(num_models)
-
         for i, mod in enumerate(st.session_state["country_models_val"]):
             df_model = df_filtered[df_filtered["model"] == mod]
             if df_model.empty:
@@ -286,7 +299,7 @@ def country_dashboard():
             answers = sorted(df_model["answer"].unique())
             series_data = {}
             for ans in answers:
-                sub_actors = df_model[(df_model["answer"] == ans)]
+                sub_actors = df_model[df_model["answer"] == ans]
                 row_vals = []
                 for act in x_data:
                     sub_df = sub_actors[sub_actors["actor"] == act]
@@ -341,28 +354,28 @@ by different response types.
     # 3 columns for 3 preset buttons
     col_a, col_b, col_c = st.columns(3)
 
-    # Preset 1: Domain-Level = "Escalation - Two Choice"
+    # -- Preset 1: Domain-Level => Escalation - Two Choice
     with col_a:
         if st.button("Pre-set 1: Escalation (2 Choice)"):
             st.session_state["analysis_choice"] = "Domain-Level"
             st.session_state["domain_select_val"] = "Escalation - Two Choice"
-            # Clear or keep answers, e.g.:
-            st.rerun()
+            # We'll reset domain-level answers & models next run
+            st.experimental_rerun()
 
-    # Preset 2: Country-Level = "Escalation - Two Choice" + actor=China
+    # -- Preset 2: Country-Level => Escalation - Two Choice, Actor=China
     with col_b:
         if st.button("Pre-set 2: China Escalation (2 Choice)"):
             st.session_state["analysis_choice"] = "Country-Level"
             st.session_state["country_domain_val"] = "Escalation - Two Choice"
             st.session_state["country_actors_val"] = ["China"]
-            st.rerun()
+            st.experimental_rerun()
 
-    # Preset 3: Domain-Level = "Cooperation"
+    # -- Preset 3: Domain-Level => Cooperation
     with col_c:
         if st.button("Pre-set 3: Cooperation"):
             st.session_state["analysis_choice"] = "Domain-Level"
             st.session_state["domain_select_val"] = "Cooperation"
-            st.rerun()
+            st.experimental_rerun()
 
     # Show chosen dashboard
     if st.session_state["analysis_choice"] == "Domain-Level":
@@ -373,4 +386,3 @@ by different response types.
 
 if __name__ == "__main__":
     main()
-
