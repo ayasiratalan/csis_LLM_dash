@@ -69,7 +69,8 @@ def build_echarts_bar_option(
         "legend": {
             "top": 30,
             "textStyle": {
-                "fontSize": 12
+                "fontSize": 12,
+                "fontWeight": "bold"
             }
         },
         "grid": {
