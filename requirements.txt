@@ -2,3 +2,4 @@ streamlit
 pandas
 plotly
 echarts
+streamlit_echarts
