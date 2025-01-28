@@ -353,7 +353,7 @@ This interactive dashboard presents results from CSIS and Scale AI’s benchmark
         st.session_state["analysis_choice"] = analysis_choice_local
 
     # 3 columns for the preset buttons
-    col_a, col_b, col_c = st.rows(3)
+    col_a, col_b, col_c = st.columns(3)
 
     # Pre-set 1
     with col_a:
