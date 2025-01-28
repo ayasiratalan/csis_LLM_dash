@@ -7,38 +7,33 @@ from streamlit_echarts import st_echarts
 ###############################################################################
 DOMAIN_EXPLANATIONS = {
     "Escalation - Three Choice": """
-**Escalation - Three Choice:** This domain focuses on scenarios in which states are offered ...
+**Escalation - Three Choice:** ...
 """,
     "Escalation - Two Choice": """
-**Escalation - Two Choice:** This domain focuses on scenarios in which states are offered ...
+**Escalation - Two Choice:** ...
 """,
     "Intervention - Two Choice": """
-**Intervention:** The Intervention domain tests model preferences ...
+**Intervention:** ...
 """,
     "Intervention - Three Choice": """
-**Intervention:** The Intervention domain tests model preferences ...
+**Intervention:** ...
 """,
     "Cooperation": """
-**Cooperation:** Questions in this domain investigate model preferences ...
+**Cooperation:** ...
 """,
     "Alliance Dynamics": """
-**Alliance Dynamics:** States attempt a wide range of activities ...
+**Alliance Dynamics:** ...
 """
 }
 
 ###############################################################################
-# 2) Utility: Build ECharts Stacked Bar Option
+# 2) ECharts Option Builder
 ###############################################################################
-def build_echarts_bar_option(
-    x_data,
-    series_data,
-    chart_title="ECharts Bar",
-    x_label="",
-    y_label="Percentage"
-):
+def build_echarts_bar_option(x_data, series_data, chart_title="ECharts Bar", 
+                             x_label="", y_label="Percentage"):
     """
-    Returns an 'option' dict for ECharts to create a stacked vertical bar chart 
-    with bold axis labels. 
+    Returns an ECharts 'option' dict for a stacked vertical bar chart 
+    with larger/bold axis labels.
     """
     series_list = []
     for name, values in series_data.items():
@@ -89,216 +84,285 @@ def build_echarts_bar_option(
     return option
 
 ###############################################################################
-# 3) Main
+# 3) Domain-Level Plot (single-run)
+###############################################################################
+def show_domain_level_plot(df):
+    """
+    Renders the domain-level chart with filters for answers, models on the right.
+    Always defaults to all valid answers/models for the domain.
+    """
+    # Filters on the right
+    dom_col_plot, dom_col_filters = st.columns([3,1], gap="medium")
+
+    with dom_col_filters:
+        # All answers
+        all_answers = sorted(df["answer"].unique())
+        chosen_answers = st.multiselect(
+            "Response Types",
+            all_answers,
+            default=all_answers
+        )
+        df_filtered = df[df["answer"].isin(chosen_answers)]
+
+        # All models
+        all_models = sorted(df_filtered["model"].unique())
+        chosen_models = st.multiselect(
+            "Models",
+            all_models,
+            default=all_models
+        )
+        df_filtered = df_filtered[df_filtered["model"].isin(chosen_models)]
+
+    with dom_col_plot:
+        if df_filtered.empty:
+            st.warning("No data after filtering.")
+            return
+        x_data = sorted(df_filtered["model"].unique())
+        answers_used = sorted(df_filtered["answer"].unique())
+
+        series_data = {}
+        for ans in answers_used:
+            row_vals = []
+            for m in x_data:
+                sub_df = df_filtered[(df_filtered["model"] == m) & (df_filtered["answer"] == ans)]
+                row_vals.append(sub_df["percentage"].mean() if len(sub_df)>0 else 0)
+            series_data[ans] = row_vals
+
+        option = build_echarts_bar_option(
+            x_data=x_data,
+            series_data=series_data,
+            chart_title="Response Distribution by LLMs",
+            x_label="Model",
+            y_label="Percentage"
+        )
+        st_echarts(options=option, height="400px")
+
+###############################################################################
+# 4) Country-Level Plot (single-run)
+###############################################################################
+def show_country_level_plot(df):
+    """
+    Renders the country-level chart with filters for actor, models, answers on the right,
+    always defaults to all valid for that domain.
+    """
+    ctry_col_plot, ctry_col_filters = st.columns([3,1], gap="medium")
+
+    with ctry_col_filters:
+        all_actors = sorted(df["actor"].unique())
+        chosen_actors = st.multiselect(
+            "Actor(s)",
+            all_actors,
+            default=all_actors
+        )
+        df_filtered = df[df["actor"].isin(chosen_actors)]
+
+        all_models = sorted(df_filtered["model"].unique())
+        chosen_models = st.multiselect(
+            "Models",
+            all_models,
+            default=all_models[:3]
+        )
+        df_filtered = df_filtered[df_filtered["model"].isin(chosen_models)]
+
+        all_answers = sorted(df_filtered["answer"].unique())
+        chosen_answers = st.multiselect(
+            "Response Types",
+            all_answers,
+            default=all_answers
+        )
+        df_filtered = df_filtered[df_filtered["answer"].isin(chosen_answers)]
+
+    with ctry_col_plot:
+        if df_filtered.empty:
+            st.warning("No data after filtering.")
+            return
+
+        final_models = sorted(df_filtered["model"].unique())
+        if len(final_models) == 0:
+            st.warning("No models available.")
+            return
+
+        # side-by-side columns for each model
+        model_cols = st.columns(len(final_models))
+        for i, mod in enumerate(final_models):
+            df_mod = df_filtered[df_filtered["model"] == mod]
+            if df_mod.empty:
+                with model_cols[i]:
+                    st.warning(f"No data for model: {mod}")
+                continue
+
+            x_data = sorted(df_mod["actor"].unique())
+            used_answers = sorted(df_mod["answer"].unique())
+
+            series_data = {}
+            for ans in used_answers:
+                sub_df_ans = df_mod[df_mod["answer"] == ans]
+                row_vals = []
+                for act in x_data:
+                    sub_df_act = sub_df_ans[sub_df_ans["actor"] == act]
+                    row_vals.append(sub_df_act["percentage"].mean() if len(sub_df_act)>0 else 0)
+                series_data[ans] = row_vals
+
+            option = build_echarts_bar_option(
+                x_data=x_data,
+                series_data=series_data,
+                chart_title=mod,
+                x_label="Actor",
+                y_label="Percentage"
+            )
+            if i > 0:
+                option["legend"] = {"show": False}
+            with model_cols[i]:
+                st_echarts(options=option, height="400px")
+
+###############################################################################
+# 5) Main
 ###############################################################################
 def main():
     st.set_page_config(layout="wide")
     st.title("LLM Bias Dashboard")
 
-    # Introduction / Instructions
     st.info("""
 ### Using This Dashboard
-
-- **Filter**: On the right, pick domain and other filters.  
-- **View**: The left side updates with the stacked bar chart(s).
-- **Preset Buttons**: Clicking them overrides the domain/actor for the chart in this run, 
-  ignoring your selectbox if they conflict. No re-runs or session states are used to sync the UI.
+- **Filters** on the right, **Plots** on the left.  
+- **Preset Buttons** can override domain/actor but you can still change them 
+  afterward in the same run.  
+- This is single-run: we do not store domain or re-run automatically.  
 """)
 
-    # =================== TOP: Choose Domain-Level vs Country-Level ===================
-    analysis_options = ["Domain-Level", "Country-Level"]
-    analysis_choice_local = st.radio("Select Level of Analysis", analysis_options)
+    # Let the user pick domain-level or country-level
+    analysis_choice_local = st.radio("Select Level of Analysis", ["Domain-Level", "Country-Level"])
 
-    # =================== PRESET BUTTONS (3) ===================
-    # We store them in booleans. If user clicks one, it sets final domain or actor in local variables.
-    col_preset1, col_preset2, col_preset3 = st.columns(3)
+    # We'll read the data so we can populate domain choices
+    try:
+        df_domain_all = pd.read_csv("final_dashboard_df.csv")
+        domain_level_domains = sorted(df_domain_all["domain"].unique())
+    except:
+        domain_level_domains = list(DOMAIN_EXPLANATIONS.keys())  # fallback
 
-    # We'll define local overrides for analysis type, domain, or actor
-    # If user doesn't press anything, we use the user-chosen domain in the filters
-    final_analysis = analysis_choice_local
-    final_domain = None  # determined by user or preset
-    final_actor = None   # relevant only if country-level
+    try:
+        df_country_all = pd.read_csv("country_level_distribution.csv")
+        country_level_domains = sorted(df_country_all["domain"].unique())
+    except:
+        country_level_domains = list(DOMAIN_EXPLANATIONS.keys())
 
-    with col_preset1:
-        preset1_clicked = st.button("Pre-set 1: Escalation (2-Choice)")
-    with col_preset2:
-        preset2_clicked = st.button("Pre-set 2: China (Escalation-2)")
-    with col_preset3:
+    # We define local variables that the user or presets might override
+    final_domain = None
+    final_actor = None
+
+    # Three columns for the preset buttons
+    c1, c2, c3 = st.columns(3)
+
+    with c1:
+        preset1_clicked = st.button("Pre-set 1: Escalation (2 Choice)")
+    with c2:
+        preset2_clicked = st.button("Pre-set 2: China (Escalation 2 Choice)")
+    with c3:
         preset3_clicked = st.button("Pre-set 3: Cooperation")
 
+    # If user clicked a preset, we override final_domain or final_actor
+    # We'll also override analysis_choice_local if needed
     if preset1_clicked:
-        final_analysis = "Domain-Level"
-        final_domain   = "Escalation - Two Choice"
-    elif preset2_clicked:
-        final_analysis = "Country-Level"
-        final_domain   = "Escalation - Two Choice"
-        final_actor    = "China"
-    elif preset3_clicked:
-        final_analysis = "Domain-Level"
-        final_domain   = "Cooperation"
+        analysis_choice_local = "Domain-Level"
+        final_domain = "Escalation - Two Choice"
 
-    st.write("---")  # a horizontal rule for clarity
+    if preset2_clicked:
+        analysis_choice_local = "Country-Level"
+        final_domain = "Escalation - Two Choice"
+        final_actor  = "China"
 
-    # =========== LAYOUT with filters on RIGHT, chart on LEFT =============
+    if preset3_clicked:
+        analysis_choice_local = "Domain-Level"
+        final_domain = "Cooperation"
+
+    st.write("---")
+
+    # Now that we've processed presets, let's let the user pick domain from the right side
+    # We'll do so in a separate columns block: plot on the left, filters on the right
+    # The logic is ephemeral.
+
+    # We'll again define columns so we can put domain selectbox on the right 
+    # but the actual chart below
     col_plot, col_filters = st.columns([3,1], gap="medium")
 
-    if final_analysis == "Domain-Level":
-        # 1) Load domain-level CSV
+    # We'll store the final domain in a local variable domain_choice that 
+    # user can override unless a preset is forcing it
+    with col_filters:
+        if analysis_choice_local == "Domain-Level":
+            # domain-level
+            if final_domain is not None:
+                # A preset forced it; let user override if they want
+                st.markdown(f"**Preset** forced domain = {final_domain}. You can override below.")
+                domain_choice = st.selectbox(
+                    "Pick domain (override preset if you want)",
+                    domain_level_domains,
+                    index=domain_level_domains.index(final_domain)
+                      if final_domain in domain_level_domains else 0
+                )
+            else:
+                # no preset forcing => user picks
+                domain_choice = st.selectbox("Pick domain", domain_level_domains)
+
+            # if user picks different from preset, that overshadow
+            final_domain = domain_choice
+
+        else:
+            # Country-Level
+            if final_domain is not None:
+                st.markdown(f"**Preset** forced domain = {final_domain}. You can override below.")
+                domain_choice = st.selectbox(
+                    "Pick domain (override preset if you want)",
+                    country_level_domains,
+                    index=country_level_domains.index(final_domain)
+                      if final_domain in country_level_domains else 0
+                )
+            else:
+                domain_choice = st.selectbox("Pick domain", country_level_domains)
+            final_domain = domain_choice
+
+    # Display
+    with col_plot:
+        st.subheader(f"**{analysis_choice_local}** scenario, Domain: {final_domain}")
+    
+    # Now do the final plotting
+    if analysis_choice_local == "Domain-Level":
+        # Filter domain-level data
         try:
-            domain_data = pd.read_csv("final_dashboard_df.csv")
+            ddf = pd.read_csv("final_dashboard_df.csv")
         except FileNotFoundError:
-            st.error("File 'final_dashboard_df.csv' not found.")
+            st.error("Missing 'final_dashboard_df.csv'.")
             return
 
-        # 2) If no preset sets final_domain, we let user pick from domain selectbox
-        #    Otherwise, we skip user’s domain choice because preset overrides it
-        if final_domain is None:
-            # user picks domain from the right side
-            with col_filters:
-                domain_options = sorted(domain_data["domain"].unique())
-                domain_choice = st.selectbox("Pick Domain", domain_options)
-            final_domain = domain_choice
-        else:
-            # We do a small placeholder so the user sees that the domain is forced
-            with col_filters:
-                st.markdown(f"**Domain forced** by preset: {final_domain}")
-
-        # Explanation
+        # Explanation text
         if final_domain in DOMAIN_EXPLANATIONS:
-            with col_filters:
+            with col_plot:
                 st.markdown(DOMAIN_EXPLANATIONS[final_domain])
 
-        # Filter domain_data by final_domain
-        domain_data = domain_data[domain_data["domain"] == final_domain]
-
-        # 3) Now let user pick answers & models on the right
-        with col_filters:
-            # All possible answers for that domain
-            all_answers = sorted(domain_data["answer"].unique())
-            chosen_answers = st.multiselect(
-                "Response Types",
-                all_answers,
-                default=all_answers
-            )
-            df_filtered = domain_data[domain_data["answer"].isin(chosen_answers)]
-
-            # All possible models
-            all_models = sorted(df_filtered["model"].unique())
-            chosen_models = st.multiselect(
-                "Models",
-                all_models,
-                default=all_models
-            )
-            df_filtered = df_filtered[df_filtered["model"].isin(chosen_models)]
-
-        # Plot on the left
-        with col_plot:
-            st.subheader(f"**Domain-Level**: {final_domain}")
-            if df_filtered.empty:
-                st.warning("No data after these filters.")
-            else:
-                x_data = sorted(df_filtered["model"].unique())
-                used_answers = sorted(df_filtered["answer"].unique())
-                series_data = {}
-                for ans in used_answers:
-                    row_vals = []
-                    for m in x_data:
-                        sub_df = df_filtered[(df_filtered["model"] == m) & (df_filtered["answer"] == ans)]
-                        row_vals.append(sub_df["percentage"].mean() if len(sub_df)>0 else 0)
-                    series_data[ans] = row_vals
-                option = build_echarts_bar_option(
-                    x_data=x_data,
-                    series_data=series_data,
-                    chart_title="Response Distribution by LLMs",
-                    x_label="Model",
-                    y_label="Percentage"
-                )
-                st_echarts(options=option, height="400px")
+        domain_df = ddf[ddf["domain"] == final_domain]
+        show_domain_level_plot(domain_df)
 
     else:
-        # =========== Country-Level logic =============
+        # Country-Level
         try:
-            country_data = pd.read_csv("country_level_distribution.csv")
+            cdf = pd.read_csv("country_level_distribution.csv")
         except FileNotFoundError:
-            st.error("File 'country_level_distribution.csv' not found.")
+            st.error("Missing 'country_level_distribution.csv'.")
             return
-
-        if final_domain is None:
-            with col_filters:
-                domain_options = sorted(country_data["domain"].unique())
-                domain_choice = st.selectbox("Pick Domain", domain_options)
-            final_domain = domain_choice
-        else:
-            with col_filters:
-                st.markdown(f"**Domain forced** by preset: {final_domain}")
 
         # Explanation
         if final_domain in DOMAIN_EXPLANATIONS:
-            with col_filters:
+            with col_plot:
                 st.markdown(DOMAIN_EXPLANATIONS[final_domain])
 
-        # Filter by domain
-        country_data = country_data[country_data["domain"] == final_domain]
+        cdf = cdf[cdf["domain"] == final_domain]
 
-        with col_filters:
-            # If preset set final_actor, we override user choice
-            all_actors = sorted(country_data["actor"].unique())
-            if final_actor is None:
-                chosen_actors = st.multiselect("Actor(s)", all_actors, default=all_actors)
-            else:
-                # domain forced, actor forced
-                st.markdown(f"**Actor forced** by preset: {final_actor}")
-                chosen_actors = [final_actor]  # override
-            df_filtered = country_data[country_data["actor"].isin(chosen_actors)]
-
-            # Next, models
-            all_models = sorted(df_filtered["model"].unique())
-            chosen_models = st.multiselect("Models", all_models, default=all_models[:3])
-            df_filtered = df_filtered[df_filtered["model"].isin(chosen_models)]
-
-            # Then answers
-            all_answers = sorted(df_filtered["answer"].unique())
-            chosen_answers = st.multiselect("Response Types", all_answers, default=all_answers)
-            df_filtered = df_filtered[df_filtered["answer"].isin(chosen_answers)]
-
-        with col_plot:
-            st.subheader(f"**Country-Level**: {final_domain}")
-            if df_filtered.empty:
-                st.warning("No data after these filters.")
-            else:
-                # Plot side-by-side columns for each model
-                final_models = sorted(df_filtered["model"].unique())
-                model_cols = st.columns(len(final_models))
-
-                for i, mod in enumerate(final_models):
-                    sub_df_m = df_filtered[df_filtered["model"] == mod]
-                    if sub_df_m.empty:
-                        with model_cols[i]:
-                            st.warning(f"No data for model: {mod}")
-                        continue
-
-                    x_data = sorted(sub_df_m["actor"].unique())
-                    used_answers = sorted(sub_df_m["answer"].unique())
-                    series_data = {}
-                    for ans in used_answers:
-                        sub_df_ans = sub_df_m[sub_df_m["answer"] == ans]
-                        row_vals = []
-                        for act in x_data:
-                            sub_df_act = sub_df_ans[sub_df_ans["actor"] == act]
-                            row_vals.append(sub_df_act["percentage"].mean() if len(sub_df_act)>0 else 0)
-                        series_data[ans] = row_vals
-
-                    option = build_echarts_bar_option(
-                        x_data=x_data,
-                        series_data=series_data,
-                        chart_title=mod,
-                        x_label="Actor",
-                        y_label="Percentage"
-                    )
-                    if i > 0:
-                        option["legend"] = {"show": False}
-                    with model_cols[i]:
-                        st_echarts(options=option, height="400px")
+        # If a preset forced final_actor = "China", 
+        # we do not prevent user from picking new actors. 
+        # We'll do a note:
+        if final_actor is not None:
+            with col_plot:
+                st.write(f"Preset suggested actor = {final_actor}, but you may override in the filters.")
+        show_country_level_plot(cdf)
 
 
 if __name__ == "__main__":
