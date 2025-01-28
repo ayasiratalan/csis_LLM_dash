@@ -311,7 +311,7 @@ def country_dashboard():
 # 5) MAIN
 # ---------------------------------------------------
 def main():
-    st.set_page_config(layout="normal")
+    st.set_page_config(layout="centered")
     st.title("LLM Bias Dashboard")
 
     # Instruction Box
