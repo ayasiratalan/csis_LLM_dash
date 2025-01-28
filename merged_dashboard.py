@@ -114,64 +114,60 @@ def build_echarts_bar_option(
 # 3. Domain-Level Dashboard
 #######################################
 def domain_dashboard():
-    # Load domain-level data
     try:
         df_domain_all = pd.read_csv("final_dashboard_df.csv")
     except FileNotFoundError:
-        st.error("Domain-level data file 'final_dashboard_df.csv' not found.")
+        st.error("Domain-level data file not found.")
         return
 
-    # Plot on the left, filters on the right
     col_plot, col_filters = st.columns([3, 1], gap="medium")
 
     with col_filters:
-        # 1) Domain
+        # Domain
         domain_options = sorted(df_domain_all["domain"].unique())
-
-        # Default or stored domain in session
-        default_domain = domain_options[0]
         if "domain_domain_val" not in st.session_state:
-            st.session_state["domain_domain_val"] = default_domain
-        # If we have a preset domain, override it as default
-        # We'll let the user pick from selectbox with that default
+            st.session_state["domain_domain_val"] = domain_options[0]
         domain_val = st.selectbox(
             "Domain", 
-            domain_options, 
+            domain_options,
             index=domain_options.index(st.session_state["domain_domain_val"]) 
               if st.session_state["domain_domain_val"] in domain_options else 0
         )
-        # Update session if user changes
-        if domain_val != st.session_state["domain_domain_val"]:
-            st.session_state["domain_domain_val"] = domain_val
+        st.session_state["domain_domain_val"] = domain_val
 
         # Explanation
-        if st.session_state["domain_domain_val"] in DOMAIN_EXPLANATIONS:
-            st.markdown(DOMAIN_EXPLANATIONS[st.session_state["domain_domain_val"]])
+        if domain_val in DOMAIN_EXPLANATIONS:
+            st.markdown(DOMAIN_EXPLANATIONS[domain_val])
 
-        # 2) Filter data by domain
-        df_domain = df_domain_all[df_domain_all["domain"] == st.session_state["domain_domain_val"]]
+        # Filter by domain
+        df_domain = df_domain_all[df_domain_all["domain"] == domain_val]
 
-        # 3) Response
+        # Response Types
         answer_options = sorted(df_domain["answer"].unique())
         if "domain_answers_val" not in st.session_state:
-            st.session_state["domain_answers_val"] = answer_options  # all by default
+            st.session_state["domain_answers_val"] = answer_options
+
+        # Intersect to avoid invalid defaults
+        valid_answers = list(set(st.session_state["domain_answers_val"]).intersection(answer_options))
         answers_val = st.multiselect(
             "Response Types",
             answer_options,
-            default=st.session_state["domain_answers_val"]
+            default=valid_answers
         )
         st.session_state["domain_answers_val"] = answers_val
 
         df_filtered = df_domain[df_domain["answer"].isin(answers_val)]
 
-        # 4) Model
+        # Models
         model_options = sorted(df_filtered["model"].unique())
         if "domain_models_val" not in st.session_state:
-            st.session_state["domain_models_val"] = model_options  # all by default
+            st.session_state["domain_models_val"] = model_options
+
+        valid_models = list(set(st.session_state["domain_models_val"]).intersection(model_options))
         models_val = st.multiselect(
             "Models",
             model_options,
-            default=st.session_state["domain_models_val"]
+            default=valid_models
         )
         st.session_state["domain_models_val"] = models_val
 
@@ -179,6 +175,7 @@ def domain_dashboard():
         if df_filtered.empty:
             st.warning("No data after filtering.")
             return
+
 
     with col_plot:
         st.subheader(f"Distribution of Responses for {st.session_state['domain_domain_val']}")
