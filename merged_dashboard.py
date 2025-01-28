@@ -343,7 +343,7 @@ by different response types.
             # Clear or keep any actor/model/answers as desired.
             # e.g. let answers & models remain whatever user had,
             # or forcibly clear them, etc. Here we do minimal.
-            st.experimental_rerun()
+            st.rerun()
 
     # ------------------ PRESET 2 ------------------
     with col_b:
@@ -355,7 +355,7 @@ by different response types.
             # Force actor = ["China"]
             st.session_state["country_actors_val"] = ["China"]
             # (Optionally set models if you like, or let user pick.)
-            st.experimental_rerun()
+            st.rerun()
 
     # ------------------ PRESET 3 ------------------
     with col_c:
@@ -363,7 +363,7 @@ by different response types.
             # Domain-level for "Cooperation" domain
             st.session_state["analysis_choice"] = "Domain-Level"
             st.session_state["domain_domain_val"] = "Cooperation"
-            st.experimental_rerun()
+            st.rerun()
 
     # --- Display the selected dashboard ---
     if st.session_state["analysis_choice"] == "Domain-Level":
