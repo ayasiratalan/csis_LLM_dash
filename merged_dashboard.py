@@ -26,6 +26,7 @@ DOMAIN_EXPLANATIONS = {
 """
 }
 
+
 ########################
 # 2) Build ECharts Stacked Bar Option with Larger Fonts
 ########################
@@ -84,9 +85,9 @@ def build_echarts_bar_option(
             "type": "category",
             "name": x_label,
             "data": x_data,
-            "nameTextStyle": {          # Corrected key from "TextStyle" to "nameTextStyle"
+            "nameTextStyle": {
                 "fontSize": 14,
-                "fontWeight": "bold"    # Added to make x-axis label bold
+                "fontWeight": "bold"
             },
             "axisLabel": {
                 "fontSize": 12,
@@ -100,7 +101,7 @@ def build_echarts_bar_option(
             "max": 100,
             "nameTextStyle": {
                 "fontSize": 14,
-                "fontWeight": "bold"    # Added to make y-axis label bold
+                "fontWeight": "bold"
             },
             "axisLabel": {
                 "fontSize": 12,
@@ -122,12 +123,10 @@ def domain_dashboard():
         st.error("Domain-level data file 'final_dashboard_df.csv' not found.")
         return
 
-    # Reverse columns so that filters are on the right and plot on the left
+    # Plot on the left, filters on the right
     col_plot, col_filters = st.columns([3, 1], gap="medium")
 
     with col_filters:
-
-                   # Domain
         domain_options = sorted(final_dashboard_df["domain"].unique())
         selected_domain = st.selectbox("Domain", domain_options, key="domain_selectbox")
 
@@ -146,7 +145,7 @@ def domain_dashboard():
         )
         df_filtered = df_domain[df_domain["answer"].isin(selected_answers)]
 
-        # Model
+        # Models
         all_models = sorted(df_filtered["model"].unique())
         selected_models = st.multiselect(
             "Models",
@@ -155,8 +154,6 @@ def domain_dashboard():
             key="domain_models_multiselect"
         )
         df_filtered = df_filtered[df_filtered["model"].isin(selected_models)]
-
-
 
         if df_filtered.empty:
             st.warning("No data after filtering.")
@@ -201,7 +198,7 @@ def country_dashboard():
         st.error("Country-level data file 'country_level_distribution.csv' not found.")
         return
 
-    # Again, plot on the left, filters on the right
+    # Plot on the left, filters on the right
     col_plot, col_filters = st.columns([4, 1], gap="medium")
 
     with col_filters:
@@ -317,13 +314,53 @@ by different response types.
 3. **View**: The left side updates with the stacked bar chart(s).
 """)
 
+    # Radio for domain-level or country-level
     choice = st.radio(
         "Select Level of Analysis",
         ["Domain-Level", "Country-Level"],
         key="analysis_choice"
     )
 
-    if choice == "Domain-Level":
+    ####################
+    # Preset Buttons
+    ####################
+    # We create 3 columns for the 3 presets just below the radio
+    col_a, col_b, col_c = st.columns(3)
+
+    # Pre-set 1: Domain-level "Escalation - Two Choice"
+    # "Which model is most likely to recommend escalatory courses of action for the two response Escalation domain?"
+    with col_a:
+        if st.button("Pre-set 1: Escalation (Two Choice)", key="preset_1"):
+            # Force domain-level analysis
+            st.session_state["analysis_choice"] = "Domain-Level"
+            # Force domain to "Escalation - Two Choice"
+            st.session_state["domain_selectbox"] = "Escalation - Two Choice"
+            # Then rerun
+            st.experimental_rerun()
+
+    # Pre-set 2: Country-level "Escalation - Two Choice" with China actor + Llama 3.1 8B Instruct + GPT-4o
+    # "Is China the country most likely to be recommended escalatory responses?"
+    with col_b:
+        if st.button("Pre-set 2: China (Escalation - Two Choice)", key="preset_2"):
+            st.session_state["analysis_choice"] = "Country-Level"
+            st.session_state["country_selectbox"] = "Escalation - Two Choice"
+            # We'll filter to only China in actor multiselect
+            st.session_state["country_actors_multiselect"] = ["China"]
+            # We'll pick two models for demonstration
+            st.session_state["country_models_multiselect"] = ["Llama 3.1 8B Instruct", "GPT-4o"]
+            st.experimental_rerun()
+
+    # Pre-set 3: Domain-level "Cooperation" domain
+    # "Are any models more likely to prefer cooperative courses of action than non-cooperative?"
+    with col_c:
+        if st.button("Pre-set 3: Cooperation Domain", key="preset_3"):
+            st.session_state["analysis_choice"] = "Domain-Level"
+            st.session_state["domain_selectbox"] = "Cooperation"
+            st.experimental_rerun()
+    ####################
+
+    # Display the selected dashboard based on the (possibly updated) st.session_state
+    if st.session_state["analysis_choice"] == "Domain-Level":
         domain_dashboard()
     else:
         country_dashboard()
