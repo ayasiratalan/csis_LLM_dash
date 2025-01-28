@@ -85,9 +85,6 @@ def build_echarts_bar_option(
     }
     return option
 
-########################
-# 3) Domain-Level Dashboard (with intersection fix)
-########################
 def domain_dashboard():
     try:
         final_dashboard_df = pd.read_csv("final_dashboard_df.csv")
@@ -95,37 +92,49 @@ def domain_dashboard():
         st.error("Domain-level data file 'final_dashboard_df.csv' not found.")
         return
 
-    # Plot (left), Filters (right)
     col_plot, col_filters = st.columns([3, 1], gap="medium")
 
     with col_filters:
-        # Domain
+        # 1) Domain
         domain_options = sorted(final_dashboard_df["domain"].unique())
+
         if "domain_select_val" not in st.session_state:
             st.session_state["domain_select_val"] = domain_options[0]
 
-        # The user’s actual pick:
+        # Remember the old domain to detect changes
+        old_domain = st.session_state["domain_select_val"]
+
         selected_domain = st.selectbox(
             "Domain",
             domain_options,
-            index=domain_options.index(st.session_state["domain_select_val"])
+            index=domain_options.index(st.session_state["domain_select_val"]) 
               if st.session_state["domain_select_val"] in domain_options else 0
         )
         st.session_state["domain_select_val"] = selected_domain
 
-        # Explanation
+        # If the domain changed, we reset the answers so all are selected
+        if selected_domain != old_domain:
+            # Reset the stored answers in session to show all for this domain
+            new_domain_answers = sorted(final_dashboard_df[final_dashboard_df["domain"] == selected_domain]["answer"].unique())
+            st.session_state["domain_answers_val"] = new_domain_answers
+
         if selected_domain in DOMAIN_EXPLANATIONS:
             st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
 
+        # 2) Filter data by domain
         df_domain = final_dashboard_df[final_dashboard_df["domain"] == selected_domain]
 
-        # Response
+        # 3) Response
         all_answers = sorted(df_domain["answer"].unique())
+        # If domain_answers_val not in session, set it to all
         if "domain_answers_val" not in st.session_state:
             st.session_state["domain_answers_val"] = all_answers
 
-        # Intersect to avoid "value not in options" error
-        valid_answers = list(set(st.session_state["domain_answers_val"]).intersection(all_answers))
+        # (No need to intersect if we want to always show all, but let's at least ensure any old
+        #  values not in this domain are removed automatically to avoid errors.)
+        current_defaults = set(st.session_state["domain_answers_val"])
+        valid_answers = list(current_defaults.intersection(all_answers))
+
         selected_answers = st.multiselect(
             "Response Types",
             all_answers,
@@ -135,11 +144,11 @@ def domain_dashboard():
 
         df_filtered = df_domain[df_domain["answer"].isin(selected_answers)]
 
-        # Model
+        # 4) Model
         all_models = sorted(df_filtered["model"].unique())
         if "domain_models_val" not in st.session_state:
             st.session_state["domain_models_val"] = all_models
-
+        # same approach for models intersection
         valid_models = list(set(st.session_state["domain_models_val"]).intersection(all_models))
         selected_models = st.multiselect(
             "Models",
@@ -149,7 +158,6 @@ def domain_dashboard():
         st.session_state["domain_models_val"] = selected_models
 
         df_filtered = df_filtered[df_filtered["model"].isin(selected_models)]
-
         if df_filtered.empty:
             st.warning("No data after filtering.")
             return
@@ -157,15 +165,16 @@ def domain_dashboard():
     with col_plot:
         st.subheader(f"Distribution of Responses for {selected_domain}")
 
+        # Build chart
         x_data = sorted(df_filtered["model"].unique())
         answers = sorted(df_filtered["answer"].unique())
         series_data = {}
         for ans in answers:
-            row_values = []
+            row_vals = []
             for mod in x_data:
                 sub_df = df_filtered[(df_filtered["model"] == mod) & (df_filtered["answer"] == ans)]
-                row_values.append(sub_df["percentage"].mean() if len(sub_df)>0 else 0)
-            series_data[ans] = row_values
+                row_vals.append(sub_df["percentage"].mean() if len(sub_df)>0 else 0)
+            series_data[ans] = row_vals
 
         option = build_echarts_bar_option(
             x_data=x_data,
@@ -175,6 +184,7 @@ def domain_dashboard():
             y_label="Percentage"
         )
         st_echarts(options=option, height="400px")
+
 
 ########################
 # 4) Country-Level Dashboard (with intersection fix)
