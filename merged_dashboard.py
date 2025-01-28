@@ -128,7 +128,7 @@ def country_dashboard():
         # Actors - unique key
         actor_options = sorted(final_df["actor"].unique())
         selected_actors = st.multiselect(
-            "Actor(s)",
+            "Actor(s) (max 5)",
             options=actor_options,
             default=actor_options,
             key="country_actors_multiselect"  # unique key
