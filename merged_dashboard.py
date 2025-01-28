@@ -24,12 +24,11 @@ DOMAIN_EXPLANATIONS = {
 """
 }
 
+
 #####################
 # 1) DOMAIN DASHBOARD
 #####################
 def domain_dashboard():
-    
-
     # Load the domain-level DataFrame (columns: domain, model, answer, percentage)
     try:
         final_dashboard_df = pd.read_csv("final_dashboard_df.csv")
@@ -100,14 +99,10 @@ def domain_dashboard():
         st.plotly_chart(fig, use_container_width=True)
 
 
-
-
 #######################
 # 2) COUNTRY DASHBOARD
 #######################
 def country_dashboard():
-    
-
     # Load your country-level DataFrame (domain, actor, model, answer, percentage)
     try:
         final_df = pd.read_csv("country_level_distribution.csv")
@@ -174,7 +169,7 @@ def country_dashboard():
             return
 
         st.subheader(f"Distribution of Responses for {selected_domain}")
-        
+
         num_models = len(selected_models)
         if num_models == 0:
             st.warning("No models selected.")
@@ -230,23 +225,39 @@ def country_dashboard():
             with model_cols[i]:
                 st.plotly_chart(fig, use_container_width=False)
 
-    
 
 #######################
-# 3) MAIN App with Tabs
+# 3) MAIN App
 #######################
 def main():
     # Set page layout to wide
     st.set_page_config(layout="wide")
     st.title("LLM Bias Dashboard")
 
-    # Create two tabs
-    tab1, tab2 = st.tabs(["Domain-Level", "Country-Level"])
+    # Instruction Section in a Framed Box
+    st.info(""" 
+### Using This Dashboard  
+This interactive dashboard presents results from CSIS and Scale AI’s benchmarking of Large Language Models’ preferences in international relations. 
+The evaluation spans four key domains including – *Escalation, Intervention, Cooperation, and Alliance Dynamics* – 
+across an initial seven foundation models: *Llama 3.1 8B Instruct, Llama 3.1 70B Instruct, GPT-4o, Gemini 1.5 Pro-002, Mistral 8x22B, Claude 3.5 Sonnet, and Qwen2 72B.*  
 
-    with tab1:
+**How to Use the Dashboard:**  
+1. **Select Level of Analysis**: Choose between Domain-Level or Country-Level variation (below).  
+2. **Filter Results**: On the right of the screen, pick the domain, model, country (if applicable) and response types of interest.  
+3. **View Results**: The dashboard will automatically update, displaying the percentage of model recommendations for each domain’s scenarios.
+""")
+
+    # Replace tabs with a radio button
+    dashboard_choice = st.radio(
+        "Select Level of Analysis",
+        ["Domain-Level", "Country-Level"],
+        key="dashboard_radio_choice"
+    )
+
+    # Show the desired dashboard based on the radio choice
+    if dashboard_choice == "Domain-Level":
         domain_dashboard()
-
-    with tab2:
+    else:
         country_dashboard()
 
 
