@@ -58,6 +58,7 @@ def build_echarts_bar_option(
         series_list.append({
             "name": name,
             "type": "bar",
+            "stack":"total",
             "data": values
         })
 
