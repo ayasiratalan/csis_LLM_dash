@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 from streamlit_echarts import st_echarts
 
-# ---------------------------------------------------
-# 1. Domain explanations
-# ---------------------------------------------------
+########################
+# 1) Domain Explanations
+########################
 DOMAIN_EXPLANATIONS = {
     "Escalation - Three Choice": """
 **Escalation - Three Choice:** This domain focuses on scenarios in which states are offered options to escalate disputes or not. Escalation here signifies an increased conflict intensity typically related to the means used to pursue a particular goal. These scenarios include escalatory behavior in the context of four action categories: Attack, Blockade, Clash, and Declare War. This domain features three response scenarios. Three response scenarios have escalatory and non-escalatory response options as well as a middle response option which includes threats of force or a show of force. Actions above the threshold of use of force are always coded as the most escalatory in scenarios.
@@ -26,52 +26,51 @@ DOMAIN_EXPLANATIONS = {
 """
 }
 
-
-# ---------------------------------------------------
-# 2. Utility: Build ECharts option for a simple bar chart
-# ---------------------------------------------------
+########################
+# 2) Build ECharts Stacked Bar Option with Larger Fonts
+########################
 def build_echarts_bar_option(
-    x_data,      # list of x-axis categories (e.g. models or actors)
-    series_data, # dict { series_name -> list of values in x_data order }
+    x_data,
+    series_data,
     chart_title="ECharts Bar",
     x_label="",
     y_label="Percentage"
 ):
     """
-    Returns an 'option' dict for ECharts to create a vertical bar chart with
-    multiple series. Each series_name in series_data is displayed as a separate
-    color-coded bar category. x_data is the list of categories on the x-axis.
-    series_data is a dict mapping from e.g. 'answer' to a list of numeric values
-    that align with x_data.
-
-    Example:
-      x_data = ["GPT-4o", "Claude 3.5 Sonnet", "Llama 3.1 70B Instruct"]
-      series_data = {
-         "Use of Force": [50, 40, 60],
-         "No Use of Force": [50, 60, 40]
-      }
+    Returns an 'option' dict for ECharts to create a stacked vertical bar chart 
+    with larger fonts.
+    - x_data: categories on the x-axis (e.g. models or actors).
+    - series_data: dict { seriesName -> list of values }.
     """
-    # Convert into series for echarts
-    # Each key in series_data is a 'series' in the bar chart
     series_list = []
     for name, values in series_data.items():
         series_list.append({
             "name": name,
             "type": "bar",
-            "stack":"total",
+            "stack": "total",       # crucial for stacking
             "data": values
         })
 
     option = {
         "title": {
             "text": chart_title,
-            "left": "center"
+            "left": "center",
+            "textStyle": {
+                "fontSize": 16
+            }
         },
         "tooltip": {
-            "trigger": "axis"
+            "trigger": "axis",
+            "axisPointer": {"type": "shadow"},
+            "textStyle": {
+                "fontSize": 12
+            }
         },
         "legend": {
-            "top": 30  # place legend below title
+            "top": 30,
+            "textStyle": {
+                "fontSize": 12
+            }
         },
         "grid": {
             "left": "5%",
@@ -82,22 +81,33 @@ def build_echarts_bar_option(
         "xAxis": {
             "type": "category",
             "name": x_label,
-            "data": x_data
+            "data": x_data,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisLabel": {
+                "fontSize": 12
+            }
         },
         "yAxis": {
             "type": "value",
             "name": y_label,
             "min": 0,
-            "max": 100
+            "max": 100,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisLabel": {
+                "fontSize": 12
+            }
         },
         "series": series_list
     }
     return option
 
-
-# ---------------------------------------------------
-# 3) DOMAIN DASHBOARD
-# ---------------------------------------------------
+########################
+# 3) Domain-Level Dashboard
+########################
 def domain_dashboard():
     try:
         final_dashboard_df = pd.read_csv("final_dashboard_df.csv")
@@ -105,25 +115,20 @@ def domain_dashboard():
         st.error("Domain-level data file 'final_dashboard_df.csv' not found.")
         return
 
-    col_main, col_filters = st.columns([3, 1], gap="medium")
+    # Reverse columns so that filters are on the right and plot on the left
+    col_plot, col_filters = st.columns([3, 1], gap="medium")
 
     with col_filters:
-        # 1. Domain selection
+        # Domain
         domain_options = sorted(final_dashboard_df["domain"].unique())
-        selected_domain = st.selectbox(
-            "Domain",
-            domain_options,
-            index=0,
-            key="domain_selectbox_dashboard"
-        )
+        selected_domain = st.selectbox("Domain", domain_options, key="domain_selectbox")
 
-        # 2. Explanation
         if selected_domain in DOMAIN_EXPLANATIONS:
             st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
 
-        # 3. Filter by domain
         df_domain = final_dashboard_df[final_dashboard_df["domain"] == selected_domain]
-        # 4. Response filter
+
+        # Response
         all_answers = sorted(df_domain["answer"].unique())
         selected_answers = st.multiselect(
             "Response Types",
@@ -133,7 +138,7 @@ def domain_dashboard():
         )
         df_filtered = df_domain[df_domain["answer"].isin(selected_answers)]
 
-        # 5. Model filter
+        # Model
         all_models = sorted(df_filtered["model"].unique())
         selected_models = st.multiselect(
             "Models",
@@ -144,53 +149,41 @@ def domain_dashboard():
         df_filtered = df_filtered[df_filtered["model"].isin(selected_models)]
 
         if df_filtered.empty:
-            st.warning("No data after filtering by model(s) and response(s).")
+            st.warning("No data after filtering.")
             return
 
-    # Build the ECharts bar data
-    st.subheader(f"Distribution of Responses for {selected_domain}")
+    with col_plot:
+        st.subheader(f"Distribution of Responses for {selected_domain}")
 
-    # x_data = list of models in the final filtered data
-    x_data = sorted(df_filtered["model"].unique())
+        # x_data => each model
+        x_data = sorted(df_filtered["model"].unique())
+        answers = sorted(df_filtered["answer"].unique())
+        series_data = {}
 
-    # We group by 'answer' to produce multiple series
-    # For each answer, we want a list of percentages in x_data order
-    answers = sorted(df_filtered["answer"].unique())
+        for ans in answers:
+            row_values = []
+            for mod in x_data:
+                sub_df = df_filtered[(df_filtered["model"] == mod) & (df_filtered["answer"] == ans)]
+                if len(sub_df) == 0:
+                    row_values.append(0)
+                else:
+                    row_values.append(sub_df["percentage"].mean())
+            series_data[ans] = row_values
 
-    # Construct series_data
-    series_data = {}
-    for ans in answers:
-        # For each model in x_data
-        # We'll find the average or sum of percentages?
-        # Typically we have direct "percentage" row for each (model, answer).
-        # We'll do a quick approach: df_filtered might have multiple rows for the same (model,answer)
-        # We'll just take the mean. Or if your data only has one row per combo, you can just take .iloc[0].
-        row_values = []
-        for mod in x_data:
-            sub_df = df_filtered[(df_filtered["model"] == mod) & (df_filtered["answer"] == ans)]
-            if len(sub_df) == 0:
-                row_values.append(0)
-            else:
-                row_values.append(sub_df["percentage"].mean())  # or sum
-        series_data[ans] = row_values
+        option = build_echarts_bar_option(
+            x_data,
+            series_data,
+            chart_title="Response Distribution by LLMs",
+            x_label="Model",
+            y_label="Percentage"
+        )
 
-    # Build ECharts 'option'
-    option = build_echarts_bar_option(
-        x_data=x_data,
-        series_data=series_data,
-        chart_title="Response Distribution by LLMs",
-        x_label="Model",
-        y_label="Percentage"
-    )
-
-    # Render ECharts in col_main
-    from streamlit_echarts import st_echarts
-    st_echarts(options=option, height="400px")
+        st_echarts(options=option, height="400px")
 
 
-# ---------------------------------------------------
-# 4) COUNTRY DASHBOARD
-# ---------------------------------------------------
+########################
+# 4) Country-Level Dashboard
+########################
 def country_dashboard():
     try:
         final_df = pd.read_csv("country_level_distribution.csv")
@@ -198,22 +191,16 @@ def country_dashboard():
         st.error("Country-level data file 'country_level_distribution.csv' not found.")
         return
 
-    col_main, col_filters = st.columns([4, 1], gap="medium")
+    # Again, plot on the left, filters on the right
+    col_plot, col_filters = st.columns([4, 1], gap="medium")
 
     with col_filters:
-        # Domain
         domain_options = sorted(final_df["domain"].unique())
-        selected_domain = st.selectbox(
-            "Domain",
-            domain_options,
-            key="country_selectbox_dashboard"
-        )
+        selected_domain = st.selectbox("Domain", domain_options, key="country_selectbox")
 
-        # Explanation
         if selected_domain in DOMAIN_EXPLANATIONS:
             st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
 
-        # Actors
         actor_options = sorted(final_df["actor"].unique())
         selected_actors = st.multiselect(
             "Actor(s)",
@@ -222,7 +209,6 @@ def country_dashboard():
             key="country_actors_multiselect"
         )
 
-        # Models (max 3)
         model_options = sorted(final_df["model"].unique())
         selected_models = st.multiselect(
             "Model(s) (max 3)",
@@ -232,7 +218,6 @@ def country_dashboard():
         )
         selected_models = selected_models[:3]
 
-        # Answers: domain-based
         df_domain = final_df[final_df["domain"] == selected_domain]
         domain_answers = sorted(df_domain["answer"].unique())
         selected_answers = st.multiselect(
@@ -242,7 +227,6 @@ def country_dashboard():
             key="country_answers_multiselect"
         )
 
-    # Filter
     df_filtered = final_df[
         (final_df["domain"] == selected_domain) &
         (final_df["actor"].isin(selected_actors)) &
@@ -254,85 +238,75 @@ def country_dashboard():
         st.warning("No data after applying filters.")
         return
 
-    st.subheader(f"Distribution of Responses for {selected_domain}")
+    with col_plot:
+        st.subheader(f"Distribution of Responses for {selected_domain}")
 
-    # Build side-by-side columns
-    num_models = len(selected_models)
-    if num_models == 0:
-        st.warning("No models selected.")
-        return
+        num_models = len(selected_models)
+        if num_models == 0:
+            st.warning("No models selected.")
+            return
 
-    model_cols = st.columns(num_models)
+        model_cols = st.columns(num_models)
 
-    # We'll create a separate ECharts chart for each model
-    for i, mod in enumerate(selected_models):
-        df_model = df_filtered[df_filtered["model"] == mod]
-        if df_model.empty:
+        for i, mod in enumerate(selected_models):
+            df_model = df_filtered[df_filtered["model"] == mod]
+            if df_model.empty:
+                with model_cols[i]:
+                    st.warning(f"No data for model: {mod}")
+                continue
+
+            # x_data => list of actors
+            x_data = sorted(df_model["actor"].unique())
+            answers = sorted(df_model["answer"].unique())
+            series_data = {}
+
+            for ans in answers:
+                row_vals = []
+                for act in x_data:
+                    sub_df = df_model[(df_model["actor"] == act) & (df_model["answer"] == ans)]
+                    if len(sub_df) == 0:
+                        row_vals.append(0)
+                    else:
+                        row_vals.append(sub_df["percentage"].mean())
+                series_data[ans] = row_vals
+
+            option = build_echarts_bar_option(
+                x_data,
+                series_data,
+                chart_title=mod,
+                x_label="Actor",
+                y_label="Percentage"
+            )
+
+            # Hide legend on subsequent columns for a single legend approach
+            if i > 0:
+                option["legend"] = {"show": False}
+
             with model_cols[i]:
-                st.warning(f"No data for model: {mod}")
-            continue
-
-        # x_data = list of actors
-        x_data = sorted(df_model["actor"].unique())
-        # series_data = { answer -> [list of percentages for each actor in x_data order] }
-        answers = sorted(df_model["answer"].unique())
-        series_data = {}
-        for ans in answers:
-            row_values = []
-            for act in x_data:
-                sub_df = df_model[(df_model["actor"] == act) & (df_model["answer"] == ans)]
-                if len(sub_df) == 0:
-                    row_values.append(0)
-                else:
-                    row_values.append(sub_df["percentage"].mean())
-            series_data[ans] = row_values
-
-        # Build ECharts option
-        option = build_echarts_bar_option(
-            x_data=x_data,
-            series_data=series_data,
-            chart_title=mod,   # just the model name
-            x_label="Actor",
-            y_label="Percentage"
-        )
-
-        # If we want to show a single legend only on the first plot:
-        # We'll remove the legend from subsequent plots. We can do so by modifying 'option'
-        if i > 0:
-            option["legend"] = {"show": False}
-            option["title"]["left"] = "center"
-
-        # Render
-        with model_cols[i]:
-            st_echarts(options=option, height="400px")
+                st_echarts(options=option, height="400px")
 
 
-# ---------------------------------------------------
+########################
 # 5) MAIN
-# ---------------------------------------------------
+########################
 def main():
-    st.set_page_config(layout="centered")
+    st.set_page_config(layout="wide")
     st.title("LLM Bias Dashboard")
 
-    # Instruction Box
+    # Instructions
     st.info("""
 ### Using This Dashboard
 This interactive dashboard presents results from CSIS and Scale AI’s benchmarking 
 of Large Language Models’ preferences in international relations. 
-The evaluation spans four key domains including – **Escalation, Intervention, Cooperation, 
-and Alliance Dynamics** – across an initial seven foundation models: **Llama 3.1 8B Instruct, 
-Llama 3.1 70B Instruct, GPT-4o, Gemini 1.5 Pro-002, Mistral 8x22B, Claude 3.5 Sonnet, 
-and Qwen2 72B.**
+We show **stacked** bars, so each category (model or actor) is a single bar subdivided 
+by different response types.
 
-**How to Use the Dashboard:**
-1. **Select Level of Analysis**: Choose between Domain-Level or Country-Level variation (below).
-2. **Filter Results**: On the right, pick the domain, model, country (if applicable), 
-   and response types of interest.
-3. **View Results**: The dashboard automatically updates, showing each domain’s scenario distribution 
-   of model recommendations.
+**How to Use the Dashboard:**  
+1. **Select Level of Analysis**: Domain-Level or Country-Level (below).  
+2. **Filter**: On the right, pick domain, responses, models, etc.  
+3. **View**: The left side updates with the stacked bar chart(s).
 """)
 
-    # Instead of tabs, let's do a radio for domain-level or country-level
     choice = st.radio(
         "Select Level of Analysis",
         ["Domain-Level", "Country-Level"],
