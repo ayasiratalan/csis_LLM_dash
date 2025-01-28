@@ -305,70 +305,71 @@ def main():
 
     st.info("""
 ### Using This Dashboard
-This interactive dashboard presents results from CSIS and Scale AI’s benchmarking...
+This interactive dashboard presents results from CSIS and Scale AI’s benchmarking 
+of Large Language Models’ preferences in international relations. 
+We show **stacked** bars, so each category (model or actor) is a single bar subdivided 
+by different response types.
+
+**How to Use the Dashboard:**  
+1. **Select Level of Analysis**: Domain-Level or Country-Level (below).  
+2. **Filter**: On the right, pick domain, responses, models, etc.  
+3. **View**: The left side updates with the stacked bar chart(s).
 """)
 
     # If "analysis_choice" not in session, default "Domain-Level"
     if "analysis_choice" not in st.session_state:
         st.session_state["analysis_choice"] = "Domain-Level"
 
-    # We do not set a key, store the user's local choice:
+    # Local radio selection
     analysis_choice_local = st.radio(
         "Select Level of Analysis",
         ["Domain-Level", "Country-Level"],
-        index=0 if st.session_state["analysis_choice"]=="Domain-Level" else 1
+        index=0 if st.session_state["analysis_choice"] == "Domain-Level" else 1
     )
     # If user changed it, update session
     if analysis_choice_local != st.session_state["analysis_choice"]:
         st.session_state["analysis_choice"] = analysis_choice_local
 
-    # 3 columns for the preset buttons
+    # --- 3 columns for the 3 preset buttons ---
     col_a, col_b, col_c = st.columns(3)
 
-    # Pre-set 1
+    # ------------------ PRESET 1 ------------------
     with col_a:
-        if st.button("Pre-set 1: Which model in the evaluation is most likely to recommend escalatory courses of action for the two response Escalation domain?"):
-            # "Which model is most likely to recommend escalatory courses... 2 response Escalation domain"
-            # Force domain-level approach
+        if st.button("Pre-set 1: Which model is most likely to recommend escalation (2-choice)?"):
+            # Force domain-level
             st.session_state["analysis_choice"] = "Domain-Level"
-            # Force domain
+            # Force domain = Escalation - Two Choice
             st.session_state["domain_domain_val"] = "Escalation - Two Choice"
-            # Optionally clear or set responses / models if you want
-            st.session_state["domain_answers_val"] = ["Use of Force","No Use of Force","Refused to Answer"]
+            # Clear or keep any actor/model/answers as desired.
+            # e.g. let answers & models remain whatever user had,
+            # or forcibly clear them, etc. Here we do minimal.
+            st.experimental_rerun()
 
-            
-            st.rerun()
-
-    # Pre-set 2
+    # ------------------ PRESET 2 ------------------
     with col_b:
-        if st.button("Pre-set 2: Is China the country most likely to be recommended escalatory responses"):
-            # "Is China the country most likely to be recommended escalatory responses?"
+        if st.button("Pre-set 2: Is China recommended escalatory responses?"):
+            # Switch to Country-Level
             st.session_state["analysis_choice"] = "Country-Level"
+            # Force domain = Escalation - Two Choice
             st.session_state["country_domain_val"] = "Escalation - Two Choice"
-            # Force actor
+            # Force actor = ["China"]
             st.session_state["country_actors_val"] = ["China"]
-            # Force models
-            st.session_state["country_models_val"] = ["Llama 3.1 8B Instruct", "GPT-4o"]
-            st.rerun()
+            # (Optionally set models if you like, or let user pick.)
+            st.experimental_rerun()
 
-    # Pre-set 3
+    # ------------------ PRESET 3 ------------------
     with col_c:
-        if st.button("Pre-set 3: Are any models more likely to prefer cooperative courses of action than non-cooperative courses of action?"):
-            # "Are any models more likely to prefer cooperative...?"
+        if st.button("Pre-set 3: Are models more likely cooperative?"):
+            # Domain-level for "Cooperation" domain
             st.session_state["analysis_choice"] = "Domain-Level"
             st.session_state["domain_domain_val"] = "Cooperation"
-            st.session_state["domain_answers_val"] = ["Cooperative","Non-cooperative","Refused to Answer"]
+            st.experimental_rerun()
 
-            st.rerun()
-
-    # Now show the dashboard based on st.session_state["analysis_choice"]
+    # --- Display the selected dashboard ---
     if st.session_state["analysis_choice"] == "Domain-Level":
         domain_dashboard()
     else:
         country_dashboard()
-
-if __name__ == "__main__":
-    main()
 
 
 
