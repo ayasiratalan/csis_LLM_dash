@@ -387,7 +387,7 @@ This interactive dashboard presents results from CSIS and Scale AI’s benchmark
             # "Are any models more likely to prefer cooperative...?"
             st.session_state["analysis_choice"] = "Domain-Level"
             st.session_state["domain_domain_val"] = "Cooperation"
-            st.session_state["domain_answers_val"] = ["Cooperative","Non-Cooperative","Refused to Answer"]
+            st.session_state["domain_answers_val"] = ["Cooperative","Non-cooperative","Refused to Answer"]
 
             st.rerun()
 
