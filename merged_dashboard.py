@@ -38,8 +38,8 @@ def build_echarts_bar_option(
 ):
     """
     Returns an 'option' dict for ECharts to create a stacked vertical bar chart 
-    with larger fonts.
-    - x_data: categories on the x-axis (e.g. models or actors).
+    with larger and bold axis labels.
+    - x_data: categories on the x-axis (e.g., models or actors).
     - series_data: dict { seriesName -> list of values }.
     """
     series_list = []
@@ -78,12 +78,14 @@ def build_echarts_bar_option(
             "bottom": "10%",
             "containLabel": True
         },
+        
         "xAxis": {
             "type": "category",
             "name": x_label,
             "data": x_data,
-            "TextStyle": {
-                "fontSize": 14
+            "nameTextStyle": {          # Corrected key from "TextStyle" to "nameTextStyle"
+                "fontSize": 14,
+                "fontWeight": "bold"    # Added to make x-axis label bold
             },
             "axisLabel": {
                 "fontSize": 12
@@ -95,7 +97,8 @@ def build_echarts_bar_option(
             "min": 0,
             "max": 100,
             "nameTextStyle": {
-                "fontSize": 14
+                "fontSize": 14,
+                "fontWeight": "bold"    # Added to make y-axis label bold
             },
             "axisLabel": {
                 "fontSize": 12
@@ -104,6 +107,7 @@ def build_echarts_bar_option(
         "series": series_list
     }
     return option
+
 
 ########################
 # 3) Domain-Level Dashboard
