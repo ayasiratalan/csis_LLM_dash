@@ -364,7 +364,7 @@ This interactive dashboard presents results from CSIS and Scale AI’s benchmark
             # Force domain
             st.session_state["domain_domain_val"] = "Escalation - Two Choice"
             # Optionally clear or set responses / models if you want
-            st.session_state["domain_answers_val"] = answer_options
+            st.session_state["domain_answers_val"] = ["Use of Force","No Use of Force","Refused to Answer"]
 
             
             st.rerun()
