@@ -360,7 +360,7 @@ by different response types.
             st.session_state["analysis_choice"] = "Domain-Level"
             st.session_state["domain_select_val"] = "Escalation - Two Choice"
             # We'll reset domain-level answers & models next run
-            st.experimental_rerun()
+            st.rerun()
 
     # -- Preset 2: Country-Level => Escalation - Two Choice, Actor=China
     with col_b:
@@ -368,14 +368,14 @@ by different response types.
             st.session_state["analysis_choice"] = "Country-Level"
             st.session_state["country_domain_val"] = "Escalation - Two Choice"
             st.session_state["country_actors_val"] = ["China"]
-            st.experimental_rerun()
+            st.rerun()
 
     # -- Preset 3: Domain-Level => Cooperation
     with col_c:
         if st.button("Pre-set 3: Cooperation"):
             st.session_state["analysis_choice"] = "Domain-Level"
             st.session_state["domain_select_val"] = "Cooperation"
-            st.experimental_rerun()
+            st.rerun()
 
     # Show chosen dashboard
     if st.session_state["analysis_choice"] == "Domain-Level":
