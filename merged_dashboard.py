@@ -88,7 +88,8 @@ def build_echarts_bar_option(
                 "fontWeight": "bold"    # Added to make x-axis label bold
             },
             "axisLabel": {
-                "fontSize": 12
+                "fontSize": 12,
+                "fontWeight": "bold"
             }
         },
         "yAxis": {
@@ -101,7 +102,8 @@ def build_echarts_bar_option(
                 "fontWeight": "bold"    # Added to make y-axis label bold
             },
             "axisLabel": {
-                "fontSize": 12
+                "fontSize": 12,
+                "fontWeight": "bold"
             }
         },
         "series": series_list
