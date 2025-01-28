@@ -39,7 +39,18 @@ def domain_dashboard():
     col_main, col_filters = st.columns([3, 1], gap="medium")
 
     with col_filters:
-       
+        # Domain selection - unique key
+        domain_options = sorted(final_dashboard_df["domain"].unique())
+        selected_domain = st.selectbox(
+            "Domain",
+            domain_options,
+            index=0,
+            key="domain_selectbox_dashboard"  # unique key
+        )
+
+        # Display domain explanation if available
+        if selected_domain in DOMAIN_EXPLANATIONS:
+            st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
 
         # Extract response types based on domain only
         df_domain = final_dashboard_df[final_dashboard_df["domain"] == selected_domain]
@@ -52,19 +63,6 @@ def domain_dashboard():
             default=all_answers,
             key="domain_answers_multiselect"  # unique key
         )
-
-         # Domain selection - unique key
-        domain_options = sorted(final_dashboard_df["domain"].unique())
-        selected_domain = st.selectbox(
-            "Domain",
-            domain_options,
-            index=0,
-            key="domain_selectbox_dashboard"  # unique key
-        )
-
-        # Display domain explanation if available
-        if selected_domain in DOMAIN_EXPLANATIONS:
-            st.markdown(DOMAIN_EXPLANATIONS[selected_domain])
 
         # Now filter by responses
         df_filtered = df_domain[df_domain["answer"].isin(selected_answers)]
