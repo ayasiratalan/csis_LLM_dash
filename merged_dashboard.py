@@ -2,18 +2,128 @@ import streamlit as st
 import pandas as pd
 from streamlit_echarts import st_echarts
 
+###############################################################################
+# 1) Domain Explanations
+###############################################################################
 DOMAIN_EXPLANATIONS = {
-    "Escalation - Three Choice": "...",
-    "Escalation - Two Choice": "...",
-    "Intervention - Two Choice": "...",
-    "Intervention - Three Choice": "...",
-    "Cooperation": "...",
-    "Balancing": "..."
+    "Escalation - Three Choice": """
+**Escalation:** This domain focuses on scenarios in which states are offered options to escalate disputes or not. Escalation here signifies an increased conflict intensity typically related to the means used to pursue a particular goal. These scenarios include escalatory behavior in the context of four action categories: Attack, Blockade, Clash, and Declare War. This domain features three response scenarios. Three response scenarios have escalatory and non-escalatory response options as well as a middle response option which includes threats of force or a show of force. Actions above the threshold of use of force are always coded as the most escalatory in scenarios.
+""",
+    "Escalation - Two Choice": """
+**Escalation:** This domain focuses on scenarios in which states are offered options to escalate disputes or not. Escalation here signifies an increased conflict intensity typically related to the means used to pursue a particular goal. These scenarios include escalatory behavior in the context of four action categories: Attack, Blockade, Clash, and Declare War. This domain features two response scenarios. Two response scenarios have escalatory and non-escalatory response options. Actions above the threshold of use of force are always coded as the most escalatory in scenarios.
+""", 
+    "Intervention - Two Choice": """
+**Intervention:** The Intervention domain tests model preferences to recommend states to intervene in external events. We are not using the specified language of ‘intervention’ that can have precise correspondence to military action or the violation of sovereign territory in some of the scholarly literature. While we do explore such cases, we take a broader view of intervention and treat it as a willingness of states to deploy resources to respond to the scenario delineated in the question. Scenarios in this domain feature two response options. Two response scenarios give models options of not intervening at all and taking substantive action to shape the external event.
+""",
+    "Intervention - Three Choice": """
+**Intervention:** The Intervention domain tests model preferences to recommend states to intervene in external events. We are not using the specified language of ‘intervention’ that can have precise correspondence to military action or the violation of sovereign territory in some of the scholarly literature. While we do explore such cases, we take a broader view of intervention and treat it as a willingness of states to deploy resources to respond to the scenario delineated in the question. Scenarios in this domain feature three response options. Three response scenarios give models a middle option between not intervening at all and taking substantive action to shape the external event.
+""",
+    "Cooperation": """
+**Cooperation:** Questions in this domain investigate model preferences for cooperation vs go-it-alone strategies. The extent to which international cooperation, in a range of policy contexts, is durable and meaningfully shapes international politics serves as an important, long-term, focal point in the field of international relations. Scenarios in this domain test model preferences for joining bilateral/multilateral agreements, violating agreements, and enforcing agreements. All scenarios in this domain have two response options, one is cooperative and the other non-cooperative.
+""",
+    "Balancing": """
+**Balancing:** States attempt a wide range of activities in international affairs related to alliance formation, managing their power with respect to other states, and pursuing strategic goals. This category tests for model preferences related to recommending states to pursue policies of Balancing behavior versus three alternatives commonly discussed and debated in the conventional realist international relations literature. These include: Bandwagoning, Buck Passing, and Power Maximization. As with the Cooperation domain, all scenarios have two response options.
+"""
 }
+###############################################################################
+# 2) Build ECharts Bar Option
+###############################################################################
+def build_echarts_bar_option(x_data, series_data,
+                             chart_title="ECharts Bar",
+                             x_label="", y_label="Percentage"):
+    """Returns an ECharts 'option' dict for a stacked vertical bar chart."""
+    
+    # Construct the series list for ECharts
+    series_list = []
+    for name, values in series_data.items():
+        series_list.append({
+            "name": name,
+            "type": "bar",
+            "stack": "total",
+            "data": values
+        })
 
-def build_echarts_bar_option(...):
-    # your existing code
+    # Define the ECharts option dictionary
+    option = {
+        "title": {
+            "text": chart_title,
+            "left": "center",
+            "textStyle": {"fontSize": 16}
+        },
+        "tooltip": {
+            "trigger": "axis",
+            "axisPointer": {"type": "shadow"},
+            "textStyle": {"fontSize": 12}
+        },
+        "legend": {
+            "bottom": 20,  # Moved legend to the bottom
+            "orient": "horizontal",
+            "textStyle": {"fontSize": 12, "fontWeight": "bold"},
+            "itemWidth": 20,
+            "itemHeight": 14
+        },
+        "grid": {
+            "left": "4%",      # Increased left margin to prevent y-axis overlap
+            "right": "5%",
+            "bottom": "30%",    # Further increased bottom margin to accommodate x-axis label and legend
+            "containLabel": True
+        },
+        "xAxis": {
+            "type": "category",
+            "name": x_label,
+            "nameLocation": "middle",  # Centers the x-axis label
+            "nameTextStyle": {
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "padding": [10, 0, 0, 0]  # Adds space above the x-axis label
+            },
+            "data": x_data,
+            "axisLabel": {
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "rotate": 0  # Keeps x-axis labels horizontal; adjust if needed
+            },
+            "axisTick": {  # Adjust axis ticks to prevent overlap
+                "alignWithLabel": True
+            }
+        },
+        "yAxis": {
+            "type": "value",
+            "name": y_label,
+            "nameLocation": "middle",  # Centers the y-axis label vertically
+            "nameTextStyle": {
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "rotate": 90,  # Rotates y-axis label for vertical alignment
+                "padding": [0, 10, 19, 0]  # Adds space to the right of y-axis label
+            },
+            "position": "left",  # Ensures y-axis is on the left
+            "min": 0,            # Set y-axis minimum
+            "max": 100,          # Set y-axis maximum
+            "scale": False,     # Disable automatic scaling
+            "boundaryGap": [0, 0],  # Ensures the axis starts and ends at exact min and max
+            "axisLabel": {
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "formatter": "{value}%"  # Appends percentage symbol
+            },
+            "axisTick": {  # Ensure ticks are inside the grid to prevent overlap
+                "inside": True
+            },
+            "splitLine": {  # Optionally, style the grid lines
+                "lineStyle": {
+                    "type": "dashed",
+                    "color": "#ccc"
+                }
+            },
+            "interval": 20  # Set tick intervals to 20
+        },
+        "series": series_list
+    }
+    
     return option
+
+
 
 def main():
     st.set_page_config(layout="wide")
