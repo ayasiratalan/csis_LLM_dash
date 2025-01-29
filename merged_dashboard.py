@@ -66,7 +66,7 @@ def build_echarts_bar_option(x_data, series_data,
         "grid": {
             "left": "20%",      # Increased left margin to prevent y-axis overlap
             "right": "5%",
-            "bottom": "25%",    # Increased bottom margin to accommodate x-axis label and legend
+            "bottom": "30%",    # Further increased bottom margin to accommodate x-axis label and legend
             "containLabel": True
         },
         "xAxis": {
@@ -96,12 +96,17 @@ def build_echarts_bar_option(x_data, series_data,
                 "fontSize": 14,
                 "fontWeight": "bold",
                 "rotate": 90,  # Rotates y-axis label for vertical alignment
-                "padding": [0, 10, 20, 0]  # Adds space to the right of y-axis label
+                "padding": [0, 10, 0, 0]  # Adds space to the right of y-axis label
             },
             "position": "left",  # Ensures y-axis is on the left
+            "min": 0,            # Set y-axis minimum
+            "max": 100,          # Set y-axis maximum
+            "scale": False,     # Disable automatic scaling
+            "boundaryGap": [0, 0],  # Ensures the axis starts and ends at exact min and max
             "axisLabel": {
                 "fontSize": 12,
-                "fontWeight": "bold"
+                "fontWeight": "bold",
+                "formatter": "{value}%"  # Appends percentage symbol
             },
             "axisTick": {  # Ensure ticks are inside the grid to prevent overlap
                 "inside": True
@@ -111,12 +116,14 @@ def build_echarts_bar_option(x_data, series_data,
                     "type": "dashed",
                     "color": "#ccc"
                 }
-            }
+            },
+            "interval": 20  # Set tick intervals to 20
         },
         "series": series_list
     }
     
     return option
+
 
 
 
