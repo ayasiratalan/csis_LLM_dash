@@ -64,7 +64,7 @@ def build_echarts_bar_option(x_data, series_data,
             "itemHeight": 14
         },
         "grid": {
-            "left": "5%",      # Increased left margin to prevent y-axis overlap
+            "left": "1%",      # Increased left margin to prevent y-axis overlap
             "right": "5%",
             "bottom": "20%",    # Further increased bottom margin to accommodate x-axis label and legend
             "containLabel": True
@@ -96,7 +96,7 @@ def build_echarts_bar_option(x_data, series_data,
                 "fontSize": 14,
                 "fontWeight": "bold",
                 "rotate": 90,  # Rotates y-axis label for vertical alignment
-                "padding": [0, 10, 20, 0]  # Adds space to the right of y-axis label
+                "padding": [0, 10, 25, 0]  # Adds space to the right of y-axis label
             },
             "position": "left",  # Ensures y-axis is on the left
             "min": 0,            # Set y-axis minimum
