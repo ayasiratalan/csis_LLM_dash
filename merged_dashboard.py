@@ -7,25 +7,24 @@ from streamlit_echarts import st_echarts
 ###############################################################################
 DOMAIN_EXPLANATIONS = {
     "Escalation - Three Choice": """
-**Escalation - Three Choice:** ...
+**Escalation:** This domain focuses on scenarios in which states are offered options to escalate disputes or not. Escalation here signifies an increased conflict intensity typically related to the means used to pursue a particular goal. These scenarios include escalatory behavior in the context of four action categories: Attack, Blockade, Clash, and Declare War. This domain features three response scenarios. Three response scenarios have escalatory and non-escalatory response options as well as a middle response option which includes threats of force or a show of force. Actions above the threshold of use of force are always coded as the most escalatory in scenarios.
 """,
     "Escalation - Two Choice": """
-**Escalation - Two Choice:** ...
-""",
+**Escalation:** This domain focuses on scenarios in which states are offered options to escalate disputes or not. Escalation here signifies an increased conflict intensity typically related to the means used to pursue a particular goal. These scenarios include escalatory behavior in the context of four action categories: Attack, Blockade, Clash, and Declare War. This domain features two response scenarios. Two response scenarios have escalatory and non-escalatory response options. Actions above the threshold of use of force are always coded as the most escalatory in scenarios.
+""", 
     "Intervention - Two Choice": """
-**Intervention:** ...
+**Intervention:** The Intervention domain tests model preferences to recommend states to intervene in external events. We are not using the specified language of ‘intervention’ that can have precise correspondence to military action or the violation of sovereign territory in some of the scholarly literature. While we do explore such cases, we take a broader view of intervention and treat it as a willingness of states to deploy resources to respond to the scenario delineated in the question. Scenarios in this domain feature two response options. Two response scenarios give models options of not intervening at all and taking substantive action to shape the external event.
 """,
     "Intervention - Three Choice": """
-**Intervention:** ...
+**Intervention:** The Intervention domain tests model preferences to recommend states to intervene in external events. We are not using the specified language of ‘intervention’ that can have precise correspondence to military action or the violation of sovereign territory in some of the scholarly literature. While we do explore such cases, we take a broader view of intervention and treat it as a willingness of states to deploy resources to respond to the scenario delineated in the question. Scenarios in this domain feature three response options. Three response scenarios give models a middle option between not intervening at all and taking substantive action to shape the external event.
 """,
     "Cooperation": """
-**Cooperation:** ...
+**Cooperation:** Questions in this domain investigate model preferences for cooperation vs go-it-alone strategies. The extent to which international cooperation, in a range of policy contexts, is durable and meaningfully shapes international politics serves as an important, long-term, focal point in the field of international relations. Scenarios in this domain test model preferences for joining bilateral/multilateral agreements, violating agreements, and enforcing agreements. All scenarios in this domain have two response options, one is cooperative and the other non-cooperative.
 """,
-    "Alliance Dynamics": """
-**Alliance Dynamics:** ...
+    "Balancing": """
+**Balancing:** States attempt a wide range of activities in international affairs related to alliance formation, managing their power with respect to other states, and pursuing strategic goals. This category tests for model preferences related to recommending states to pursue policies of Balancing behavior versus three alternatives commonly discussed and debated in the conventional realist international relations literature. These include: Bandwagoning, Buck Passing, and Power Maximization. As with the Cooperation domain, all scenarios have two response options.
 """
 }
-
 ###############################################################################
 # 2) Build ECharts Bar Option
 ###############################################################################
@@ -134,12 +133,16 @@ def main():
     st.set_page_config(layout="wide")
     st.title("LLM Bias Dashboard")
 
-    st.info("""
-**How to Use**  
-- Choose Domain-Level or Country-Level below.  
-- Optional: click a preset button to force a domain (and actor in preset 2).  
-- Then pick your final domain, actor, or filters in the UI to override if desired.  
-- The final chart is determined by whichever domain/actor you set *last*.
+    st.info(""" 
+### Using This Dashboard  
+This interactive dashboard presents results from CSIS and Scale AI’s benchmarking of Large Language Models’ preferences in international relations. 
+The evaluation spans four key domains including – *Escalation, Intervention, Cooperation, and Alliance Dynamics* – 
+across an initial seven foundation models: *Llama 3.1 8B Instruct, Llama 3.1 70B Instruct, GPT-4o, Gemini 1.5 Pro-002, Mistral 8x22B, Claude 3.5 Sonnet, and Qwen2 72B.*  
+
+**How to Use the Dashboard:**  
+1. **Select Level of Analysis**: Choose between Domain-Level or Country-Level variation (below).  
+2. **Filter Results**: On the right of the screen, pick the domain, model, country (if applicable) and response types of interest.  
+3. **View Results**: The dashboard will automatically update, displaying the percentage of model recommendations for each domain’s scenarios.
 """)
 
     # Step A: Choose analysis (Domain or Country)
