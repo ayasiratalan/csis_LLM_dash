@@ -57,13 +57,16 @@ def build_echarts_bar_option(x_data, series_data,
             "textStyle": {"fontSize": 12}
         },
         "legend": {
-            "top": 30,
-            "textStyle": {"fontSize": 12, "fontWeight": "bold"}
+            "bottom": 10,  # Moved legend to the bottom
+            "orient": "horizontal",
+            "textStyle": {"fontSize": 12, "fontWeight": "bold"},
+            "itemWidth": 20,
+            "itemHeight": 14
         },
         "grid": {
-            "left": "15%",      # Increased left margin for y-axis label
+            "left": "20%",      # Increased left margin to prevent y-axis overlap
             "right": "5%",
-            "bottom": "20%",    # Increased bottom margin for x-axis label
+            "bottom": "25%",    # Increased bottom margin to accommodate x-axis label and legend
             "containLabel": True
         },
         "xAxis": {
@@ -80,6 +83,9 @@ def build_echarts_bar_option(x_data, series_data,
                 "fontSize": 12,
                 "fontWeight": "bold",
                 "rotate": 0  # Keeps x-axis labels horizontal; adjust if needed
+            },
+            "axisTick": {  # Adjust axis ticks to prevent overlap
+                "alignWithLabel": True
             }
         },
         "yAxis": {
@@ -96,6 +102,15 @@ def build_echarts_bar_option(x_data, series_data,
             "axisLabel": {
                 "fontSize": 12,
                 "fontWeight": "bold"
+            },
+            "axisTick": {  # Ensure ticks are inside the grid to prevent overlap
+                "inside": True
+            },
+            "splitLine": {  # Optionally, style the grid lines
+                "lineStyle": {
+                    "type": "dashed",
+                    "color": "#ccc"
+                }
             }
         },
         "series": series_list
