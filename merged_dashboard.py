@@ -60,27 +60,45 @@ def build_echarts_bar_option(x_data, series_data,
         "grid": {
             "left": "5%",
             "right": "5%",
-            "bottom": "10%",
+            "bottom": "15%",  # Increased to accommodate x-axis label
             "containLabel": True
         },
         "xAxis": {
             "type": "category",
             "name": x_label,
             "data": x_data,
-            "nameTextStyle": {"fontSize": 14, "fontWeight": "bold"},
-            "axisLabel": {"fontSize": 12, "fontWeight": "bold"}
+            "nameTextStyle": {
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "padding": [10, 0, 0, 0]  # Adds space above the x-axis label
+            },
+            "nameLocation": "end",  # Positions the x-axis label at the end (bottom center)
+            "axisLabel": {
+                "fontSize": 12,
+                "fontWeight": "bold",
+                "rotate": 0  # Set to 0 for horizontal labels; adjust if needed
+            }
         },
         "yAxis": {
             "type": "value",
             "name": y_label,
             "min": 0,
             "max": 100,
-            "nameTextStyle": {"fontSize": 14, "fontWeight": "bold"},
-            "axisLabel": {"fontSize": 12, "fontWeight": "bold"}
+            "nameTextStyle": {
+                "fontSize": 14,
+                "fontWeight": "bold",
+                "padding": [0, 10, 0, 0]  # Adds space to the right of the y-axis label
+            },
+            "position": "left",  # Explicitly positions the y-axis on the left
+            "axisLabel": {
+                "fontSize": 12,
+                "fontWeight": "bold"
+            }
         },
         "series": series_list
     }
     return option
+
 
 ###############################################################################
 # 3) MAIN
