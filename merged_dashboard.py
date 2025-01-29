@@ -96,7 +96,7 @@ def build_echarts_bar_option(x_data, series_data,
                 "fontSize": 14,
                 "fontWeight": "bold",
                 "rotate": 90,  # Rotates y-axis label for vertical alignment
-                "padding": [0, 10, 25, 0]  # Adds space to the right of y-axis label
+                "padding": [0, 10, 19, 0]  # Adds space to the right of y-axis label
             },
             "position": "left",  # Ensures y-axis is on the left
             "min": 0,            # Set y-axis minimum
