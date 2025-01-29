@@ -308,7 +308,7 @@ def main():
                 chosen_actors = st.multiselect(
                     "Actor(s)",
                     all_actors,
-                    default=all_actors
+                    default=all_actors[:5]
                 )
             df_filtered = cdf[cdf["actor"].isin(chosen_actors)]
 
