@@ -33,6 +33,8 @@ def build_echarts_bar_option(x_data, series_data,
                              chart_title="ECharts Bar",
                              x_label="", y_label="Percentage"):
     """Returns an ECharts 'option' dict for a stacked vertical bar chart."""
+    
+    # Construct the series list for ECharts
     series_list = []
     for name, values in series_data.items():
         series_list.append({
@@ -42,6 +44,7 @@ def build_echarts_bar_option(x_data, series_data,
             "data": values
         })
 
+    # Define the ECharts option dictionary
     option = {
         "title": {
             "text": chart_title,
@@ -58,38 +61,38 @@ def build_echarts_bar_option(x_data, series_data,
             "textStyle": {"fontSize": 12, "fontWeight": "bold"}
         },
         "grid": {
-            "left": "5%",
+            "left": "15%",      # Increased left margin for y-axis label
             "right": "5%",
-            "bottom": "15%",  # Increased to accommodate x-axis label
+            "bottom": "20%",    # Increased bottom margin for x-axis label
             "containLabel": True
         },
         "xAxis": {
             "type": "category",
             "name": x_label,
-            "data": x_data,
+            "nameLocation": "middle",  # Centers the x-axis label
             "nameTextStyle": {
                 "fontSize": 14,
                 "fontWeight": "bold",
                 "padding": [10, 0, 0, 0]  # Adds space above the x-axis label
             },
-            "nameLocation": "end",  # Positions the x-axis label at the end (bottom center)
+            "data": x_data,
             "axisLabel": {
                 "fontSize": 12,
                 "fontWeight": "bold",
-                "rotate": 0  # Set to 0 for horizontal labels; adjust if needed
+                "rotate": 0  # Keeps x-axis labels horizontal; adjust if needed
             }
         },
         "yAxis": {
             "type": "value",
             "name": y_label,
-            "min": 0,
-            "max": 100,
+            "nameLocation": "middle",  # Centers the y-axis label vertically
             "nameTextStyle": {
                 "fontSize": 14,
                 "fontWeight": "bold",
-                "padding": [0, 10, 0, 0]  # Adds space to the right of the y-axis label
+                "rotate": 90,  # Rotates y-axis label for vertical alignment
+                "padding": [0, 10, 0, 0]  # Adds space to the right of y-axis label
             },
-            "position": "left",  # Explicitly positions the y-axis on the left
+            "position": "left",  # Ensures y-axis is on the left
             "axisLabel": {
                 "fontSize": 12,
                 "fontWeight": "bold"
@@ -97,7 +100,9 @@ def build_echarts_bar_option(x_data, series_data,
         },
         "series": series_list
     }
+    
     return option
+
 
 
 ###############################################################################
