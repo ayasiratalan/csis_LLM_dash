@@ -57,7 +57,7 @@ def build_echarts_bar_option(x_data, series_data,
             "textStyle": {"fontSize": 12}
         },
         "legend": {
-            "bottom": 15,  # Moved legend to the bottom
+            "bottom": 20,  # Moved legend to the bottom
             "orient": "horizontal",
             "textStyle": {"fontSize": 12, "fontWeight": "bold"},
             "itemWidth": 20,
@@ -66,7 +66,7 @@ def build_echarts_bar_option(x_data, series_data,
         "grid": {
             "left": "4%",      # Increased left margin to prevent y-axis overlap
             "right": "5%",
-            "bottom": "20%",    # Further increased bottom margin to accommodate x-axis label and legend
+            "bottom": "30%",    # Further increased bottom margin to accommodate x-axis label and legend
             "containLabel": True
         },
         "xAxis": {
