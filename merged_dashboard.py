@@ -150,11 +150,11 @@ You may choose the 3 presets below that produces example plots for the relevant 
     # -----------------
     col_p1, col_p2, col_p3 = st.columns(3)
     with col_p1:
-        preset1 = st.button("Preset 1: Escalation - Two Choice")
+        preset1 = st.button("Pre-set 1: Which model is most likely to recommend escalation?")
     with col_p2:
-        preset2 = st.button("Preset 2: China Escalation - Two Choice")
+        preset2 = st.button("Pre-set 2: Is China recommended escalatory responses?")
     with col_p3:
-        preset3 = st.button("Preset 3: Cooperation")
+        preset3 = st.button("Pre-set 3: Do models offer more cooperative recommendations?")
 
     # Default is None unless a preset is pressed
     forced_domain = None
