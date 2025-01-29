@@ -200,7 +200,7 @@ You may choose the 3 presets below that produces example plots for the relevant 
         with col_filters:
             domain_options = sorted(df_domain_all["domain"].unique())
             if forced_domain is not None:
-                st.markdown(f"**Preset** forced domain = `{forced_domain}`. (You may override below.)")
+                st.markdown(f"**Preset**= `{forced_domain}`. (You may change below.)")
                 if forced_domain not in domain_options:
                     # If forced domain isn't in domain_options, just append or fallback
                     domain_options = [forced_domain] + domain_options
