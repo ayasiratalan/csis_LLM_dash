@@ -143,7 +143,13 @@ across an initial seven foundation models: *Llama 3.1 8B Instruct, Llama 3.1 70B
 1. **Select Level of Analysis**: Choose between Domain-Level or Country-Level variation (below).  
 2. **Filter Results**: On the right of the screen, pick the domain, model, country (if applicable) and response types of interest.  
 3. **View Results**: The dashboard will automatically update, displaying the percentage of model recommendations for each domain’s scenarios.
-""")
+
+
+**Presets:**
+
+You may choose the 3 presets below that produces example plots for the relevant question.
+"""
+)
 
     # Step A: Choose analysis (Domain or Country)
     analysis_options = ["Domain-Level", "Country-Level"]
