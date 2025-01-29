@@ -274,7 +274,7 @@ across an initial seven foundation models: *Llama 3.1 8B Instruct, Llama 3.1 70B
         with col_filters:
             domain_options = sorted(df_country_all["domain"].unique())
             if forced_domain is not None:
-                st.markdown(f"**Preset** forced domain = `{forced_domain}`. (You may override below.)")
+                st.markdown(f"**Preset**= `{forced_domain}`. (You may change below.)")
                 if forced_domain not in domain_options:
                     domain_options = [forced_domain] + domain_options
                 domain_choice = st.selectbox(
@@ -298,7 +298,7 @@ across an initial seven foundation models: *Llama 3.1 8B Instruct, Llama 3.1 70B
             all_actors = sorted(cdf["actor"].unique())
             # If forced_actor from preset, we do note & let user override
             if forced_actor is not None and forced_actor in all_actors:
-                st.markdown(f"**Preset** forced actor = `{forced_actor}`. (You may override below.)")
+                st.markdown(f"**Preset**= `{forced_actor}`. (You may change below.)")
                 # We'll put forced_actor as default in the multiselect
                 if forced_actor not in all_actors:
                     all_actors = [forced_actor] + all_actors
