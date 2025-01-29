@@ -64,7 +64,7 @@ def build_echarts_bar_option(x_data, series_data,
             "itemHeight": 14
         },
         "grid": {
-            "left": "1%",      # Increased left margin to prevent y-axis overlap
+            "left": "4%",      # Increased left margin to prevent y-axis overlap
             "right": "5%",
             "bottom": "20%",    # Further increased bottom margin to accommodate x-axis label and legend
             "containLabel": True
