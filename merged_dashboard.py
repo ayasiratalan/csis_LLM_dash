@@ -75,7 +75,7 @@ def build_echarts_bar_option(x_data, series_data,
             "nameTextStyle": {
                 "fontSize": 14,
                 "fontWeight": "bold",
-                "padding": [30, 0, 0, 0]
+                "padding": [40, 0, 0, 0]
             },
             "data": x_data,
             "axisLabel": {
