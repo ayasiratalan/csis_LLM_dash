@@ -65,7 +65,7 @@ def build_echarts_bar_option(x_data, series_data,
         "grid": {
             "left": "4%",      
             "right": "5%",
-            "bottom": "5%",    # Increased bottom margin to accommodate rotated labels
+            "bottom": "25%",    # Increased bottom margin to accommodate rotated labels
             "containLabel": True
         },
         "xAxis": {
