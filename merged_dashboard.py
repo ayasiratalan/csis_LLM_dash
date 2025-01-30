@@ -124,6 +124,7 @@ def build_echarts_bar_option(x_data, series_data,
     
     return option
 
+# 3 
 def hide_streamlit_style():
     hide_style = """
         <style>
