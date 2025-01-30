@@ -65,7 +65,7 @@ def build_echarts_bar_option(x_data, series_data,
         "grid": {
             "left": "4%",      
             "right": "5%",
-            "bottom": "20%",    # Increased bottom margin to accommodate rotated labels
+            "bottom": "10%",    # Increased bottom margin to accommodate rotated labels
             "containLabel": True
         },
         "xAxis": {
@@ -81,7 +81,7 @@ def build_echarts_bar_option(x_data, series_data,
             "axisLabel": {
                 "fontSize": 12,
                 "fontWeight": "bold",
-                "rotate": 30,        # Rotate labels by 45 degrees
+                "rotate": 20,        # Rotate labels by 45 degrees
                 "interval": 0        # Show all labels
             },
             "axisTick": {  
