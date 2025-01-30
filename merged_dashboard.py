@@ -56,7 +56,7 @@ def build_echarts_bar_option(x_data, series_data,
             "textStyle": {"fontSize": 12}
         },
         "legend": {
-            "bottom": -10,  # Moved legend to the bottom
+            "bottom": -5,  # Moved legend to the bottom
             "orient": "horizontal",
             "textStyle": {"fontSize": 12, "fontWeight": "bold"},
             "itemWidth": 20,
@@ -65,7 +65,7 @@ def build_echarts_bar_option(x_data, series_data,
         "grid": {
             "left": "4%",      
             "right": "5%",
-            "bottom": "25%",    # Increased bottom margin to accommodate rotated labels
+            "bottom": "15%",    # Increased bottom margin to accommodate rotated labels
             "containLabel": True
         },
         "xAxis": {
