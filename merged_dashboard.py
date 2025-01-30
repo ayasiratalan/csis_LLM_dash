@@ -125,6 +125,9 @@ def build_echarts_bar_option(x_data, series_data,
     
     return option
                                          
+###############################################################################
+# 3) Hide Streamlit's Default Header and Footer
+###############################################################################
 def hide_streamlit_style():
     hide_style = """
         <style>
@@ -140,14 +143,19 @@ def hide_streamlit_style():
     """
     st.markdown(hide_style, unsafe_allow_html=True)
 
+###############################################################################
+# 4) MAIN
+###############################################################################
 def main():
-   # Step 1: Set page config first
+    # Step 1: Set page config first
     st.set_page_config(
         page_title="LLM Bias Dashboard",
         layout="wide",
         initial_sidebar_state="expanded"
     )
     
+    # Step 2: Hide Streamlit's default header and footer
+    hide_streamlit_style()
     
     # Step 3: Continue with the rest of your app
     st.title("LLM Bias Dashboard")
