@@ -160,7 +160,7 @@ def main():
     
     # Step 3: Continue with the rest of your app
     st.title("LLM Bias Dashboard")
-st.markdown("Created by [Yasir Atalan](https://www.csis.org/people/yasir-atalan).")
+    st.markdown("Created by [Yasir Atalan](https://www.csis.org/people/yasir-atalan).")
     st.info(""" 
 ### Using This Dashboard  
 This interactive dashboard presents results from CSIS and Scale AI’s benchmarking of Large Language Models’ preferences in international relations. 
