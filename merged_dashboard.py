@@ -148,8 +148,6 @@ def main():
         initial_sidebar_state="expanded"
     )
     
-    # Step 2: Hide Streamlit's default header and footer
-    hide_streamlit_style()
     
     # Step 3: Continue with the rest of your app
     st.title("LLM Bias Dashboard")
