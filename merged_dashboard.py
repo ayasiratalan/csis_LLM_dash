@@ -56,7 +56,7 @@ def build_echarts_bar_option(x_data, series_data,
             "textStyle": {"fontSize": 12}
         },
         "legend": {
-            "bottom": 30,  # Moved legend to the bottom
+            "bottom": 10,  # Moved legend to the bottom
             "orient": "horizontal",
             "textStyle": {"fontSize": 12, "fontWeight": "bold"},
             "itemWidth": 20,
