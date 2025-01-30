@@ -124,24 +124,9 @@ def build_echarts_bar_option(x_data, series_data,
     
     return option
 
-# 3 
-def hide_streamlit_style():
-    hide_style = """
-        <style>
-        /* Hide Streamlit header */
-        header {visibility: hidden;}
-        
-        /* Hide Streamlit footer */
-        footer {visibility: hidden;}
-        
-        /* Optionally, hide the hamburger menu */
-        #MainMenu {visibility: hidden;}
-        </style>
-    """
-    st.markdown(hide_style, unsafe_allow_html=True)
 
 def main():
-    hide_streamlit_style()  # Hide Streamlit's default header and footer
+   
     
     st.set_page_config(layout="wide")
     st.title("LLM Bias Dashboard")
