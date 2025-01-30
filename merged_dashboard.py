@@ -63,66 +63,66 @@ def build_echarts_bar_option(x_data, series_data,
             "itemHeight": 14
         },
         "grid": {
-            "left": "4%",      # Increased left margin to prevent y-axis overlap
+            "left": "4%",      
             "right": "5%",
-            "bottom": "30%",    # Further increased bottom margin to accommodate x-axis label and legend
+            "bottom": "40%",    # Increased bottom margin to accommodate rotated labels
             "containLabel": True
         },
         "xAxis": {
             "type": "category",
             "name": x_label,
-            "nameLocation": "middle",  # Centers the x-axis label
+            "nameLocation": "middle",
             "nameTextStyle": {
                 "fontSize": 14,
                 "fontWeight": "bold",
-                "padding": [10, 0, 0, 0]  # Adds space above the x-axis label
+                "padding": [10, 0, 0, 0]
             },
             "data": x_data,
             "axisLabel": {
                 "fontSize": 12,
                 "fontWeight": "bold",
-                "rotate": 0  # Keeps x-axis labels horizontal; adjust if needed
+                "rotate": 45,        # Rotate labels by 45 degrees
+                "interval": 0        # Show all labels
             },
-            "axisTick": {  # Adjust axis ticks to prevent overlap
+            "axisTick": {  
                 "alignWithLabel": True
             }
         },
         "yAxis": {
             "type": "value",
             "name": y_label,
-            "nameLocation": "middle",  # Centers the y-axis label vertically
+            "nameLocation": "middle",
             "nameTextStyle": {
                 "fontSize": 14,
                 "fontWeight": "bold",
-                "rotate": 90,  # Rotates y-axis label for vertical alignment
-                "padding": [0, 10, 19, 0]  # Adds space to the right of y-axis label
+                "rotate": 90,
+                "padding": [0, 10, 19, 0]
             },
-            "position": "left",  # Ensures y-axis is on the left
-            "min": 0,            # Set y-axis minimum
-            "max": 100,          # Set y-axis maximum
-            "scale": False,     # Disable automatic scaling
-            "boundaryGap": [0, 0],  # Ensures the axis starts and ends at exact min and max
+            "position": "left",
+            "min": 0,
+            "max": 100,
+            "scale": False,
+            "boundaryGap": [0, 0],
             "axisLabel": {
                 "fontSize": 12,
                 "fontWeight": "bold",
-                "formatter": "{value}%"  # Appends percentage symbol
+                "formatter": "{value}%" 
             },
-            "axisTick": {  # Ensure ticks are inside the grid to prevent overlap
+            "axisTick": {  
                 "inside": True
             },
-            "splitLine": {  # Optionally, style the grid lines
+            "splitLine": {  
                 "lineStyle": {
                     "type": "dashed",
                     "color": "#ccc"
                 }
             },
-            "interval": 20  # Set tick intervals to 20
+            "interval": 20  
         },
         "series": series_list
     }
     
     return option
-
 
 
 def main():
