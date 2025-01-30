@@ -2,6 +2,16 @@ import streamlit as st
 import pandas as pd
 from streamlit_echarts import st_echarts
 
+
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 ###############################################################################
 # 1) Domain Explanations
 ###############################################################################
