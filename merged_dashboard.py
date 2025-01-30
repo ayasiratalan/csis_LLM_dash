@@ -3,15 +3,6 @@ import pandas as pd
 from streamlit_echarts import st_echarts
 
 
-
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
 ###############################################################################
 # 1) Domain Explanations
 ###############################################################################
@@ -133,12 +124,34 @@ def build_echarts_bar_option(x_data, series_data,
     }
     
     return option
-
+                                         
+def hide_streamlit_style():
+    hide_style = """
+        <style>
+        /* Hide Streamlit header */
+        header {visibility: hidden;}
+        
+        /* Hide Streamlit footer */
+        footer {visibility: hidden;}
+        
+        /* Optionally, hide the hamburger menu */
+        #MainMenu {visibility: hidden;}
+        </style>
+    """
+    st.markdown(hide_style, unsafe_allow_html=True)
 
 def main():
-   
+   # Step 1: Set page config first
+    st.set_page_config(
+        page_title="LLM Bias Dashboard",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
     
-    st.set_page_config(layout="wide")
+    # Step 2: Hide Streamlit's default header and footer
+    hide_streamlit_style()
+    
+    # Step 3: Continue with the rest of your app
     st.title("LLM Bias Dashboard")
     st.info(""" 
 ### Using This Dashboard  
