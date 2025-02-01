@@ -71,7 +71,7 @@ def build_echarts_bar_option(x_data, series_data,
         },
         "xAxis": {
             "type": "category",
-            "name": ,
+            "name": "" ,
             "nameLocation": "middle",
             "nameTextStyle": {
                 "fontSize": 14,
