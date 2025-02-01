@@ -82,11 +82,9 @@ def build_echarts_bar_option(x_data, series_data,
             "axisLabel": {
         "fontSize": 12,
         "fontWeight": "normal",  # Changed from bold to normal.
-        "rotate": 20,            # Rotate labels by 10 degrees.
-        "interval": 0,           # Show all labels
-                "align": "center",
-        "padding": [20, 20, 40, 10]  # Shift labels 10px to the right
-        
+        "rotate": 30,            # Rotate labels by 10 degrees.
+        "interval": 0           # Show all labels
+           
     },
             "axisTick": {  
                 "alignWithLabel": True
