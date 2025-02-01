@@ -85,7 +85,7 @@ def build_echarts_bar_option(x_data, series_data,
         "rotate": 20,            # Rotate labels by 10 degrees.
         "interval": 0,           # Show all labels
                 "align": "center",
-        "padding": [0, 20, 0, 10]  # Shift labels 10px to the right
+        "padding": [20, 20, 0, 10]  # Shift labels 10px to the right
         
     },
             "axisTick": {  
