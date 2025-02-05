@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import matplotlib.patheffects as patheffects
 
 # read final_dashboard_df.csv
-fd = pd.read_csv('/Users/ayasiratalan/Desktop/ACADEMIA/SCALE/final_dashboard_df.csv')
+fd = pd.read_csv("final_dashboard_df.csv")
 
 # Filter the DataFrame for the "Escalation - Two Choice" domain
 escalation_df = fd[fd['domain'] == 'Escalation - Two Choice']
