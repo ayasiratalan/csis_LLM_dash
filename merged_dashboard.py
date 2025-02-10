@@ -162,7 +162,7 @@ def main():
     # Step 3: Continue with the rest of your app
     st.title("LLM Bias Dashboard")
     st.markdown(
-    'created by <a href="https://www.csis.org/people/yasir-atalan" style="color: #00008B; font-style: italic;">Yasir Atalan</a>',
+    'for questions:<a href="https://www.csis.org/people/yasir-atalan" style="color: #00008B; font-style: italic;">Yasir Atalan</a>',
     unsafe_allow_html=True
 )
     st.info(""" 
