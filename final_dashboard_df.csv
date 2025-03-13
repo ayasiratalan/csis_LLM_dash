@@ -1,18 +1,5 @@
 domain,model,answer,percentage
-Escalation - Two Choice,Mixtral 8x22B,No Use of Force,71.66
-Escalation - Two Choice,Gemini 1.5 Pro-002,No Use of Force,58.77
-Escalation - Two Choice,GPT-4o,No Use of Force,83.27
-Escalation - Two Choice,Qwen2 72B,No Use of Force,55.09
-Escalation - Two Choice,Llama 3.1 8B Instruct,No Use of Force,54.88
-Escalation - Two Choice,Claude 3.5 Sonnet,No Use of Force,80.45
-Escalation - Two Choice,Llama 3.1 70B Instruct,No Use of Force,70.07
-Escalation - Two Choice,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Two Choice,Gemini 1.5 Pro-002,Refused to Answer,0.58
-Escalation - Two Choice,GPT-4o,Refused to Answer,0.39
-Escalation - Two Choice,Qwen2 72B,Refused to Answer,0.0
-Escalation - Two Choice,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Two Choice,Claude 3.5 Sonnet,Refused to Answer,2.64
-Escalation - Two Choice,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Escalation - Two Choice,DeepSeek V3,Use of Force,36.16
 Escalation - Two Choice,Mixtral 8x22B,Use of Force,28.34
 Escalation - Two Choice,Gemini 1.5 Pro-002,Use of Force,40.65
 Escalation - Two Choice,GPT-4o,Use of Force,16.34
@@ -20,19 +7,37 @@ Escalation - Two Choice,Qwen2 72B,Use of Force,44.91
 Escalation - Two Choice,Llama 3.1 8B Instruct,Use of Force,45.12
 Escalation - Two Choice,Claude 3.5 Sonnet,Use of Force,16.91
 Escalation - Two Choice,Llama 3.1 70B Instruct,Use of Force,29.93
-Escalation - Three Choice,GPT-4o,No Use of Force,63.03
-Escalation - Three Choice,Mixtral 8x22B,No Use of Force,42.69
-Escalation - Three Choice,Claude 3.5 Sonnet,No Use of Force,68.76
-Escalation - Three Choice,Llama 3.1 8B Instruct,No Use of Force,36.91
-Escalation - Three Choice,Qwen2 72B,No Use of Force,43.75
-Escalation - Three Choice,Llama 3.1 70B Instruct,No Use of Force,43.6
-Escalation - Three Choice,Gemini 1.5 Pro-002,No Use of Force,31.02
+Escalation - Two Choice,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,Mixtral 8x22B,Refused to Answer,0.0
+Escalation - Two Choice,Gemini 1.5 Pro-002,Refused to Answer,0.58
+Escalation - Two Choice,GPT-4o,Refused to Answer,0.39
+Escalation - Two Choice,Qwen2 72B,Refused to Answer,0.0
+Escalation - Two Choice,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Escalation - Two Choice,Claude 3.5 Sonnet,Refused to Answer,2.64
+Escalation - Two Choice,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Escalation - Two Choice,DeepSeek V3,No Use of Force,63.84
+Escalation - Two Choice,Mixtral 8x22B,No Use of Force,71.66
+Escalation - Two Choice,Gemini 1.5 Pro-002,No Use of Force,58.77
+Escalation - Two Choice,GPT-4o,No Use of Force,83.27
+Escalation - Two Choice,Qwen2 72B,No Use of Force,55.09
+Escalation - Two Choice,Llama 3.1 8B Instruct,No Use of Force,54.88
+Escalation - Two Choice,Claude 3.5 Sonnet,No Use of Force,80.45
+Escalation - Two Choice,Llama 3.1 70B Instruct,No Use of Force,70.07
+Escalation - Three Choice,GPT-4o,Use of Force,5.84
+Escalation - Three Choice,Mixtral 8x22B,Use of Force,14.45
+Escalation - Three Choice,Claude 3.5 Sonnet,Use of Force,9.36
+Escalation - Three Choice,Llama 3.1 8B Instruct,Use of Force,41.36
+Escalation - Three Choice,Qwen2 72B,Use of Force,33.46
+Escalation - Three Choice,Llama 3.1 70B Instruct,Use of Force,15.0
+Escalation - Three Choice,DeepSeek V3,Use of Force,21.11
+Escalation - Three Choice,Gemini 1.5 Pro-002,Use of Force,14.1
 Escalation - Three Choice,GPT-4o,Refused to Answer,0.01
 Escalation - Three Choice,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,Claude 3.5 Sonnet,Refused to Answer,0.65
 Escalation - Three Choice,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Escalation - Three Choice,DeepSeek V3,Refused to Answer,0.0
 Escalation - Three Choice,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Three Choice,GPT-4o,Threat of Force,31.12
 Escalation - Three Choice,Mixtral 8x22B,Threat of Force,42.87
@@ -40,42 +45,40 @@ Escalation - Three Choice,Claude 3.5 Sonnet,Threat of Force,21.23
 Escalation - Three Choice,Llama 3.1 8B Instruct,Threat of Force,21.73
 Escalation - Three Choice,Qwen2 72B,Threat of Force,22.79
 Escalation - Three Choice,Llama 3.1 70B Instruct,Threat of Force,41.4
+Escalation - Three Choice,DeepSeek V3,Threat of Force,35.94
 Escalation - Three Choice,Gemini 1.5 Pro-002,Threat of Force,54.88
-Escalation - Three Choice,GPT-4o,Use of Force,5.84
-Escalation - Three Choice,Mixtral 8x22B,Use of Force,14.45
-Escalation - Three Choice,Claude 3.5 Sonnet,Use of Force,9.36
-Escalation - Three Choice,Llama 3.1 8B Instruct,Use of Force,41.36
-Escalation - Three Choice,Qwen2 72B,Use of Force,33.46
-Escalation - Three Choice,Llama 3.1 70B Instruct,Use of Force,15.0
-Escalation - Three Choice,Gemini 1.5 Pro-002,Use of Force,14.1
-Cooperation,Claude 3.5 Sonnet,Refused to Answer,0.31
-Cooperation,GPT-4o,Refused to Answer,0.3
-Cooperation,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,Qwen2 72B,Refused to Answer,0.0
-Cooperation,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,Gemini 1.5 Pro-002,Refused to Answer,0.71
-Cooperation,Claude 3.5 Sonnet,Cooperative,91.72
-Cooperation,GPT-4o,Cooperative,84.56
-Cooperation,Mixtral 8x22B,Cooperative,83.49
-Cooperation,Qwen2 72B,Cooperative,90.69
-Cooperation,Llama 3.1 8B Instruct,Cooperative,81.41
-Cooperation,Llama 3.1 70B Instruct,Cooperative,84.41
-Cooperation,Gemini 1.5 Pro-002,Cooperative,89.42
+Escalation - Three Choice,GPT-4o,No Use of Force,63.03
+Escalation - Three Choice,Mixtral 8x22B,No Use of Force,42.69
+Escalation - Three Choice,Claude 3.5 Sonnet,No Use of Force,68.76
+Escalation - Three Choice,Llama 3.1 8B Instruct,No Use of Force,36.91
+Escalation - Three Choice,Qwen2 72B,No Use of Force,43.75
+Escalation - Three Choice,Llama 3.1 70B Instruct,No Use of Force,43.6
+Escalation - Three Choice,DeepSeek V3,No Use of Force,42.95
+Escalation - Three Choice,Gemini 1.5 Pro-002,No Use of Force,31.02
 Cooperation,Claude 3.5 Sonnet,Non-cooperative,7.96
 Cooperation,GPT-4o,Non-cooperative,15.14
 Cooperation,Mixtral 8x22B,Non-cooperative,16.51
 Cooperation,Qwen2 72B,Non-cooperative,9.31
 Cooperation,Llama 3.1 8B Instruct,Non-cooperative,18.59
+Cooperation,DeepSeek V3,Non-cooperative,12.52
 Cooperation,Llama 3.1 70B Instruct,Non-cooperative,15.59
 Cooperation,Gemini 1.5 Pro-002,Non-cooperative,9.87
-Alliance Dynamics,Gemini 1.5 Pro-002,Refused to Answer,0.03
-Alliance Dynamics,Qwen2 72B,Refused to Answer,0.0
-Alliance Dynamics,Mixtral 8x22B,Refused to Answer,0.0
-Alliance Dynamics,GPT-4o,Refused to Answer,0.0
-Alliance Dynamics,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Alliance Dynamics,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Alliance Dynamics,Claude 3.5 Sonnet,Refused to Answer,0.01
+Cooperation,Claude 3.5 Sonnet,Cooperative,91.72
+Cooperation,GPT-4o,Cooperative,84.56
+Cooperation,Mixtral 8x22B,Cooperative,83.49
+Cooperation,Qwen2 72B,Cooperative,90.69
+Cooperation,Llama 3.1 8B Instruct,Cooperative,81.41
+Cooperation,DeepSeek V3,Cooperative,87.48
+Cooperation,Llama 3.1 70B Instruct,Cooperative,84.41
+Cooperation,Gemini 1.5 Pro-002,Cooperative,89.42
+Cooperation,Claude 3.5 Sonnet,Refused to Answer,0.31
+Cooperation,GPT-4o,Refused to Answer,0.3
+Cooperation,Mixtral 8x22B,Refused to Answer,0.0
+Cooperation,Qwen2 72B,Refused to Answer,0.0
+Cooperation,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,DeepSeek V3,Refused to Answer,0.0
+Cooperation,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Cooperation,Gemini 1.5 Pro-002,Refused to Answer,0.71
 Alliance Dynamics,Gemini 1.5 Pro-002,Power Maximization,3.91
 Alliance Dynamics,Qwen2 72B,Power Maximization,6.67
 Alliance Dynamics,Mixtral 8x22B,Power Maximization,1.97
@@ -83,13 +86,7 @@ Alliance Dynamics,GPT-4o,Power Maximization,3.16
 Alliance Dynamics,Llama 3.1 8B Instruct,Power Maximization,5.3
 Alliance Dynamics,Llama 3.1 70B Instruct,Power Maximization,2.49
 Alliance Dynamics,Claude 3.5 Sonnet,Power Maximization,2.5
-Alliance Dynamics,Gemini 1.5 Pro-002,Balance,73.34
-Alliance Dynamics,Qwen2 72B,Balance,75.89
-Alliance Dynamics,Mixtral 8x22B,Balance,81.97
-Alliance Dynamics,GPT-4o,Balance,76.8
-Alliance Dynamics,Llama 3.1 8B Instruct,Balance,76.49
-Alliance Dynamics,Llama 3.1 70B Instruct,Balance,76.84
-Alliance Dynamics,Claude 3.5 Sonnet,Balance,78.69
+Alliance Dynamics,DeepSeek V3,Power Maximization,3.85
 Alliance Dynamics,Gemini 1.5 Pro-002,Buck Pass,10.04
 Alliance Dynamics,Qwen2 72B,Buck Pass,8.69
 Alliance Dynamics,Mixtral 8x22B,Buck Pass,8.23
@@ -97,6 +94,7 @@ Alliance Dynamics,GPT-4o,Buck Pass,10.46
 Alliance Dynamics,Llama 3.1 8B Instruct,Buck Pass,8.07
 Alliance Dynamics,Llama 3.1 70B Instruct,Buck Pass,11.42
 Alliance Dynamics,Claude 3.5 Sonnet,Buck Pass,9.99
+Alliance Dynamics,DeepSeek V3,Buck Pass,12.8
 Alliance Dynamics,Gemini 1.5 Pro-002,Bandwagon,12.69
 Alliance Dynamics,Qwen2 72B,Bandwagon,8.76
 Alliance Dynamics,Mixtral 8x22B,Bandwagon,7.84
@@ -104,6 +102,23 @@ Alliance Dynamics,GPT-4o,Bandwagon,9.58
 Alliance Dynamics,Llama 3.1 8B Instruct,Bandwagon,10.15
 Alliance Dynamics,Llama 3.1 70B Instruct,Bandwagon,9.25
 Alliance Dynamics,Claude 3.5 Sonnet,Bandwagon,8.8
+Alliance Dynamics,DeepSeek V3,Bandwagon,12.43
+Alliance Dynamics,Gemini 1.5 Pro-002,Refused to Answer,0.03
+Alliance Dynamics,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Claude 3.5 Sonnet,Refused to Answer,0.01
+Alliance Dynamics,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,Gemini 1.5 Pro-002,Balance,73.34
+Alliance Dynamics,Qwen2 72B,Balance,75.89
+Alliance Dynamics,Mixtral 8x22B,Balance,81.97
+Alliance Dynamics,GPT-4o,Balance,76.8
+Alliance Dynamics,Llama 3.1 8B Instruct,Balance,76.49
+Alliance Dynamics,Llama 3.1 70B Instruct,Balance,76.84
+Alliance Dynamics,Claude 3.5 Sonnet,Balance,78.69
+Alliance Dynamics,DeepSeek V3,Balance,70.91
 Intervention - Two Choice,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Qwen2 72B,Refused to Answer,0.0
@@ -111,6 +126,7 @@ Intervention - Two Choice,GPT-4o,Refused to Answer,0.56
 Intervention - Two Choice,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,Claude 3.5 Sonnet,Refused to Answer,1.75
+Intervention - Two Choice,DeepSeek V3,Refused to Answer,0.0
 Intervention - Two Choice,Gemini 1.5 Pro-002,Intervention,71.98
 Intervention - Two Choice,Llama 3.1 70B Instruct,Intervention,68.95
 Intervention - Two Choice,Qwen2 72B,Intervention,78.54
@@ -118,6 +134,7 @@ Intervention - Two Choice,GPT-4o,Intervention,61.39
 Intervention - Two Choice,Llama 3.1 8B Instruct,Intervention,68.78
 Intervention - Two Choice,Mixtral 8x22B,Intervention,66.79
 Intervention - Two Choice,Claude 3.5 Sonnet,Intervention,59.35
+Intervention - Two Choice,DeepSeek V3,Intervention,70.79
 Intervention - Two Choice,Gemini 1.5 Pro-002,No Intervention,28.02
 Intervention - Two Choice,Llama 3.1 70B Instruct,No Intervention,31.05
 Intervention - Two Choice,Qwen2 72B,No Intervention,21.46
@@ -125,8 +142,18 @@ Intervention - Two Choice,GPT-4o,No Intervention,38.06
 Intervention - Two Choice,Llama 3.1 8B Instruct,No Intervention,31.22
 Intervention - Two Choice,Mixtral 8x22B,No Intervention,33.21
 Intervention - Two Choice,Claude 3.5 Sonnet,No Intervention,38.89
+Intervention - Two Choice,DeepSeek V3,No Intervention,29.21
+Intervention - Three Choice,Llama 3.1 8B Instruct,High Intervention,55.41
+Intervention - Three Choice,GPT-4o,High Intervention,41.58
+Intervention - Three Choice,DeepSeek V3,High Intervention,42.88
+Intervention - Three Choice,Claude 3.5 Sonnet,High Intervention,42.6
+Intervention - Three Choice,Mixtral 8x22B,High Intervention,41.04
+Intervention - Three Choice,Qwen2 72B,High Intervention,52.33
+Intervention - Three Choice,Llama 3.1 70B Instruct,High Intervention,49.33
+Intervention - Three Choice,Gemini 1.5 Pro-002,High Intervention,40.46
 Intervention - Three Choice,Llama 3.1 8B Instruct,Middle Intervention,21.5
 Intervention - Three Choice,GPT-4o,Middle Intervention,29.81
+Intervention - Three Choice,DeepSeek V3,Middle Intervention,36.66
 Intervention - Three Choice,Claude 3.5 Sonnet,Middle Intervention,35.17
 Intervention - Three Choice,Mixtral 8x22B,Middle Intervention,35.27
 Intervention - Three Choice,Qwen2 72B,Middle Intervention,33.63
@@ -134,15 +161,9 @@ Intervention - Three Choice,Llama 3.1 70B Instruct,Middle Intervention,30.8
 Intervention - Three Choice,Gemini 1.5 Pro-002,Middle Intervention,47.64
 Intervention - Three Choice,Llama 3.1 8B Instruct,No Intervention,23.1
 Intervention - Three Choice,GPT-4o,No Intervention,28.6
+Intervention - Three Choice,DeepSeek V3,No Intervention,20.46
 Intervention - Three Choice,Claude 3.5 Sonnet,No Intervention,22.23
 Intervention - Three Choice,Mixtral 8x22B,No Intervention,23.69
 Intervention - Three Choice,Qwen2 72B,No Intervention,14.03
 Intervention - Three Choice,Llama 3.1 70B Instruct,No Intervention,19.88
 Intervention - Three Choice,Gemini 1.5 Pro-002,No Intervention,11.9
-Intervention - Three Choice,Llama 3.1 8B Instruct,High Intervention,55.41
-Intervention - Three Choice,GPT-4o,High Intervention,41.58
-Intervention - Three Choice,Claude 3.5 Sonnet,High Intervention,42.6
-Intervention - Three Choice,Mixtral 8x22B,High Intervention,41.04
-Intervention - Three Choice,Qwen2 72B,High Intervention,52.33
-Intervention - Three Choice,Llama 3.1 70B Instruct,High Intervention,49.33
-Intervention - Three Choice,Gemini 1.5 Pro-002,High Intervention,40.46

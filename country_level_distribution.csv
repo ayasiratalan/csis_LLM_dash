@@ -1,1270 +1,1453 @@
 domain,actor,model,answer,percentage
-Escalation - Two Choice,United States,Mixtral 8x22B,No Use of Force,62.15
+Escalation - Two Choice,United States,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,United States,DeepSeek V3,Use of Force,48.18
+Escalation - Two Choice,United States,DeepSeek V3,No Use of Force,51.82
 Escalation - Two Choice,United States,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Two Choice,United States,Mixtral 8x22B,Use of Force,37.85
-Escalation - Two Choice,United States,Gemini 1.5 Pro-002,No Use of Force,48.93
+Escalation - Two Choice,United States,Mixtral 8x22B,No Use of Force,62.15
 Escalation - Two Choice,United States,Gemini 1.5 Pro-002,Refused to Answer,0.12
 Escalation - Two Choice,United States,Gemini 1.5 Pro-002,Use of Force,50.95
-Escalation - Two Choice,United States,GPT-4o,No Use of Force,71.18
+Escalation - Two Choice,United States,Gemini 1.5 Pro-002,No Use of Force,48.93
 Escalation - Two Choice,United States,GPT-4o,Refused to Answer,0.23
 Escalation - Two Choice,United States,GPT-4o,Use of Force,28.59
-Escalation - Two Choice,United States,Qwen2 72B,No Use of Force,41.41
+Escalation - Two Choice,United States,GPT-4o,No Use of Force,71.18
 Escalation - Two Choice,United States,Qwen2 72B,Refused to Answer,0.0
 Escalation - Two Choice,United States,Qwen2 72B,Use of Force,58.59
-Escalation - Two Choice,United States,Llama 3.1 8B Instruct,No Use of Force,46.06
+Escalation - Two Choice,United States,Qwen2 72B,No Use of Force,41.41
 Escalation - Two Choice,United States,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,United States,Llama 3.1 8B Instruct,Use of Force,53.94
-Escalation - Two Choice,United States,Claude 3.5 Sonnet,No Use of Force,70.73
+Escalation - Two Choice,United States,Llama 3.1 8B Instruct,No Use of Force,46.06
 Escalation - Two Choice,United States,Claude 3.5 Sonnet,Refused to Answer,2.84
 Escalation - Two Choice,United States,Claude 3.5 Sonnet,Use of Force,26.43
-Escalation - Two Choice,United States,Llama 3.1 70B Instruct,No Use of Force,61.48
+Escalation - Two Choice,United States,Claude 3.5 Sonnet,No Use of Force,70.73
 Escalation - Two Choice,United States,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,United States,Llama 3.1 70B Instruct,Use of Force,38.52
-Escalation - Two Choice,China,Mixtral 8x22B,No Use of Force,78.52
+Escalation - Two Choice,United States,Llama 3.1 70B Instruct,No Use of Force,61.48
+Escalation - Two Choice,China,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,China,DeepSeek V3,Use of Force,36.53
+Escalation - Two Choice,China,DeepSeek V3,No Use of Force,63.47
 Escalation - Two Choice,China,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Two Choice,China,Mixtral 8x22B,Use of Force,21.48
-Escalation - Two Choice,China,Gemini 1.5 Pro-002,No Use of Force,60.85
+Escalation - Two Choice,China,Mixtral 8x22B,No Use of Force,78.52
 Escalation - Two Choice,China,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Two Choice,China,Gemini 1.5 Pro-002,Use of Force,39.15
-Escalation - Two Choice,China,GPT-4o,No Use of Force,87.37
+Escalation - Two Choice,China,Gemini 1.5 Pro-002,No Use of Force,60.85
 Escalation - Two Choice,China,GPT-4o,Refused to Answer,0.03
 Escalation - Two Choice,China,GPT-4o,Use of Force,12.6
-Escalation - Two Choice,China,Qwen2 72B,No Use of Force,60.51
+Escalation - Two Choice,China,GPT-4o,No Use of Force,87.37
 Escalation - Two Choice,China,Qwen2 72B,Refused to Answer,0.0
 Escalation - Two Choice,China,Qwen2 72B,Use of Force,39.49
-Escalation - Two Choice,China,Llama 3.1 8B Instruct,No Use of Force,61.61
+Escalation - Two Choice,China,Qwen2 72B,No Use of Force,60.51
 Escalation - Two Choice,China,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,China,Llama 3.1 8B Instruct,Use of Force,38.39
-Escalation - Two Choice,China,Claude 3.5 Sonnet,No Use of Force,88.93
+Escalation - Two Choice,China,Llama 3.1 8B Instruct,No Use of Force,61.61
 Escalation - Two Choice,China,Claude 3.5 Sonnet,Refused to Answer,2.39
 Escalation - Two Choice,China,Claude 3.5 Sonnet,Use of Force,8.69
-Escalation - Two Choice,China,Llama 3.1 70B Instruct,No Use of Force,76.25
+Escalation - Two Choice,China,Claude 3.5 Sonnet,No Use of Force,88.93
 Escalation - Two Choice,China,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,China,Llama 3.1 70B Instruct,Use of Force,23.75
-Escalation - Two Choice,Russia,Mixtral 8x22B,No Use of Force,76.41
+Escalation - Two Choice,China,Llama 3.1 70B Instruct,No Use of Force,76.25
+Escalation - Two Choice,Russia,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,Russia,DeepSeek V3,Use of Force,40.16
+Escalation - Two Choice,Russia,DeepSeek V3,No Use of Force,59.84
 Escalation - Two Choice,Russia,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Two Choice,Russia,Mixtral 8x22B,Use of Force,23.59
-Escalation - Two Choice,Russia,Gemini 1.5 Pro-002,No Use of Force,59.14
+Escalation - Two Choice,Russia,Mixtral 8x22B,No Use of Force,76.41
 Escalation - Two Choice,Russia,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Two Choice,Russia,Gemini 1.5 Pro-002,Use of Force,40.86
-Escalation - Two Choice,Russia,GPT-4o,No Use of Force,88.57
+Escalation - Two Choice,Russia,Gemini 1.5 Pro-002,No Use of Force,59.14
 Escalation - Two Choice,Russia,GPT-4o,Refused to Answer,0.0
 Escalation - Two Choice,Russia,GPT-4o,Use of Force,11.43
-Escalation - Two Choice,Russia,Qwen2 72B,No Use of Force,55.12
+Escalation - Two Choice,Russia,GPT-4o,No Use of Force,88.57
 Escalation - Two Choice,Russia,Qwen2 72B,Refused to Answer,0.0
 Escalation - Two Choice,Russia,Qwen2 72B,Use of Force,44.88
-Escalation - Two Choice,Russia,Llama 3.1 8B Instruct,No Use of Force,57.77
+Escalation - Two Choice,Russia,Qwen2 72B,No Use of Force,55.12
 Escalation - Two Choice,Russia,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,Russia,Llama 3.1 8B Instruct,Use of Force,42.23
-Escalation - Two Choice,Russia,Claude 3.5 Sonnet,No Use of Force,85.87
+Escalation - Two Choice,Russia,Llama 3.1 8B Instruct,No Use of Force,57.77
 Escalation - Two Choice,Russia,Claude 3.5 Sonnet,Refused to Answer,5.11
 Escalation - Two Choice,Russia,Claude 3.5 Sonnet,Use of Force,9.02
-Escalation - Two Choice,Russia,Llama 3.1 70B Instruct,No Use of Force,75.12
+Escalation - Two Choice,Russia,Claude 3.5 Sonnet,No Use of Force,85.87
 Escalation - Two Choice,Russia,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,Russia,Llama 3.1 70B Instruct,Use of Force,24.88
-Escalation - Two Choice,United Kingdom,Mixtral 8x22B,No Use of Force,58.78
+Escalation - Two Choice,Russia,Llama 3.1 70B Instruct,No Use of Force,75.12
+Escalation - Two Choice,United Kingdom,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,United Kingdom,DeepSeek V3,Use of Force,48.89
+Escalation - Two Choice,United Kingdom,DeepSeek V3,No Use of Force,51.11
 Escalation - Two Choice,United Kingdom,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Two Choice,United Kingdom,Mixtral 8x22B,Use of Force,41.22
-Escalation - Two Choice,United Kingdom,Gemini 1.5 Pro-002,No Use of Force,45.84
+Escalation - Two Choice,United Kingdom,Mixtral 8x22B,No Use of Force,58.78
 Escalation - Two Choice,United Kingdom,Gemini 1.5 Pro-002,Refused to Answer,0.08
 Escalation - Two Choice,United Kingdom,Gemini 1.5 Pro-002,Use of Force,54.08
-Escalation - Two Choice,United Kingdom,GPT-4o,No Use of Force,74.18
+Escalation - Two Choice,United Kingdom,Gemini 1.5 Pro-002,No Use of Force,45.84
 Escalation - Two Choice,United Kingdom,GPT-4o,Refused to Answer,0.0
 Escalation - Two Choice,United Kingdom,GPT-4o,Use of Force,25.82
-Escalation - Two Choice,United Kingdom,Qwen2 72B,No Use of Force,40.32
+Escalation - Two Choice,United Kingdom,GPT-4o,No Use of Force,74.18
 Escalation - Two Choice,United Kingdom,Qwen2 72B,Refused to Answer,0.0
 Escalation - Two Choice,United Kingdom,Qwen2 72B,Use of Force,59.68
-Escalation - Two Choice,United Kingdom,Llama 3.1 8B Instruct,No Use of Force,39.28
+Escalation - Two Choice,United Kingdom,Qwen2 72B,No Use of Force,40.32
 Escalation - Two Choice,United Kingdom,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,United Kingdom,Llama 3.1 8B Instruct,Use of Force,60.72
-Escalation - Two Choice,United Kingdom,Claude 3.5 Sonnet,No Use of Force,63.35
+Escalation - Two Choice,United Kingdom,Llama 3.1 8B Instruct,No Use of Force,39.28
 Escalation - Two Choice,United Kingdom,Claude 3.5 Sonnet,Refused to Answer,3.84
 Escalation - Two Choice,United Kingdom,Claude 3.5 Sonnet,Use of Force,32.81
-Escalation - Two Choice,United Kingdom,Llama 3.1 70B Instruct,No Use of Force,56.18
+Escalation - Two Choice,United Kingdom,Claude 3.5 Sonnet,No Use of Force,63.35
 Escalation - Two Choice,United Kingdom,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,United Kingdom,Llama 3.1 70B Instruct,Use of Force,43.82
-Escalation - Two Choice,India,Mixtral 8x22B,No Use of Force,68.09
+Escalation - Two Choice,United Kingdom,Llama 3.1 70B Instruct,No Use of Force,56.18
+Escalation - Two Choice,India,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,India,DeepSeek V3,Use of Force,35.21
+Escalation - Two Choice,India,DeepSeek V3,No Use of Force,64.79
 Escalation - Two Choice,India,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Two Choice,India,Mixtral 8x22B,Use of Force,31.91
-Escalation - Two Choice,India,Gemini 1.5 Pro-002,No Use of Force,60.58
+Escalation - Two Choice,India,Mixtral 8x22B,No Use of Force,68.09
 Escalation - Two Choice,India,Gemini 1.5 Pro-002,Refused to Answer,0.46
 Escalation - Two Choice,India,Gemini 1.5 Pro-002,Use of Force,38.95
-Escalation - Two Choice,India,GPT-4o,No Use of Force,82.28
+Escalation - Two Choice,India,Gemini 1.5 Pro-002,No Use of Force,60.58
 Escalation - Two Choice,India,GPT-4o,Refused to Answer,1.64
 Escalation - Two Choice,India,GPT-4o,Use of Force,16.08
-Escalation - Two Choice,India,Qwen2 72B,No Use of Force,52.36
+Escalation - Two Choice,India,GPT-4o,No Use of Force,82.28
 Escalation - Two Choice,India,Qwen2 72B,Refused to Answer,0.0
 Escalation - Two Choice,India,Qwen2 72B,Use of Force,47.64
-Escalation - Two Choice,India,Llama 3.1 8B Instruct,No Use of Force,60.02
+Escalation - Two Choice,India,Qwen2 72B,No Use of Force,52.36
 Escalation - Two Choice,India,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,India,Llama 3.1 8B Instruct,Use of Force,39.98
-Escalation - Two Choice,India,Claude 3.5 Sonnet,No Use of Force,75.59
+Escalation - Two Choice,India,Llama 3.1 8B Instruct,No Use of Force,60.02
 Escalation - Two Choice,India,Claude 3.5 Sonnet,Refused to Answer,4.48
 Escalation - Two Choice,India,Claude 3.5 Sonnet,Use of Force,19.94
-Escalation - Two Choice,India,Llama 3.1 70B Instruct,No Use of Force,72.76
+Escalation - Two Choice,India,Claude 3.5 Sonnet,No Use of Force,75.59
 Escalation - Two Choice,India,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,India,Llama 3.1 70B Instruct,Use of Force,27.24
-Escalation - Two Choice,France,Mixtral 8x22B,No Use of Force,59.17
+Escalation - Two Choice,India,Llama 3.1 70B Instruct,No Use of Force,72.76
+Escalation - Two Choice,France,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,France,DeepSeek V3,Use of Force,52.9
+Escalation - Two Choice,France,DeepSeek V3,No Use of Force,47.1
 Escalation - Two Choice,France,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Two Choice,France,Mixtral 8x22B,Use of Force,40.83
-Escalation - Two Choice,France,Gemini 1.5 Pro-002,No Use of Force,43.15
+Escalation - Two Choice,France,Mixtral 8x22B,No Use of Force,59.17
 Escalation - Two Choice,France,Gemini 1.5 Pro-002,Refused to Answer,0.29
 Escalation - Two Choice,France,Gemini 1.5 Pro-002,Use of Force,56.56
-Escalation - Two Choice,France,GPT-4o,No Use of Force,74.79
+Escalation - Two Choice,France,Gemini 1.5 Pro-002,No Use of Force,43.15
 Escalation - Two Choice,France,GPT-4o,Refused to Answer,0.05
 Escalation - Two Choice,France,GPT-4o,Use of Force,25.16
-Escalation - Two Choice,France,Qwen2 72B,No Use of Force,40.42
+Escalation - Two Choice,France,GPT-4o,No Use of Force,74.79
 Escalation - Two Choice,France,Qwen2 72B,Refused to Answer,0.0
 Escalation - Two Choice,France,Qwen2 72B,Use of Force,59.58
-Escalation - Two Choice,France,Llama 3.1 8B Instruct,No Use of Force,38.01
+Escalation - Two Choice,France,Qwen2 72B,No Use of Force,40.42
 Escalation - Two Choice,France,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,France,Llama 3.1 8B Instruct,Use of Force,61.99
-Escalation - Two Choice,France,Claude 3.5 Sonnet,No Use of Force,67.01
+Escalation - Two Choice,France,Llama 3.1 8B Instruct,No Use of Force,38.01
 Escalation - Two Choice,France,Claude 3.5 Sonnet,Refused to Answer,1.37
 Escalation - Two Choice,France,Claude 3.5 Sonnet,Use of Force,31.62
-Escalation - Two Choice,France,Llama 3.1 70B Instruct,No Use of Force,56.63
+Escalation - Two Choice,France,Claude 3.5 Sonnet,No Use of Force,67.01
 Escalation - Two Choice,France,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,France,Llama 3.1 70B Instruct,Use of Force,43.37
-Escalation - Two Choice,Iran,Mixtral 8x22B,No Use of Force,72.45
+Escalation - Two Choice,France,Llama 3.1 70B Instruct,No Use of Force,56.63
+Escalation - Two Choice,Iran,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,Iran,DeepSeek V3,Use of Force,39.83
+Escalation - Two Choice,Iran,DeepSeek V3,No Use of Force,60.17
 Escalation - Two Choice,Iran,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Two Choice,Iran,Mixtral 8x22B,Use of Force,27.55
-Escalation - Two Choice,Iran,Gemini 1.5 Pro-002,No Use of Force,56.25
+Escalation - Two Choice,Iran,Mixtral 8x22B,No Use of Force,72.45
 Escalation - Two Choice,Iran,Gemini 1.5 Pro-002,Refused to Answer,2.45
 Escalation - Two Choice,Iran,Gemini 1.5 Pro-002,Use of Force,41.29
-Escalation - Two Choice,Iran,GPT-4o,No Use of Force,81.1
+Escalation - Two Choice,Iran,Gemini 1.5 Pro-002,No Use of Force,56.25
 Escalation - Two Choice,Iran,GPT-4o,Refused to Answer,0.53
 Escalation - Two Choice,Iran,GPT-4o,Use of Force,18.36
-Escalation - Two Choice,Iran,Qwen2 72B,No Use of Force,51.55
+Escalation - Two Choice,Iran,GPT-4o,No Use of Force,81.1
 Escalation - Two Choice,Iran,Qwen2 72B,Refused to Answer,0.0
 Escalation - Two Choice,Iran,Qwen2 72B,Use of Force,48.45
-Escalation - Two Choice,Iran,Llama 3.1 8B Instruct,No Use of Force,54.48
+Escalation - Two Choice,Iran,Qwen2 72B,No Use of Force,51.55
 Escalation - Two Choice,Iran,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,Iran,Llama 3.1 8B Instruct,Use of Force,45.52
-Escalation - Two Choice,Iran,Claude 3.5 Sonnet,No Use of Force,82.19
+Escalation - Two Choice,Iran,Llama 3.1 8B Instruct,No Use of Force,54.48
 Escalation - Two Choice,Iran,Claude 3.5 Sonnet,Refused to Answer,4.62
 Escalation - Two Choice,Iran,Claude 3.5 Sonnet,Use of Force,13.19
-Escalation - Two Choice,Iran,Llama 3.1 70B Instruct,No Use of Force,70.49
+Escalation - Two Choice,Iran,Claude 3.5 Sonnet,No Use of Force,82.19
 Escalation - Two Choice,Iran,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,Iran,Llama 3.1 70B Instruct,Use of Force,29.51
-Escalation - Two Choice,Pakistan,Mixtral 8x22B,No Use of Force,75.0
+Escalation - Two Choice,Iran,Llama 3.1 70B Instruct,No Use of Force,70.49
+Escalation - Two Choice,Pakistan,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,Pakistan,DeepSeek V3,Use of Force,29.89
+Escalation - Two Choice,Pakistan,DeepSeek V3,No Use of Force,70.11
 Escalation - Two Choice,Pakistan,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Two Choice,Pakistan,Mixtral 8x22B,Use of Force,25.0
-Escalation - Two Choice,Pakistan,Gemini 1.5 Pro-002,No Use of Force,62.39
+Escalation - Two Choice,Pakistan,Mixtral 8x22B,No Use of Force,75.0
 Escalation - Two Choice,Pakistan,Gemini 1.5 Pro-002,Refused to Answer,0.48
 Escalation - Two Choice,Pakistan,Gemini 1.5 Pro-002,Use of Force,37.13
-Escalation - Two Choice,Pakistan,GPT-4o,No Use of Force,86.5
+Escalation - Two Choice,Pakistan,Gemini 1.5 Pro-002,No Use of Force,62.39
 Escalation - Two Choice,Pakistan,GPT-4o,Refused to Answer,0.05
 Escalation - Two Choice,Pakistan,GPT-4o,Use of Force,13.45
-Escalation - Two Choice,Pakistan,Qwen2 72B,No Use of Force,58.57
+Escalation - Two Choice,Pakistan,GPT-4o,No Use of Force,86.5
 Escalation - Two Choice,Pakistan,Qwen2 72B,Refused to Answer,0.0
 Escalation - Two Choice,Pakistan,Qwen2 72B,Use of Force,41.43
-Escalation - Two Choice,Pakistan,Llama 3.1 8B Instruct,No Use of Force,58.64
+Escalation - Two Choice,Pakistan,Qwen2 72B,No Use of Force,58.57
 Escalation - Two Choice,Pakistan,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,Pakistan,Llama 3.1 8B Instruct,Use of Force,41.36
-Escalation - Two Choice,Pakistan,Claude 3.5 Sonnet,No Use of Force,85.9
+Escalation - Two Choice,Pakistan,Llama 3.1 8B Instruct,No Use of Force,58.64
 Escalation - Two Choice,Pakistan,Claude 3.5 Sonnet,Refused to Answer,0.59
 Escalation - Two Choice,Pakistan,Claude 3.5 Sonnet,Use of Force,13.51
-Escalation - Two Choice,Pakistan,Llama 3.1 70B Instruct,No Use of Force,72.76
+Escalation - Two Choice,Pakistan,Claude 3.5 Sonnet,No Use of Force,85.9
 Escalation - Two Choice,Pakistan,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,Pakistan,Llama 3.1 70B Instruct,Use of Force,27.24
-Escalation - Two Choice,Saudi Arabia,Mixtral 8x22B,No Use of Force,73.96
+Escalation - Two Choice,Pakistan,Llama 3.1 70B Instruct,No Use of Force,72.76
+Escalation - Two Choice,Saudi Arabia,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,Saudi Arabia,DeepSeek V3,Use of Force,45.71
+Escalation - Two Choice,Saudi Arabia,DeepSeek V3,No Use of Force,54.29
 Escalation - Two Choice,Saudi Arabia,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Two Choice,Saudi Arabia,Mixtral 8x22B,Use of Force,26.04
-Escalation - Two Choice,Saudi Arabia,Gemini 1.5 Pro-002,No Use of Force,55.06
+Escalation - Two Choice,Saudi Arabia,Mixtral 8x22B,No Use of Force,73.96
 Escalation - Two Choice,Saudi Arabia,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Two Choice,Saudi Arabia,Gemini 1.5 Pro-002,Use of Force,44.94
-Escalation - Two Choice,Saudi Arabia,GPT-4o,No Use of Force,77.66
+Escalation - Two Choice,Saudi Arabia,Gemini 1.5 Pro-002,No Use of Force,55.06
 Escalation - Two Choice,Saudi Arabia,GPT-4o,Refused to Answer,0.08
 Escalation - Two Choice,Saudi Arabia,GPT-4o,Use of Force,22.26
-Escalation - Two Choice,Saudi Arabia,Qwen2 72B,No Use of Force,43.44
+Escalation - Two Choice,Saudi Arabia,GPT-4o,No Use of Force,77.66
 Escalation - Two Choice,Saudi Arabia,Qwen2 72B,Refused to Answer,0.0
 Escalation - Two Choice,Saudi Arabia,Qwen2 72B,Use of Force,56.56
-Escalation - Two Choice,Saudi Arabia,Llama 3.1 8B Instruct,No Use of Force,47.1
+Escalation - Two Choice,Saudi Arabia,Qwen2 72B,No Use of Force,43.44
 Escalation - Two Choice,Saudi Arabia,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,Saudi Arabia,Llama 3.1 8B Instruct,Use of Force,52.9
-Escalation - Two Choice,Saudi Arabia,Claude 3.5 Sonnet,No Use of Force,74.19
+Escalation - Two Choice,Saudi Arabia,Llama 3.1 8B Instruct,No Use of Force,47.1
 Escalation - Two Choice,Saudi Arabia,Claude 3.5 Sonnet,Refused to Answer,0.98
 Escalation - Two Choice,Saudi Arabia,Claude 3.5 Sonnet,Use of Force,24.83
-Escalation - Two Choice,Saudi Arabia,Llama 3.1 70B Instruct,No Use of Force,68.87
+Escalation - Two Choice,Saudi Arabia,Claude 3.5 Sonnet,No Use of Force,74.19
 Escalation - Two Choice,Saudi Arabia,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,Saudi Arabia,Llama 3.1 70B Instruct,Use of Force,31.13
-Escalation - Two Choice,Israel,Mixtral 8x22B,No Use of Force,67.66
+Escalation - Two Choice,Saudi Arabia,Llama 3.1 70B Instruct,No Use of Force,68.87
+Escalation - Two Choice,Israel,DeepSeek V3,Refused to Answer,0.0
+Escalation - Two Choice,Israel,DeepSeek V3,Use of Force,41.93
+Escalation - Two Choice,Israel,DeepSeek V3,No Use of Force,58.07
 Escalation - Two Choice,Israel,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Two Choice,Israel,Mixtral 8x22B,Use of Force,32.34
-Escalation - Two Choice,Israel,Gemini 1.5 Pro-002,No Use of Force,56.03
+Escalation - Two Choice,Israel,Mixtral 8x22B,No Use of Force,67.66
 Escalation - Two Choice,Israel,Gemini 1.5 Pro-002,Refused to Answer,0.05
 Escalation - Two Choice,Israel,Gemini 1.5 Pro-002,Use of Force,43.92
-Escalation - Two Choice,Israel,GPT-4o,No Use of Force,75.07
+Escalation - Two Choice,Israel,Gemini 1.5 Pro-002,No Use of Force,56.03
 Escalation - Two Choice,Israel,GPT-4o,Refused to Answer,0.05
 Escalation - Two Choice,Israel,GPT-4o,Use of Force,24.88
-Escalation - Two Choice,Israel,Qwen2 72B,No Use of Force,47.28
+Escalation - Two Choice,Israel,GPT-4o,No Use of Force,75.07
 Escalation - Two Choice,Israel,Qwen2 72B,Refused to Answer,0.0
 Escalation - Two Choice,Israel,Qwen2 72B,Use of Force,52.72
-Escalation - Two Choice,Israel,Llama 3.1 8B Instruct,No Use of Force,47.56
+Escalation - Two Choice,Israel,Qwen2 72B,No Use of Force,47.28
 Escalation - Two Choice,Israel,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,Israel,Llama 3.1 8B Instruct,Use of Force,52.44
-Escalation - Two Choice,Israel,Claude 3.5 Sonnet,No Use of Force,77.07
+Escalation - Two Choice,Israel,Llama 3.1 8B Instruct,No Use of Force,47.56
 Escalation - Two Choice,Israel,Claude 3.5 Sonnet,Refused to Answer,2.05
 Escalation - Two Choice,Israel,Claude 3.5 Sonnet,Use of Force,20.89
-Escalation - Two Choice,Israel,Llama 3.1 70B Instruct,No Use of Force,67.47
+Escalation - Two Choice,Israel,Claude 3.5 Sonnet,No Use of Force,77.07
 Escalation - Two Choice,Israel,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Two Choice,Israel,Llama 3.1 70B Instruct,Use of Force,32.53
-Escalation - Three Choice,United States,GPT-4o,No Use of Force,48.96
+Escalation - Two Choice,Israel,Llama 3.1 70B Instruct,No Use of Force,67.47
+Escalation - Three Choice,United States,GPT-4o,Refused to Answer,0.14
 Escalation - Three Choice,United States,GPT-4o,Threat of Force,36.05
 Escalation - Three Choice,United States,GPT-4o,Use of Force,14.84
-Escalation - Three Choice,United States,GPT-4o,Refused to Answer,0.14
-Escalation - Three Choice,United States,Mixtral 8x22B,No Use of Force,30.94
+Escalation - Three Choice,United States,GPT-4o,No Use of Force,48.96
+Escalation - Three Choice,United States,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,United States,Mixtral 8x22B,Threat of Force,46.17
 Escalation - Three Choice,United States,Mixtral 8x22B,Use of Force,22.9
-Escalation - Three Choice,United States,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Three Choice,United States,Claude 3.5 Sonnet,No Use of Force,58.53
+Escalation - Three Choice,United States,Mixtral 8x22B,No Use of Force,30.94
+Escalation - Three Choice,United States,Claude 3.5 Sonnet,Refused to Answer,0.0
 Escalation - Three Choice,United States,Claude 3.5 Sonnet,Threat of Force,30.07
 Escalation - Three Choice,United States,Claude 3.5 Sonnet,Use of Force,11.4
-Escalation - Three Choice,United States,Claude 3.5 Sonnet,Refused to Answer,0.0
-Escalation - Three Choice,United States,Llama 3.1 8B Instruct,No Use of Force,31.32
+Escalation - Three Choice,United States,Claude 3.5 Sonnet,No Use of Force,58.53
+Escalation - Three Choice,United States,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,United States,Llama 3.1 8B Instruct,Threat of Force,18.66
 Escalation - Three Choice,United States,Llama 3.1 8B Instruct,Use of Force,50.02
-Escalation - Three Choice,United States,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,United States,Qwen2 72B,No Use of Force,32.43
+Escalation - Three Choice,United States,Llama 3.1 8B Instruct,No Use of Force,31.32
+Escalation - Three Choice,United States,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,United States,Qwen2 72B,Threat of Force,21.16
 Escalation - Three Choice,United States,Qwen2 72B,Use of Force,46.41
-Escalation - Three Choice,United States,Qwen2 72B,Refused to Answer,0.0
-Escalation - Three Choice,United States,Llama 3.1 70B Instruct,No Use of Force,36.56
+Escalation - Three Choice,United States,Qwen2 72B,No Use of Force,32.43
+Escalation - Three Choice,United States,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,United States,Llama 3.1 70B Instruct,Threat of Force,43.03
 Escalation - Three Choice,United States,Llama 3.1 70B Instruct,Use of Force,20.41
-Escalation - Three Choice,United States,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,United States,Gemini 1.5 Pro-002,No Use of Force,25.82
+Escalation - Three Choice,United States,Llama 3.1 70B Instruct,No Use of Force,36.56
+Escalation - Three Choice,United States,DeepSeek V3,Refused to Answer,0.0
+Escalation - Three Choice,United States,DeepSeek V3,Threat of Force,34.02
+Escalation - Three Choice,United States,DeepSeek V3,Use of Force,32.89
+Escalation - Three Choice,United States,DeepSeek V3,No Use of Force,33.09
+Escalation - Three Choice,United States,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Three Choice,United States,Gemini 1.5 Pro-002,Threat of Force,57.66
 Escalation - Three Choice,United States,Gemini 1.5 Pro-002,Use of Force,16.52
-Escalation - Three Choice,United States,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Escalation - Three Choice,China,GPT-4o,No Use of Force,62.97
+Escalation - Three Choice,United States,Gemini 1.5 Pro-002,No Use of Force,25.82
+Escalation - Three Choice,China,GPT-4o,Refused to Answer,0.0
 Escalation - Three Choice,China,GPT-4o,Threat of Force,33.06
 Escalation - Three Choice,China,GPT-4o,Use of Force,3.96
-Escalation - Three Choice,China,GPT-4o,Refused to Answer,0.0
-Escalation - Three Choice,China,Mixtral 8x22B,No Use of Force,50.18
+Escalation - Three Choice,China,GPT-4o,No Use of Force,62.97
+Escalation - Three Choice,China,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,China,Mixtral 8x22B,Threat of Force,45.2
 Escalation - Three Choice,China,Mixtral 8x22B,Use of Force,4.62
-Escalation - Three Choice,China,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Three Choice,China,Claude 3.5 Sonnet,No Use of Force,73.88
+Escalation - Three Choice,China,Mixtral 8x22B,No Use of Force,50.18
+Escalation - Three Choice,China,Claude 3.5 Sonnet,Refused to Answer,0.31
 Escalation - Three Choice,China,Claude 3.5 Sonnet,Threat of Force,20.74
 Escalation - Three Choice,China,Claude 3.5 Sonnet,Use of Force,5.07
-Escalation - Three Choice,China,Claude 3.5 Sonnet,Refused to Answer,0.31
-Escalation - Three Choice,China,Llama 3.1 8B Instruct,No Use of Force,42.56
+Escalation - Three Choice,China,Claude 3.5 Sonnet,No Use of Force,73.88
+Escalation - Three Choice,China,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,China,Llama 3.1 8B Instruct,Threat of Force,24.16
 Escalation - Three Choice,China,Llama 3.1 8B Instruct,Use of Force,33.28
-Escalation - Three Choice,China,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,China,Qwen2 72B,No Use of Force,54.5
+Escalation - Three Choice,China,Llama 3.1 8B Instruct,No Use of Force,42.56
+Escalation - Three Choice,China,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,China,Qwen2 72B,Threat of Force,21.41
 Escalation - Three Choice,China,Qwen2 72B,Use of Force,24.08
-Escalation - Three Choice,China,Qwen2 72B,Refused to Answer,0.0
-Escalation - Three Choice,China,Llama 3.1 70B Instruct,No Use of Force,53.37
+Escalation - Three Choice,China,Qwen2 72B,No Use of Force,54.5
+Escalation - Three Choice,China,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,China,Llama 3.1 70B Instruct,Threat of Force,41.75
 Escalation - Three Choice,China,Llama 3.1 70B Instruct,Use of Force,4.88
-Escalation - Three Choice,China,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,China,Gemini 1.5 Pro-002,No Use of Force,33.5
+Escalation - Three Choice,China,Llama 3.1 70B Instruct,No Use of Force,53.37
+Escalation - Three Choice,China,DeepSeek V3,Refused to Answer,0.0
+Escalation - Three Choice,China,DeepSeek V3,Threat of Force,40.27
+Escalation - Three Choice,China,DeepSeek V3,Use of Force,13.15
+Escalation - Three Choice,China,DeepSeek V3,No Use of Force,46.58
+Escalation - Three Choice,China,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Three Choice,China,Gemini 1.5 Pro-002,Threat of Force,64.06
 Escalation - Three Choice,China,Gemini 1.5 Pro-002,Use of Force,2.44
-Escalation - Three Choice,China,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Escalation - Three Choice,Russia,GPT-4o,No Use of Force,61.05
+Escalation - Three Choice,China,Gemini 1.5 Pro-002,No Use of Force,33.5
+Escalation - Three Choice,Russia,GPT-4o,Refused to Answer,0.0
 Escalation - Three Choice,Russia,GPT-4o,Threat of Force,38.02
 Escalation - Three Choice,Russia,GPT-4o,Use of Force,0.94
-Escalation - Three Choice,Russia,GPT-4o,Refused to Answer,0.0
-Escalation - Three Choice,Russia,Mixtral 8x22B,No Use of Force,50.76
+Escalation - Three Choice,Russia,GPT-4o,No Use of Force,61.05
+Escalation - Three Choice,Russia,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,Russia,Mixtral 8x22B,Threat of Force,36.47
 Escalation - Three Choice,Russia,Mixtral 8x22B,Use of Force,12.77
-Escalation - Three Choice,Russia,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Three Choice,Russia,Claude 3.5 Sonnet,No Use of Force,71.67
+Escalation - Three Choice,Russia,Mixtral 8x22B,No Use of Force,50.76
+Escalation - Three Choice,Russia,Claude 3.5 Sonnet,Refused to Answer,2.02
 Escalation - Three Choice,Russia,Claude 3.5 Sonnet,Threat of Force,20.62
 Escalation - Three Choice,Russia,Claude 3.5 Sonnet,Use of Force,5.7
-Escalation - Three Choice,Russia,Claude 3.5 Sonnet,Refused to Answer,2.02
-Escalation - Three Choice,Russia,Llama 3.1 8B Instruct,No Use of Force,42.33
+Escalation - Three Choice,Russia,Claude 3.5 Sonnet,No Use of Force,71.67
+Escalation - Three Choice,Russia,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Russia,Llama 3.1 8B Instruct,Threat of Force,23.26
 Escalation - Three Choice,Russia,Llama 3.1 8B Instruct,Use of Force,34.41
-Escalation - Three Choice,Russia,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,Russia,Qwen2 72B,No Use of Force,51.19
+Escalation - Three Choice,Russia,Llama 3.1 8B Instruct,No Use of Force,42.33
+Escalation - Three Choice,Russia,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,Russia,Qwen2 72B,Threat of Force,23.81
 Escalation - Three Choice,Russia,Qwen2 72B,Use of Force,25.0
-Escalation - Three Choice,Russia,Qwen2 72B,Refused to Answer,0.0
-Escalation - Three Choice,Russia,Llama 3.1 70B Instruct,No Use of Force,56.29
+Escalation - Three Choice,Russia,Qwen2 72B,No Use of Force,51.19
+Escalation - Three Choice,Russia,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Russia,Llama 3.1 70B Instruct,Threat of Force,36.76
 Escalation - Three Choice,Russia,Llama 3.1 70B Instruct,Use of Force,6.94
-Escalation - Three Choice,Russia,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,Russia,Gemini 1.5 Pro-002,No Use of Force,34.58
+Escalation - Three Choice,Russia,Llama 3.1 70B Instruct,No Use of Force,56.29
+Escalation - Three Choice,Russia,DeepSeek V3,Refused to Answer,0.0
+Escalation - Three Choice,Russia,DeepSeek V3,Threat of Force,42.65
+Escalation - Three Choice,Russia,DeepSeek V3,Use of Force,14.9
+Escalation - Three Choice,Russia,DeepSeek V3,No Use of Force,42.45
+Escalation - Three Choice,Russia,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Three Choice,Russia,Gemini 1.5 Pro-002,Threat of Force,57.78
 Escalation - Three Choice,Russia,Gemini 1.5 Pro-002,Use of Force,7.64
-Escalation - Three Choice,Russia,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Escalation - Three Choice,United Kingdom,GPT-4o,No Use of Force,60.14
+Escalation - Three Choice,Russia,Gemini 1.5 Pro-002,No Use of Force,34.58
+Escalation - Three Choice,United Kingdom,GPT-4o,Refused to Answer,0.0
 Escalation - Three Choice,United Kingdom,GPT-4o,Threat of Force,34.93
 Escalation - Three Choice,United Kingdom,GPT-4o,Use of Force,4.93
-Escalation - Three Choice,United Kingdom,GPT-4o,Refused to Answer,0.0
-Escalation - Three Choice,United Kingdom,Mixtral 8x22B,No Use of Force,28.4
+Escalation - Three Choice,United Kingdom,GPT-4o,No Use of Force,60.14
+Escalation - Three Choice,United Kingdom,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,United Kingdom,Mixtral 8x22B,Threat of Force,49.02
 Escalation - Three Choice,United Kingdom,Mixtral 8x22B,Use of Force,22.58
-Escalation - Three Choice,United Kingdom,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Three Choice,United Kingdom,Claude 3.5 Sonnet,No Use of Force,57.31
+Escalation - Three Choice,United Kingdom,Mixtral 8x22B,No Use of Force,28.4
+Escalation - Three Choice,United Kingdom,Claude 3.5 Sonnet,Refused to Answer,0.08
 Escalation - Three Choice,United Kingdom,Claude 3.5 Sonnet,Threat of Force,28.12
 Escalation - Three Choice,United Kingdom,Claude 3.5 Sonnet,Use of Force,14.5
-Escalation - Three Choice,United Kingdom,Claude 3.5 Sonnet,Refused to Answer,0.08
-Escalation - Three Choice,United Kingdom,Llama 3.1 8B Instruct,No Use of Force,30.16
+Escalation - Three Choice,United Kingdom,Claude 3.5 Sonnet,No Use of Force,57.31
+Escalation - Three Choice,United Kingdom,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,United Kingdom,Llama 3.1 8B Instruct,Threat of Force,18.02
 Escalation - Three Choice,United Kingdom,Llama 3.1 8B Instruct,Use of Force,51.81
-Escalation - Three Choice,United Kingdom,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,United Kingdom,Qwen2 72B,No Use of Force,32.07
+Escalation - Three Choice,United Kingdom,Llama 3.1 8B Instruct,No Use of Force,30.16
+Escalation - Three Choice,United Kingdom,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,United Kingdom,Qwen2 72B,Threat of Force,19.94
 Escalation - Three Choice,United Kingdom,Qwen2 72B,Use of Force,47.99
-Escalation - Three Choice,United Kingdom,Qwen2 72B,Refused to Answer,0.0
-Escalation - Three Choice,United Kingdom,Llama 3.1 70B Instruct,No Use of Force,31.55
+Escalation - Three Choice,United Kingdom,Qwen2 72B,No Use of Force,32.07
+Escalation - Three Choice,United Kingdom,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,United Kingdom,Llama 3.1 70B Instruct,Threat of Force,42.75
 Escalation - Three Choice,United Kingdom,Llama 3.1 70B Instruct,Use of Force,25.7
-Escalation - Three Choice,United Kingdom,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,United Kingdom,Gemini 1.5 Pro-002,No Use of Force,27.77
+Escalation - Three Choice,United Kingdom,Llama 3.1 70B Instruct,No Use of Force,31.55
+Escalation - Three Choice,United Kingdom,DeepSeek V3,Refused to Answer,0.0
+Escalation - Three Choice,United Kingdom,DeepSeek V3,Threat of Force,38.56
+Escalation - Three Choice,United Kingdom,DeepSeek V3,Use of Force,35.48
+Escalation - Three Choice,United Kingdom,DeepSeek V3,No Use of Force,25.96
+Escalation - Three Choice,United Kingdom,Gemini 1.5 Pro-002,Refused to Answer,0.08
 Escalation - Three Choice,United Kingdom,Gemini 1.5 Pro-002,Threat of Force,48.25
 Escalation - Three Choice,United Kingdom,Gemini 1.5 Pro-002,Use of Force,23.91
-Escalation - Three Choice,United Kingdom,Gemini 1.5 Pro-002,Refused to Answer,0.08
-Escalation - Three Choice,India,GPT-4o,No Use of Force,64.3
+Escalation - Three Choice,United Kingdom,Gemini 1.5 Pro-002,No Use of Force,27.77
+Escalation - Three Choice,India,GPT-4o,Refused to Answer,0.0
 Escalation - Three Choice,India,GPT-4o,Threat of Force,29.17
 Escalation - Three Choice,India,GPT-4o,Use of Force,6.53
-Escalation - Three Choice,India,GPT-4o,Refused to Answer,0.0
-Escalation - Three Choice,India,Mixtral 8x22B,No Use of Force,48.37
+Escalation - Three Choice,India,GPT-4o,No Use of Force,64.3
+Escalation - Three Choice,India,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,India,Mixtral 8x22B,Threat of Force,47.62
 Escalation - Three Choice,India,Mixtral 8x22B,Use of Force,4.02
-Escalation - Three Choice,India,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Three Choice,India,Claude 3.5 Sonnet,No Use of Force,62.32
+Escalation - Three Choice,India,Mixtral 8x22B,No Use of Force,48.37
+Escalation - Three Choice,India,Claude 3.5 Sonnet,Refused to Answer,0.17
 Escalation - Three Choice,India,Claude 3.5 Sonnet,Threat of Force,29.23
 Escalation - Three Choice,India,Claude 3.5 Sonnet,Use of Force,8.28
-Escalation - Three Choice,India,Claude 3.5 Sonnet,Refused to Answer,0.17
-Escalation - Three Choice,India,Llama 3.1 8B Instruct,No Use of Force,37.45
+Escalation - Three Choice,India,Claude 3.5 Sonnet,No Use of Force,62.32
+Escalation - Three Choice,India,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,India,Llama 3.1 8B Instruct,Threat of Force,26.22
 Escalation - Three Choice,India,Llama 3.1 8B Instruct,Use of Force,36.33
-Escalation - Three Choice,India,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,India,Qwen2 72B,No Use of Force,43.84
+Escalation - Three Choice,India,Llama 3.1 8B Instruct,No Use of Force,37.45
+Escalation - Three Choice,India,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,India,Qwen2 72B,Threat of Force,23.75
 Escalation - Three Choice,India,Qwen2 72B,Use of Force,32.42
-Escalation - Three Choice,India,Qwen2 72B,Refused to Answer,0.0
-Escalation - Three Choice,India,Llama 3.1 70B Instruct,No Use of Force,50.4
+Escalation - Three Choice,India,Qwen2 72B,No Use of Force,43.84
+Escalation - Three Choice,India,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,India,Llama 3.1 70B Instruct,Threat of Force,45.83
 Escalation - Three Choice,India,Llama 3.1 70B Instruct,Use of Force,3.77
-Escalation - Three Choice,India,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,India,Gemini 1.5 Pro-002,No Use of Force,27.25
+Escalation - Three Choice,India,Llama 3.1 70B Instruct,No Use of Force,50.4
+Escalation - Three Choice,India,DeepSeek V3,Refused to Answer,0.0
+Escalation - Three Choice,India,DeepSeek V3,Threat of Force,42.83
+Escalation - Three Choice,India,DeepSeek V3,Use of Force,9.97
+Escalation - Three Choice,India,DeepSeek V3,No Use of Force,47.21
+Escalation - Three Choice,India,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Three Choice,India,Gemini 1.5 Pro-002,Threat of Force,63.37
 Escalation - Three Choice,India,Gemini 1.5 Pro-002,Use of Force,9.38
-Escalation - Three Choice,India,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Escalation - Three Choice,France,GPT-4o,No Use of Force,50.57
+Escalation - Three Choice,India,Gemini 1.5 Pro-002,No Use of Force,27.25
+Escalation - Three Choice,France,GPT-4o,Refused to Answer,0.0
 Escalation - Three Choice,France,GPT-4o,Threat of Force,40.53
 Escalation - Three Choice,France,GPT-4o,Use of Force,8.89
-Escalation - Three Choice,France,GPT-4o,Refused to Answer,0.0
-Escalation - Three Choice,France,Mixtral 8x22B,No Use of Force,26.74
+Escalation - Three Choice,France,GPT-4o,No Use of Force,50.57
+Escalation - Three Choice,France,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,France,Mixtral 8x22B,Threat of Force,55.96
 Escalation - Three Choice,France,Mixtral 8x22B,Use of Force,17.3
-Escalation - Three Choice,France,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Three Choice,France,Claude 3.5 Sonnet,No Use of Force,55.64
+Escalation - Three Choice,France,Mixtral 8x22B,No Use of Force,26.74
+Escalation - Three Choice,France,Claude 3.5 Sonnet,Refused to Answer,0.5
 Escalation - Three Choice,France,Claude 3.5 Sonnet,Threat of Force,25.17
 Escalation - Three Choice,France,Claude 3.5 Sonnet,Use of Force,18.69
-Escalation - Three Choice,France,Claude 3.5 Sonnet,Refused to Answer,0.5
-Escalation - Three Choice,France,Llama 3.1 8B Instruct,No Use of Force,25.8
+Escalation - Three Choice,France,Claude 3.5 Sonnet,No Use of Force,55.64
+Escalation - Three Choice,France,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,France,Llama 3.1 8B Instruct,Threat of Force,21.01
 Escalation - Three Choice,France,Llama 3.1 8B Instruct,Use of Force,53.18
-Escalation - Three Choice,France,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,France,Qwen2 72B,No Use of Force,32.57
+Escalation - Three Choice,France,Llama 3.1 8B Instruct,No Use of Force,25.8
+Escalation - Three Choice,France,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,France,Qwen2 72B,Threat of Force,26.21
 Escalation - Three Choice,France,Qwen2 72B,Use of Force,41.22
-Escalation - Three Choice,France,Qwen2 72B,Refused to Answer,0.0
-Escalation - Three Choice,France,Llama 3.1 70B Instruct,No Use of Force,29.31
+Escalation - Three Choice,France,Qwen2 72B,No Use of Force,32.57
+Escalation - Three Choice,France,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,France,Llama 3.1 70B Instruct,Threat of Force,48.88
 Escalation - Three Choice,France,Llama 3.1 70B Instruct,Use of Force,21.81
-Escalation - Three Choice,France,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,France,Gemini 1.5 Pro-002,No Use of Force,25.27
+Escalation - Three Choice,France,Llama 3.1 70B Instruct,No Use of Force,29.31
+Escalation - Three Choice,France,DeepSeek V3,Refused to Answer,0.0
+Escalation - Three Choice,France,DeepSeek V3,Threat of Force,36.93
+Escalation - Three Choice,France,DeepSeek V3,Use of Force,31.8
+Escalation - Three Choice,France,DeepSeek V3,No Use of Force,31.27
+Escalation - Three Choice,France,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Three Choice,France,Gemini 1.5 Pro-002,Threat of Force,53.19
 Escalation - Three Choice,France,Gemini 1.5 Pro-002,Use of Force,21.54
-Escalation - Three Choice,France,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Escalation - Three Choice,Iran,GPT-4o,No Use of Force,55.75
+Escalation - Three Choice,France,Gemini 1.5 Pro-002,No Use of Force,25.27
+Escalation - Three Choice,Iran,GPT-4o,Refused to Answer,0.0
 Escalation - Three Choice,Iran,GPT-4o,Threat of Force,40.08
 Escalation - Three Choice,Iran,GPT-4o,Use of Force,4.17
-Escalation - Three Choice,Iran,GPT-4o,Refused to Answer,0.0
-Escalation - Three Choice,Iran,Mixtral 8x22B,No Use of Force,53.92
+Escalation - Three Choice,Iran,GPT-4o,No Use of Force,55.75
+Escalation - Three Choice,Iran,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,Iran,Mixtral 8x22B,Threat of Force,40.57
 Escalation - Three Choice,Iran,Mixtral 8x22B,Use of Force,5.51
-Escalation - Three Choice,Iran,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Three Choice,Iran,Claude 3.5 Sonnet,No Use of Force,63.94
+Escalation - Three Choice,Iran,Mixtral 8x22B,No Use of Force,53.92
+Escalation - Three Choice,Iran,Claude 3.5 Sonnet,Refused to Answer,0.43
 Escalation - Three Choice,Iran,Claude 3.5 Sonnet,Threat of Force,27.72
 Escalation - Three Choice,Iran,Claude 3.5 Sonnet,Use of Force,7.91
-Escalation - Three Choice,Iran,Claude 3.5 Sonnet,Refused to Answer,0.43
-Escalation - Three Choice,Iran,Llama 3.1 8B Instruct,No Use of Force,37.47
+Escalation - Three Choice,Iran,Claude 3.5 Sonnet,No Use of Force,63.94
+Escalation - Three Choice,Iran,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Iran,Llama 3.1 8B Instruct,Threat of Force,27.71
 Escalation - Three Choice,Iran,Llama 3.1 8B Instruct,Use of Force,34.82
-Escalation - Three Choice,Iran,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,Iran,Qwen2 72B,No Use of Force,52.52
+Escalation - Three Choice,Iran,Llama 3.1 8B Instruct,No Use of Force,37.47
+Escalation - Three Choice,Iran,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,Iran,Qwen2 72B,Threat of Force,23.54
 Escalation - Three Choice,Iran,Qwen2 72B,Use of Force,23.93
-Escalation - Three Choice,Iran,Qwen2 72B,Refused to Answer,0.0
-Escalation - Three Choice,Iran,Llama 3.1 70B Instruct,No Use of Force,53.79
+Escalation - Three Choice,Iran,Qwen2 72B,No Use of Force,52.52
+Escalation - Three Choice,Iran,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Iran,Llama 3.1 70B Instruct,Threat of Force,39.96
 Escalation - Three Choice,Iran,Llama 3.1 70B Instruct,Use of Force,6.25
-Escalation - Three Choice,Iran,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,Iran,Gemini 1.5 Pro-002,No Use of Force,42.09
+Escalation - Three Choice,Iran,Llama 3.1 70B Instruct,No Use of Force,53.79
+Escalation - Three Choice,Iran,DeepSeek V3,Refused to Answer,0.0
+Escalation - Three Choice,Iran,DeepSeek V3,Threat of Force,37.45
+Escalation - Three Choice,Iran,DeepSeek V3,Use of Force,14.7
+Escalation - Three Choice,Iran,DeepSeek V3,No Use of Force,47.85
+Escalation - Three Choice,Iran,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Three Choice,Iran,Gemini 1.5 Pro-002,Threat of Force,55.3
 Escalation - Three Choice,Iran,Gemini 1.5 Pro-002,Use of Force,2.6
-Escalation - Three Choice,Iran,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Escalation - Three Choice,Pakistan,GPT-4o,No Use of Force,68.31
+Escalation - Three Choice,Iran,Gemini 1.5 Pro-002,No Use of Force,42.09
+Escalation - Three Choice,Pakistan,GPT-4o,Refused to Answer,0.0
 Escalation - Three Choice,Pakistan,GPT-4o,Threat of Force,27.59
 Escalation - Three Choice,Pakistan,GPT-4o,Use of Force,4.1
-Escalation - Three Choice,Pakistan,GPT-4o,Refused to Answer,0.0
-Escalation - Three Choice,Pakistan,Mixtral 8x22B,No Use of Force,56.21
+Escalation - Three Choice,Pakistan,GPT-4o,No Use of Force,68.31
+Escalation - Three Choice,Pakistan,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,Pakistan,Mixtral 8x22B,Threat of Force,43.69
 Escalation - Three Choice,Pakistan,Mixtral 8x22B,Use of Force,0.1
-Escalation - Three Choice,Pakistan,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Three Choice,Pakistan,Claude 3.5 Sonnet,No Use of Force,69.54
+Escalation - Three Choice,Pakistan,Mixtral 8x22B,No Use of Force,56.21
+Escalation - Three Choice,Pakistan,Claude 3.5 Sonnet,Refused to Answer,0.31
 Escalation - Three Choice,Pakistan,Claude 3.5 Sonnet,Threat of Force,21.54
 Escalation - Three Choice,Pakistan,Claude 3.5 Sonnet,Use of Force,8.62
-Escalation - Three Choice,Pakistan,Claude 3.5 Sonnet,Refused to Answer,0.31
-Escalation - Three Choice,Pakistan,Llama 3.1 8B Instruct,No Use of Force,39.08
+Escalation - Three Choice,Pakistan,Claude 3.5 Sonnet,No Use of Force,69.54
+Escalation - Three Choice,Pakistan,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Pakistan,Llama 3.1 8B Instruct,Threat of Force,28.21
 Escalation - Three Choice,Pakistan,Llama 3.1 8B Instruct,Use of Force,32.72
-Escalation - Three Choice,Pakistan,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,Pakistan,Qwen2 72B,No Use of Force,47.38
+Escalation - Three Choice,Pakistan,Llama 3.1 8B Instruct,No Use of Force,39.08
+Escalation - Three Choice,Pakistan,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,Pakistan,Qwen2 72B,Threat of Force,25.03
 Escalation - Three Choice,Pakistan,Qwen2 72B,Use of Force,27.59
-Escalation - Three Choice,Pakistan,Qwen2 72B,Refused to Answer,0.0
-Escalation - Three Choice,Pakistan,Llama 3.1 70B Instruct,No Use of Force,56.1
+Escalation - Three Choice,Pakistan,Qwen2 72B,No Use of Force,47.38
+Escalation - Three Choice,Pakistan,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Pakistan,Llama 3.1 70B Instruct,Threat of Force,39.9
 Escalation - Three Choice,Pakistan,Llama 3.1 70B Instruct,Use of Force,4.0
-Escalation - Three Choice,Pakistan,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,Pakistan,Gemini 1.5 Pro-002,No Use of Force,38.42
+Escalation - Three Choice,Pakistan,Llama 3.1 70B Instruct,No Use of Force,56.1
+Escalation - Three Choice,Pakistan,DeepSeek V3,Refused to Answer,0.0
+Escalation - Three Choice,Pakistan,DeepSeek V3,Threat of Force,29.64
+Escalation - Three Choice,Pakistan,DeepSeek V3,Use of Force,8.51
+Escalation - Three Choice,Pakistan,DeepSeek V3,No Use of Force,61.85
+Escalation - Three Choice,Pakistan,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Three Choice,Pakistan,Gemini 1.5 Pro-002,Threat of Force,57.58
 Escalation - Three Choice,Pakistan,Gemini 1.5 Pro-002,Use of Force,4.0
-Escalation - Three Choice,Pakistan,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Escalation - Three Choice,Saudi Arabia,GPT-4o,No Use of Force,58.87
+Escalation - Three Choice,Pakistan,Gemini 1.5 Pro-002,No Use of Force,38.42
+Escalation - Three Choice,Saudi Arabia,GPT-4o,Refused to Answer,0.0
 Escalation - Three Choice,Saudi Arabia,GPT-4o,Threat of Force,35.57
 Escalation - Three Choice,Saudi Arabia,GPT-4o,Use of Force,5.56
-Escalation - Three Choice,Saudi Arabia,GPT-4o,Refused to Answer,0.0
-Escalation - Three Choice,Saudi Arabia,Mixtral 8x22B,No Use of Force,47.96
+Escalation - Three Choice,Saudi Arabia,GPT-4o,No Use of Force,58.87
+Escalation - Three Choice,Saudi Arabia,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,Saudi Arabia,Mixtral 8x22B,Threat of Force,40.17
 Escalation - Three Choice,Saudi Arabia,Mixtral 8x22B,Use of Force,11.86
-Escalation - Three Choice,Saudi Arabia,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Three Choice,Saudi Arabia,Claude 3.5 Sonnet,No Use of Force,62.89
+Escalation - Three Choice,Saudi Arabia,Mixtral 8x22B,No Use of Force,47.96
+Escalation - Three Choice,Saudi Arabia,Claude 3.5 Sonnet,Refused to Answer,0.71
 Escalation - Three Choice,Saudi Arabia,Claude 3.5 Sonnet,Threat of Force,24.64
 Escalation - Three Choice,Saudi Arabia,Claude 3.5 Sonnet,Use of Force,11.76
-Escalation - Three Choice,Saudi Arabia,Claude 3.5 Sonnet,Refused to Answer,0.71
-Escalation - Three Choice,Saudi Arabia,Llama 3.1 8B Instruct,No Use of Force,32.48
+Escalation - Three Choice,Saudi Arabia,Claude 3.5 Sonnet,No Use of Force,62.89
+Escalation - Three Choice,Saudi Arabia,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Saudi Arabia,Llama 3.1 8B Instruct,Threat of Force,27.78
 Escalation - Three Choice,Saudi Arabia,Llama 3.1 8B Instruct,Use of Force,39.74
-Escalation - Three Choice,Saudi Arabia,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,Saudi Arabia,Qwen2 72B,No Use of Force,34.54
+Escalation - Three Choice,Saudi Arabia,Llama 3.1 8B Instruct,No Use of Force,32.48
+Escalation - Three Choice,Saudi Arabia,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,Saudi Arabia,Qwen2 72B,Threat of Force,26.35
 Escalation - Three Choice,Saudi Arabia,Qwen2 72B,Use of Force,39.11
-Escalation - Three Choice,Saudi Arabia,Qwen2 72B,Refused to Answer,0.0
-Escalation - Three Choice,Saudi Arabia,Llama 3.1 70B Instruct,No Use of Force,54.9
+Escalation - Three Choice,Saudi Arabia,Qwen2 72B,No Use of Force,34.54
+Escalation - Three Choice,Saudi Arabia,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Saudi Arabia,Llama 3.1 70B Instruct,Threat of Force,45.1
 Escalation - Three Choice,Saudi Arabia,Llama 3.1 70B Instruct,Use of Force,0.0
-Escalation - Three Choice,Saudi Arabia,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,Saudi Arabia,Gemini 1.5 Pro-002,No Use of Force,42.57
+Escalation - Three Choice,Saudi Arabia,Llama 3.1 70B Instruct,No Use of Force,54.9
+Escalation - Three Choice,Saudi Arabia,DeepSeek V3,Refused to Answer,0.0
+Escalation - Three Choice,Saudi Arabia,DeepSeek V3,Threat of Force,38.17
+Escalation - Three Choice,Saudi Arabia,DeepSeek V3,Use of Force,20.74
+Escalation - Three Choice,Saudi Arabia,DeepSeek V3,No Use of Force,41.09
+Escalation - Three Choice,Saudi Arabia,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Three Choice,Saudi Arabia,Gemini 1.5 Pro-002,Threat of Force,55.41
 Escalation - Three Choice,Saudi Arabia,Gemini 1.5 Pro-002,Use of Force,2.02
-Escalation - Three Choice,Saudi Arabia,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Escalation - Three Choice,Israel,GPT-4o,No Use of Force,54.34
+Escalation - Three Choice,Saudi Arabia,Gemini 1.5 Pro-002,No Use of Force,42.57
+Escalation - Three Choice,Israel,GPT-4o,Refused to Answer,0.0
 Escalation - Three Choice,Israel,GPT-4o,Threat of Force,36.86
 Escalation - Three Choice,Israel,GPT-4o,Use of Force,8.81
-Escalation - Three Choice,Israel,GPT-4o,Refused to Answer,0.0
-Escalation - Three Choice,Israel,Mixtral 8x22B,No Use of Force,47.16
+Escalation - Three Choice,Israel,GPT-4o,No Use of Force,54.34
+Escalation - Three Choice,Israel,Mixtral 8x22B,Refused to Answer,0.0
 Escalation - Three Choice,Israel,Mixtral 8x22B,Threat of Force,41.63
 Escalation - Three Choice,Israel,Mixtral 8x22B,Use of Force,11.21
-Escalation - Three Choice,Israel,Mixtral 8x22B,Refused to Answer,0.0
-Escalation - Three Choice,Israel,Claude 3.5 Sonnet,No Use of Force,55.07
+Escalation - Three Choice,Israel,Mixtral 8x22B,No Use of Force,47.16
+Escalation - Three Choice,Israel,Claude 3.5 Sonnet,Refused to Answer,0.0
 Escalation - Three Choice,Israel,Claude 3.5 Sonnet,Threat of Force,31.49
 Escalation - Three Choice,Israel,Claude 3.5 Sonnet,Use of Force,13.43
-Escalation - Three Choice,Israel,Claude 3.5 Sonnet,Refused to Answer,0.0
-Escalation - Three Choice,Israel,Llama 3.1 8B Instruct,No Use of Force,35.58
+Escalation - Three Choice,Israel,Claude 3.5 Sonnet,No Use of Force,55.07
+Escalation - Three Choice,Israel,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Israel,Llama 3.1 8B Instruct,Threat of Force,17.39
 Escalation - Three Choice,Israel,Llama 3.1 8B Instruct,Use of Force,47.03
-Escalation - Three Choice,Israel,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,Israel,Qwen2 72B,No Use of Force,33.91
+Escalation - Three Choice,Israel,Llama 3.1 8B Instruct,No Use of Force,35.58
+Escalation - Three Choice,Israel,Qwen2 72B,Refused to Answer,0.0
 Escalation - Three Choice,Israel,Qwen2 72B,Threat of Force,19.04
 Escalation - Three Choice,Israel,Qwen2 72B,Use of Force,47.05
-Escalation - Three Choice,Israel,Qwen2 72B,Refused to Answer,0.0
-Escalation - Three Choice,Israel,Llama 3.1 70B Instruct,No Use of Force,41.95
+Escalation - Three Choice,Israel,Qwen2 72B,No Use of Force,33.91
+Escalation - Three Choice,Israel,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Escalation - Three Choice,Israel,Llama 3.1 70B Instruct,Threat of Force,49.35
 Escalation - Three Choice,Israel,Llama 3.1 70B Instruct,Use of Force,8.7
-Escalation - Three Choice,Israel,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Escalation - Three Choice,Israel,Gemini 1.5 Pro-002,No Use of Force,38.25
+Escalation - Three Choice,Israel,Llama 3.1 70B Instruct,No Use of Force,41.95
+Escalation - Three Choice,Israel,DeepSeek V3,Refused to Answer,0.0
+Escalation - Three Choice,Israel,DeepSeek V3,Threat of Force,40.36
+Escalation - Three Choice,Israel,DeepSeek V3,Use of Force,17.84
+Escalation - Three Choice,Israel,DeepSeek V3,No Use of Force,41.81
+Escalation - Three Choice,Israel,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Escalation - Three Choice,Israel,Gemini 1.5 Pro-002,Threat of Force,53.06
 Escalation - Three Choice,Israel,Gemini 1.5 Pro-002,Use of Force,8.7
-Escalation - Three Choice,Israel,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Cooperation,United States,Claude 3.5 Sonnet,Refused to Answer,0.06
-Cooperation,United States,Claude 3.5 Sonnet,Cooperative,92.65
+Escalation - Three Choice,Israel,Gemini 1.5 Pro-002,No Use of Force,38.25
 Cooperation,United States,Claude 3.5 Sonnet,Non-cooperative,7.29
-Cooperation,United States,GPT-4o,Refused to Answer,0.0
-Cooperation,United States,GPT-4o,Cooperative,87.92
+Cooperation,United States,Claude 3.5 Sonnet,Cooperative,92.65
+Cooperation,United States,Claude 3.5 Sonnet,Refused to Answer,0.06
 Cooperation,United States,GPT-4o,Non-cooperative,12.08
-Cooperation,United States,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,United States,Mixtral 8x22B,Cooperative,83.07
+Cooperation,United States,GPT-4o,Cooperative,87.92
+Cooperation,United States,GPT-4o,Refused to Answer,0.0
 Cooperation,United States,Mixtral 8x22B,Non-cooperative,16.93
-Cooperation,United States,Qwen2 72B,Refused to Answer,0.0
-Cooperation,United States,Qwen2 72B,Cooperative,91.29
+Cooperation,United States,Mixtral 8x22B,Cooperative,83.07
+Cooperation,United States,Mixtral 8x22B,Refused to Answer,0.0
 Cooperation,United States,Qwen2 72B,Non-cooperative,8.71
-Cooperation,United States,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,United States,Llama 3.1 8B Instruct,Cooperative,83.84
+Cooperation,United States,Qwen2 72B,Cooperative,91.29
+Cooperation,United States,Qwen2 72B,Refused to Answer,0.0
 Cooperation,United States,Llama 3.1 8B Instruct,Non-cooperative,16.16
-Cooperation,United States,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,United States,Llama 3.1 70B Instruct,Cooperative,85.34
+Cooperation,United States,Llama 3.1 8B Instruct,Cooperative,83.84
+Cooperation,United States,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,United States,DeepSeek V3,Non-cooperative,10.34
+Cooperation,United States,DeepSeek V3,Cooperative,89.66
+Cooperation,United States,DeepSeek V3,Refused to Answer,0.0
 Cooperation,United States,Llama 3.1 70B Instruct,Non-cooperative,14.66
-Cooperation,United States,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Cooperation,United States,Gemini 1.5 Pro-002,Cooperative,89.57
+Cooperation,United States,Llama 3.1 70B Instruct,Cooperative,85.34
+Cooperation,United States,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Cooperation,United States,Gemini 1.5 Pro-002,Non-cooperative,10.43
-Cooperation,China,Claude 3.5 Sonnet,Refused to Answer,0.0
-Cooperation,China,Claude 3.5 Sonnet,Cooperative,84.41
+Cooperation,United States,Gemini 1.5 Pro-002,Cooperative,89.57
+Cooperation,United States,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Cooperation,China,Claude 3.5 Sonnet,Non-cooperative,15.59
-Cooperation,China,GPT-4o,Refused to Answer,0.0
-Cooperation,China,GPT-4o,Cooperative,81.72
+Cooperation,China,Claude 3.5 Sonnet,Cooperative,84.41
+Cooperation,China,Claude 3.5 Sonnet,Refused to Answer,0.0
 Cooperation,China,GPT-4o,Non-cooperative,18.28
-Cooperation,China,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,China,Mixtral 8x22B,Cooperative,79.24
+Cooperation,China,GPT-4o,Cooperative,81.72
+Cooperation,China,GPT-4o,Refused to Answer,0.0
 Cooperation,China,Mixtral 8x22B,Non-cooperative,20.76
-Cooperation,China,Qwen2 72B,Refused to Answer,0.0
-Cooperation,China,Qwen2 72B,Cooperative,86.9
+Cooperation,China,Mixtral 8x22B,Cooperative,79.24
+Cooperation,China,Mixtral 8x22B,Refused to Answer,0.0
 Cooperation,China,Qwen2 72B,Non-cooperative,13.1
-Cooperation,China,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,China,Llama 3.1 8B Instruct,Cooperative,79.16
+Cooperation,China,Qwen2 72B,Cooperative,86.9
+Cooperation,China,Qwen2 72B,Refused to Answer,0.0
 Cooperation,China,Llama 3.1 8B Instruct,Non-cooperative,20.84
-Cooperation,China,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,China,Llama 3.1 70B Instruct,Cooperative,81.59
+Cooperation,China,Llama 3.1 8B Instruct,Cooperative,79.16
+Cooperation,China,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,China,DeepSeek V3,Non-cooperative,20.18
+Cooperation,China,DeepSeek V3,Cooperative,79.82
+Cooperation,China,DeepSeek V3,Refused to Answer,0.0
 Cooperation,China,Llama 3.1 70B Instruct,Non-cooperative,18.41
-Cooperation,China,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Cooperation,China,Gemini 1.5 Pro-002,Cooperative,79.1
+Cooperation,China,Llama 3.1 70B Instruct,Cooperative,81.59
+Cooperation,China,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Cooperation,China,Gemini 1.5 Pro-002,Non-cooperative,20.9
-Cooperation,Russia,Claude 3.5 Sonnet,Refused to Answer,0.0
-Cooperation,Russia,Claude 3.5 Sonnet,Cooperative,89.17
+Cooperation,China,Gemini 1.5 Pro-002,Cooperative,79.1
+Cooperation,China,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Cooperation,Russia,Claude 3.5 Sonnet,Non-cooperative,10.83
-Cooperation,Russia,GPT-4o,Refused to Answer,0.0
-Cooperation,Russia,GPT-4o,Cooperative,75.26
+Cooperation,Russia,Claude 3.5 Sonnet,Cooperative,89.17
+Cooperation,Russia,Claude 3.5 Sonnet,Refused to Answer,0.0
 Cooperation,Russia,GPT-4o,Non-cooperative,24.74
-Cooperation,Russia,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,Russia,Mixtral 8x22B,Cooperative,80.16
+Cooperation,Russia,GPT-4o,Cooperative,75.26
+Cooperation,Russia,GPT-4o,Refused to Answer,0.0
 Cooperation,Russia,Mixtral 8x22B,Non-cooperative,19.84
-Cooperation,Russia,Qwen2 72B,Refused to Answer,0.0
-Cooperation,Russia,Qwen2 72B,Cooperative,89.29
+Cooperation,Russia,Mixtral 8x22B,Cooperative,80.16
+Cooperation,Russia,Mixtral 8x22B,Refused to Answer,0.0
 Cooperation,Russia,Qwen2 72B,Non-cooperative,10.71
-Cooperation,Russia,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,Russia,Llama 3.1 8B Instruct,Cooperative,78.85
+Cooperation,Russia,Qwen2 72B,Cooperative,89.29
+Cooperation,Russia,Qwen2 72B,Refused to Answer,0.0
 Cooperation,Russia,Llama 3.1 8B Instruct,Non-cooperative,21.15
-Cooperation,Russia,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,Russia,Llama 3.1 70B Instruct,Cooperative,83.08
+Cooperation,Russia,Llama 3.1 8B Instruct,Cooperative,78.85
+Cooperation,Russia,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,Russia,DeepSeek V3,Non-cooperative,33.29
+Cooperation,Russia,DeepSeek V3,Cooperative,66.71
+Cooperation,Russia,DeepSeek V3,Refused to Answer,0.0
 Cooperation,Russia,Llama 3.1 70B Instruct,Non-cooperative,16.92
-Cooperation,Russia,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Cooperation,Russia,Gemini 1.5 Pro-002,Cooperative,78.18
+Cooperation,Russia,Llama 3.1 70B Instruct,Cooperative,83.08
+Cooperation,Russia,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Cooperation,Russia,Gemini 1.5 Pro-002,Non-cooperative,21.82
-Cooperation,United Kingdom,Claude 3.5 Sonnet,Refused to Answer,0.0
-Cooperation,United Kingdom,Claude 3.5 Sonnet,Cooperative,92.71
+Cooperation,Russia,Gemini 1.5 Pro-002,Cooperative,78.18
+Cooperation,Russia,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Cooperation,United Kingdom,Claude 3.5 Sonnet,Non-cooperative,7.29
-Cooperation,United Kingdom,GPT-4o,Refused to Answer,0.0
-Cooperation,United Kingdom,GPT-4o,Cooperative,88.99
+Cooperation,United Kingdom,Claude 3.5 Sonnet,Cooperative,92.71
+Cooperation,United Kingdom,Claude 3.5 Sonnet,Refused to Answer,0.0
 Cooperation,United Kingdom,GPT-4o,Non-cooperative,11.01
-Cooperation,United Kingdom,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,United Kingdom,Mixtral 8x22B,Cooperative,81.78
+Cooperation,United Kingdom,GPT-4o,Cooperative,88.99
+Cooperation,United Kingdom,GPT-4o,Refused to Answer,0.0
 Cooperation,United Kingdom,Mixtral 8x22B,Non-cooperative,18.22
-Cooperation,United Kingdom,Qwen2 72B,Refused to Answer,0.0
-Cooperation,United Kingdom,Qwen2 72B,Cooperative,91.11
+Cooperation,United Kingdom,Mixtral 8x22B,Cooperative,81.78
+Cooperation,United Kingdom,Mixtral 8x22B,Refused to Answer,0.0
 Cooperation,United Kingdom,Qwen2 72B,Non-cooperative,8.89
-Cooperation,United Kingdom,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,United Kingdom,Llama 3.1 8B Instruct,Cooperative,83.26
+Cooperation,United Kingdom,Qwen2 72B,Cooperative,91.11
+Cooperation,United Kingdom,Qwen2 72B,Refused to Answer,0.0
 Cooperation,United Kingdom,Llama 3.1 8B Instruct,Non-cooperative,16.74
-Cooperation,United Kingdom,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,United Kingdom,Llama 3.1 70B Instruct,Cooperative,87.91
+Cooperation,United Kingdom,Llama 3.1 8B Instruct,Cooperative,83.26
+Cooperation,United Kingdom,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,United Kingdom,DeepSeek V3,Non-cooperative,9.22
+Cooperation,United Kingdom,DeepSeek V3,Cooperative,90.78
+Cooperation,United Kingdom,DeepSeek V3,Refused to Answer,0.0
 Cooperation,United Kingdom,Llama 3.1 70B Instruct,Non-cooperative,12.09
-Cooperation,United Kingdom,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Cooperation,United Kingdom,Gemini 1.5 Pro-002,Cooperative,91.93
+Cooperation,United Kingdom,Llama 3.1 70B Instruct,Cooperative,87.91
+Cooperation,United Kingdom,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Cooperation,United Kingdom,Gemini 1.5 Pro-002,Non-cooperative,8.07
-Cooperation,India,Claude 3.5 Sonnet,Refused to Answer,0.0
-Cooperation,India,Claude 3.5 Sonnet,Cooperative,91.56
+Cooperation,United Kingdom,Gemini 1.5 Pro-002,Cooperative,91.93
+Cooperation,United Kingdom,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Cooperation,India,Claude 3.5 Sonnet,Non-cooperative,8.44
-Cooperation,India,GPT-4o,Refused to Answer,0.0
-Cooperation,India,GPT-4o,Cooperative,84.98
+Cooperation,India,Claude 3.5 Sonnet,Cooperative,91.56
+Cooperation,India,Claude 3.5 Sonnet,Refused to Answer,0.0
 Cooperation,India,GPT-4o,Non-cooperative,15.02
-Cooperation,India,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,India,Mixtral 8x22B,Cooperative,81.05
+Cooperation,India,GPT-4o,Cooperative,84.98
+Cooperation,India,GPT-4o,Refused to Answer,0.0
 Cooperation,India,Mixtral 8x22B,Non-cooperative,18.95
-Cooperation,India,Qwen2 72B,Refused to Answer,0.0
-Cooperation,India,Qwen2 72B,Cooperative,89.87
+Cooperation,India,Mixtral 8x22B,Cooperative,81.05
+Cooperation,India,Mixtral 8x22B,Refused to Answer,0.0
 Cooperation,India,Qwen2 72B,Non-cooperative,10.13
-Cooperation,India,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,India,Llama 3.1 8B Instruct,Cooperative,81.31
+Cooperation,India,Qwen2 72B,Cooperative,89.87
+Cooperation,India,Qwen2 72B,Refused to Answer,0.0
 Cooperation,India,Llama 3.1 8B Instruct,Non-cooperative,18.69
-Cooperation,India,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,India,Llama 3.1 70B Instruct,Cooperative,80.85
+Cooperation,India,Llama 3.1 8B Instruct,Cooperative,81.31
+Cooperation,India,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,India,DeepSeek V3,Non-cooperative,15.57
+Cooperation,India,DeepSeek V3,Cooperative,84.43
+Cooperation,India,DeepSeek V3,Refused to Answer,0.0
 Cooperation,India,Llama 3.1 70B Instruct,Non-cooperative,19.15
-Cooperation,India,Gemini 1.5 Pro-002,Refused to Answer,1.27
-Cooperation,India,Gemini 1.5 Pro-002,Cooperative,80.15
+Cooperation,India,Llama 3.1 70B Instruct,Cooperative,80.85
+Cooperation,India,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Cooperation,India,Gemini 1.5 Pro-002,Non-cooperative,18.58
-Cooperation,France,Claude 3.5 Sonnet,Refused to Answer,0.04
-Cooperation,France,Claude 3.5 Sonnet,Cooperative,95.63
+Cooperation,India,Gemini 1.5 Pro-002,Cooperative,80.15
+Cooperation,India,Gemini 1.5 Pro-002,Refused to Answer,1.27
 Cooperation,France,Claude 3.5 Sonnet,Non-cooperative,4.34
-Cooperation,France,GPT-4o,Refused to Answer,0.0
-Cooperation,France,GPT-4o,Cooperative,91.56
+Cooperation,France,Claude 3.5 Sonnet,Cooperative,95.63
+Cooperation,France,Claude 3.5 Sonnet,Refused to Answer,0.04
 Cooperation,France,GPT-4o,Non-cooperative,8.44
-Cooperation,France,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,France,Mixtral 8x22B,Cooperative,86.82
+Cooperation,France,GPT-4o,Cooperative,91.56
+Cooperation,France,GPT-4o,Refused to Answer,0.0
 Cooperation,France,Mixtral 8x22B,Non-cooperative,13.18
-Cooperation,France,Qwen2 72B,Refused to Answer,0.0
-Cooperation,France,Qwen2 72B,Cooperative,93.06
+Cooperation,France,Mixtral 8x22B,Cooperative,86.82
+Cooperation,France,Mixtral 8x22B,Refused to Answer,0.0
 Cooperation,France,Qwen2 72B,Non-cooperative,6.94
-Cooperation,France,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,France,Llama 3.1 8B Instruct,Cooperative,87.39
+Cooperation,France,Qwen2 72B,Cooperative,93.06
+Cooperation,France,Qwen2 72B,Refused to Answer,0.0
 Cooperation,France,Llama 3.1 8B Instruct,Non-cooperative,12.61
-Cooperation,France,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,France,Llama 3.1 70B Instruct,Cooperative,88.6
+Cooperation,France,Llama 3.1 8B Instruct,Cooperative,87.39
+Cooperation,France,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,France,DeepSeek V3,Non-cooperative,6.84
+Cooperation,France,DeepSeek V3,Cooperative,93.16
+Cooperation,France,DeepSeek V3,Refused to Answer,0.0
 Cooperation,France,Llama 3.1 70B Instruct,Non-cooperative,11.4
-Cooperation,France,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Cooperation,France,Gemini 1.5 Pro-002,Cooperative,88.32
+Cooperation,France,Llama 3.1 70B Instruct,Cooperative,88.6
+Cooperation,France,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Cooperation,France,Gemini 1.5 Pro-002,Non-cooperative,11.68
-Cooperation,Iran,Claude 3.5 Sonnet,Refused to Answer,1.82
-Cooperation,Iran,Claude 3.5 Sonnet,Cooperative,88.07
+Cooperation,France,Gemini 1.5 Pro-002,Cooperative,88.32
+Cooperation,France,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Cooperation,Iran,Claude 3.5 Sonnet,Non-cooperative,10.11
-Cooperation,Iran,GPT-4o,Refused to Answer,0.0
-Cooperation,Iran,GPT-4o,Cooperative,79.05
+Cooperation,Iran,Claude 3.5 Sonnet,Cooperative,88.07
+Cooperation,Iran,Claude 3.5 Sonnet,Refused to Answer,1.82
 Cooperation,Iran,GPT-4o,Non-cooperative,20.95
-Cooperation,Iran,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,Iran,Mixtral 8x22B,Cooperative,79.77
+Cooperation,Iran,GPT-4o,Cooperative,79.05
+Cooperation,Iran,GPT-4o,Refused to Answer,0.0
 Cooperation,Iran,Mixtral 8x22B,Non-cooperative,20.23
-Cooperation,Iran,Qwen2 72B,Refused to Answer,0.0
-Cooperation,Iran,Qwen2 72B,Cooperative,87.27
+Cooperation,Iran,Mixtral 8x22B,Cooperative,79.77
+Cooperation,Iran,Mixtral 8x22B,Refused to Answer,0.0
 Cooperation,Iran,Qwen2 72B,Non-cooperative,12.73
-Cooperation,Iran,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,Iran,Llama 3.1 8B Instruct,Cooperative,78.79
+Cooperation,Iran,Qwen2 72B,Cooperative,87.27
+Cooperation,Iran,Qwen2 72B,Refused to Answer,0.0
 Cooperation,Iran,Llama 3.1 8B Instruct,Non-cooperative,21.21
-Cooperation,Iran,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,Iran,Llama 3.1 70B Instruct,Cooperative,83.44
+Cooperation,Iran,Llama 3.1 8B Instruct,Cooperative,78.79
+Cooperation,Iran,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,Iran,DeepSeek V3,Non-cooperative,26.9
+Cooperation,Iran,DeepSeek V3,Cooperative,73.1
+Cooperation,Iran,DeepSeek V3,Refused to Answer,0.0
 Cooperation,Iran,Llama 3.1 70B Instruct,Non-cooperative,16.56
-Cooperation,Iran,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Cooperation,Iran,Gemini 1.5 Pro-002,Cooperative,79.03
+Cooperation,Iran,Llama 3.1 70B Instruct,Cooperative,83.44
+Cooperation,Iran,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Cooperation,Iran,Gemini 1.5 Pro-002,Non-cooperative,20.97
-Cooperation,Pakistan,Claude 3.5 Sonnet,Refused to Answer,0.08
-Cooperation,Pakistan,Claude 3.5 Sonnet,Cooperative,90.72
+Cooperation,Iran,Gemini 1.5 Pro-002,Cooperative,79.03
+Cooperation,Iran,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Cooperation,Pakistan,Claude 3.5 Sonnet,Non-cooperative,9.2
-Cooperation,Pakistan,GPT-4o,Refused to Answer,0.0
-Cooperation,Pakistan,GPT-4o,Cooperative,79.6
+Cooperation,Pakistan,Claude 3.5 Sonnet,Cooperative,90.72
+Cooperation,Pakistan,Claude 3.5 Sonnet,Refused to Answer,0.08
 Cooperation,Pakistan,GPT-4o,Non-cooperative,20.4
-Cooperation,Pakistan,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,Pakistan,Mixtral 8x22B,Cooperative,86.19
+Cooperation,Pakistan,GPT-4o,Cooperative,79.6
+Cooperation,Pakistan,GPT-4o,Refused to Answer,0.0
 Cooperation,Pakistan,Mixtral 8x22B,Non-cooperative,13.81
-Cooperation,Pakistan,Qwen2 72B,Refused to Answer,0.0
-Cooperation,Pakistan,Qwen2 72B,Cooperative,88.57
+Cooperation,Pakistan,Mixtral 8x22B,Cooperative,86.19
+Cooperation,Pakistan,Mixtral 8x22B,Refused to Answer,0.0
 Cooperation,Pakistan,Qwen2 72B,Non-cooperative,11.43
-Cooperation,Pakistan,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,Pakistan,Llama 3.1 8B Instruct,Cooperative,79.69
+Cooperation,Pakistan,Qwen2 72B,Cooperative,88.57
+Cooperation,Pakistan,Qwen2 72B,Refused to Answer,0.0
 Cooperation,Pakistan,Llama 3.1 8B Instruct,Non-cooperative,20.31
-Cooperation,Pakistan,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,Pakistan,Llama 3.1 70B Instruct,Cooperative,80.29
+Cooperation,Pakistan,Llama 3.1 8B Instruct,Cooperative,79.69
+Cooperation,Pakistan,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,Pakistan,DeepSeek V3,Non-cooperative,14.23
+Cooperation,Pakistan,DeepSeek V3,Cooperative,85.77
+Cooperation,Pakistan,DeepSeek V3,Refused to Answer,0.0
 Cooperation,Pakistan,Llama 3.1 70B Instruct,Non-cooperative,19.71
-Cooperation,Pakistan,Gemini 1.5 Pro-002,Refused to Answer,0.04
-Cooperation,Pakistan,Gemini 1.5 Pro-002,Cooperative,83.93
+Cooperation,Pakistan,Llama 3.1 70B Instruct,Cooperative,80.29
+Cooperation,Pakistan,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Cooperation,Pakistan,Gemini 1.5 Pro-002,Non-cooperative,16.03
-Cooperation,Saudi Arabia,Claude 3.5 Sonnet,Refused to Answer,0.0
-Cooperation,Saudi Arabia,Claude 3.5 Sonnet,Cooperative,92.26
+Cooperation,Pakistan,Gemini 1.5 Pro-002,Cooperative,83.93
+Cooperation,Pakistan,Gemini 1.5 Pro-002,Refused to Answer,0.04
 Cooperation,Saudi Arabia,Claude 3.5 Sonnet,Non-cooperative,7.74
-Cooperation,Saudi Arabia,GPT-4o,Refused to Answer,0.0
-Cooperation,Saudi Arabia,GPT-4o,Cooperative,75.79
+Cooperation,Saudi Arabia,Claude 3.5 Sonnet,Cooperative,92.26
+Cooperation,Saudi Arabia,Claude 3.5 Sonnet,Refused to Answer,0.0
 Cooperation,Saudi Arabia,GPT-4o,Non-cooperative,24.21
-Cooperation,Saudi Arabia,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,Saudi Arabia,Mixtral 8x22B,Cooperative,78.91
+Cooperation,Saudi Arabia,GPT-4o,Cooperative,75.79
+Cooperation,Saudi Arabia,GPT-4o,Refused to Answer,0.0
 Cooperation,Saudi Arabia,Mixtral 8x22B,Non-cooperative,21.09
-Cooperation,Saudi Arabia,Qwen2 72B,Refused to Answer,0.0
-Cooperation,Saudi Arabia,Qwen2 72B,Cooperative,87.76
+Cooperation,Saudi Arabia,Mixtral 8x22B,Cooperative,78.91
+Cooperation,Saudi Arabia,Mixtral 8x22B,Refused to Answer,0.0
 Cooperation,Saudi Arabia,Qwen2 72B,Non-cooperative,12.24
-Cooperation,Saudi Arabia,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,Saudi Arabia,Llama 3.1 8B Instruct,Cooperative,76.24
+Cooperation,Saudi Arabia,Qwen2 72B,Cooperative,87.76
+Cooperation,Saudi Arabia,Qwen2 72B,Refused to Answer,0.0
 Cooperation,Saudi Arabia,Llama 3.1 8B Instruct,Non-cooperative,23.76
-Cooperation,Saudi Arabia,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,Saudi Arabia,Llama 3.1 70B Instruct,Cooperative,77.34
+Cooperation,Saudi Arabia,Llama 3.1 8B Instruct,Cooperative,76.24
+Cooperation,Saudi Arabia,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,Saudi Arabia,DeepSeek V3,Non-cooperative,22.19
+Cooperation,Saudi Arabia,DeepSeek V3,Cooperative,77.81
+Cooperation,Saudi Arabia,DeepSeek V3,Refused to Answer,0.0
 Cooperation,Saudi Arabia,Llama 3.1 70B Instruct,Non-cooperative,22.66
-Cooperation,Saudi Arabia,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Cooperation,Saudi Arabia,Gemini 1.5 Pro-002,Cooperative,81.31
+Cooperation,Saudi Arabia,Llama 3.1 70B Instruct,Cooperative,77.34
+Cooperation,Saudi Arabia,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Cooperation,Saudi Arabia,Gemini 1.5 Pro-002,Non-cooperative,18.69
-Cooperation,Israel,Claude 3.5 Sonnet,Refused to Answer,1.82
-Cooperation,Israel,Claude 3.5 Sonnet,Cooperative,93.33
+Cooperation,Saudi Arabia,Gemini 1.5 Pro-002,Cooperative,81.31
+Cooperation,Saudi Arabia,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Cooperation,Israel,Claude 3.5 Sonnet,Non-cooperative,4.85
-Cooperation,Israel,GPT-4o,Refused to Answer,3.64
-Cooperation,Israel,GPT-4o,Cooperative,82.83
+Cooperation,Israel,Claude 3.5 Sonnet,Cooperative,93.33
+Cooperation,Israel,Claude 3.5 Sonnet,Refused to Answer,1.82
 Cooperation,Israel,GPT-4o,Non-cooperative,13.53
-Cooperation,Israel,Mixtral 8x22B,Refused to Answer,0.0
-Cooperation,Israel,Mixtral 8x22B,Cooperative,76.18
+Cooperation,Israel,GPT-4o,Cooperative,82.83
+Cooperation,Israel,GPT-4o,Refused to Answer,3.64
 Cooperation,Israel,Mixtral 8x22B,Non-cooperative,23.82
-Cooperation,Israel,Qwen2 72B,Refused to Answer,0.0
-Cooperation,Israel,Qwen2 72B,Cooperative,87.23
+Cooperation,Israel,Mixtral 8x22B,Cooperative,76.18
+Cooperation,Israel,Mixtral 8x22B,Refused to Answer,0.0
 Cooperation,Israel,Qwen2 72B,Non-cooperative,12.77
-Cooperation,Israel,Llama 3.1 8B Instruct,Refused to Answer,0.0
-Cooperation,Israel,Llama 3.1 8B Instruct,Cooperative,74.22
+Cooperation,Israel,Qwen2 72B,Cooperative,87.23
+Cooperation,Israel,Qwen2 72B,Refused to Answer,0.0
 Cooperation,Israel,Llama 3.1 8B Instruct,Non-cooperative,25.78
-Cooperation,Israel,Llama 3.1 70B Instruct,Refused to Answer,0.0
-Cooperation,Israel,Llama 3.1 70B Instruct,Cooperative,77.95
+Cooperation,Israel,Llama 3.1 8B Instruct,Cooperative,74.22
+Cooperation,Israel,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Cooperation,Israel,DeepSeek V3,Non-cooperative,15.84
+Cooperation,Israel,DeepSeek V3,Cooperative,84.16
+Cooperation,Israel,DeepSeek V3,Refused to Answer,0.0
 Cooperation,Israel,Llama 3.1 70B Instruct,Non-cooperative,22.05
-Cooperation,Israel,Gemini 1.5 Pro-002,Refused to Answer,0.0
-Cooperation,Israel,Gemini 1.5 Pro-002,Cooperative,84.07
+Cooperation,Israel,Llama 3.1 70B Instruct,Cooperative,77.95
+Cooperation,Israel,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Cooperation,Israel,Gemini 1.5 Pro-002,Non-cooperative,15.93
-Alliance Dynamics,United States,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Cooperation,Israel,Gemini 1.5 Pro-002,Cooperative,84.07
+Cooperation,Israel,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Alliance Dynamics,United States,Gemini 1.5 Pro-002,Power Maximization,6.16
-Alliance Dynamics,United States,Gemini 1.5 Pro-002,Balance,75.68
 Alliance Dynamics,United States,Gemini 1.5 Pro-002,Buck Pass,9.18
 Alliance Dynamics,United States,Gemini 1.5 Pro-002,Bandwagon,8.98
-Alliance Dynamics,United States,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,United States,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,United States,Gemini 1.5 Pro-002,Balance,75.68
 Alliance Dynamics,United States,Qwen2 72B,Power Maximization,5.48
-Alliance Dynamics,United States,Qwen2 72B,Balance,83.47
 Alliance Dynamics,United States,Qwen2 72B,Buck Pass,7.11
 Alliance Dynamics,United States,Qwen2 72B,Bandwagon,3.94
-Alliance Dynamics,United States,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,United States,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,United States,Qwen2 72B,Balance,83.47
 Alliance Dynamics,United States,Mixtral 8x22B,Power Maximization,1.37
-Alliance Dynamics,United States,Mixtral 8x22B,Balance,88.83
 Alliance Dynamics,United States,Mixtral 8x22B,Buck Pass,5.35
 Alliance Dynamics,United States,Mixtral 8x22B,Bandwagon,4.44
-Alliance Dynamics,United States,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,United States,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,United States,Mixtral 8x22B,Balance,88.83
 Alliance Dynamics,United States,GPT-4o,Power Maximization,4.11
-Alliance Dynamics,United States,GPT-4o,Balance,80.58
 Alliance Dynamics,United States,GPT-4o,Buck Pass,7.54
 Alliance Dynamics,United States,GPT-4o,Bandwagon,7.78
-Alliance Dynamics,United States,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,United States,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,United States,GPT-4o,Balance,80.58
 Alliance Dynamics,United States,Llama 3.1 8B Instruct,Power Maximization,4.11
-Alliance Dynamics,United States,Llama 3.1 8B Instruct,Balance,83.69
 Alliance Dynamics,United States,Llama 3.1 8B Instruct,Buck Pass,5.87
 Alliance Dynamics,United States,Llama 3.1 8B Instruct,Bandwagon,6.34
-Alliance Dynamics,United States,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,United States,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,United States,Llama 3.1 8B Instruct,Balance,83.69
 Alliance Dynamics,United States,Llama 3.1 70B Instruct,Power Maximization,2.74
-Alliance Dynamics,United States,Llama 3.1 70B Instruct,Balance,81.33
 Alliance Dynamics,United States,Llama 3.1 70B Instruct,Buck Pass,9.17
 Alliance Dynamics,United States,Llama 3.1 70B Instruct,Bandwagon,6.76
-Alliance Dynamics,United States,Claude 3.5 Sonnet,Refused to Answer,0.04
+Alliance Dynamics,United States,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,United States,Llama 3.1 70B Instruct,Balance,81.33
 Alliance Dynamics,United States,Claude 3.5 Sonnet,Power Maximization,2.74
-Alliance Dynamics,United States,Claude 3.5 Sonnet,Balance,83.92
 Alliance Dynamics,United States,Claude 3.5 Sonnet,Buck Pass,5.62
 Alliance Dynamics,United States,Claude 3.5 Sonnet,Bandwagon,7.68
-Alliance Dynamics,China,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,United States,Claude 3.5 Sonnet,Refused to Answer,0.04
+Alliance Dynamics,United States,Claude 3.5 Sonnet,Balance,83.92
+Alliance Dynamics,United States,DeepSeek V3,Power Maximization,5.48
+Alliance Dynamics,United States,DeepSeek V3,Buck Pass,10.03
+Alliance Dynamics,United States,DeepSeek V3,Bandwagon,8.16
+Alliance Dynamics,United States,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,United States,DeepSeek V3,Balance,76.33
 Alliance Dynamics,China,Gemini 1.5 Pro-002,Power Maximization,4.6
-Alliance Dynamics,China,Gemini 1.5 Pro-002,Balance,69.92
 Alliance Dynamics,China,Gemini 1.5 Pro-002,Buck Pass,13.41
 Alliance Dynamics,China,Gemini 1.5 Pro-002,Bandwagon,12.07
-Alliance Dynamics,China,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,China,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,China,Gemini 1.5 Pro-002,Balance,69.92
 Alliance Dynamics,China,Qwen2 72B,Power Maximization,6.9
-Alliance Dynamics,China,Qwen2 72B,Balance,76.83
 Alliance Dynamics,China,Qwen2 72B,Buck Pass,9.56
 Alliance Dynamics,China,Qwen2 72B,Bandwagon,6.7
-Alliance Dynamics,China,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,China,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,China,Qwen2 72B,Balance,76.83
 Alliance Dynamics,China,Mixtral 8x22B,Power Maximization,1.15
-Alliance Dynamics,China,Mixtral 8x22B,Balance,81.9
 Alliance Dynamics,China,Mixtral 8x22B,Buck Pass,10.43
 Alliance Dynamics,China,Mixtral 8x22B,Bandwagon,6.51
-Alliance Dynamics,China,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,China,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,China,Mixtral 8x22B,Balance,81.9
 Alliance Dynamics,China,GPT-4o,Power Maximization,2.3
-Alliance Dynamics,China,GPT-4o,Balance,77.14
 Alliance Dynamics,China,GPT-4o,Buck Pass,11.61
 Alliance Dynamics,China,GPT-4o,Bandwagon,8.95
-Alliance Dynamics,China,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,China,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,China,GPT-4o,Balance,77.14
 Alliance Dynamics,China,Llama 3.1 8B Instruct,Power Maximization,5.75
-Alliance Dynamics,China,Llama 3.1 8B Instruct,Balance,76.18
 Alliance Dynamics,China,Llama 3.1 8B Instruct,Buck Pass,9.69
 Alliance Dynamics,China,Llama 3.1 8B Instruct,Bandwagon,8.38
-Alliance Dynamics,China,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,China,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,China,Llama 3.1 8B Instruct,Balance,76.18
 Alliance Dynamics,China,Llama 3.1 70B Instruct,Power Maximization,2.3
-Alliance Dynamics,China,Llama 3.1 70B Instruct,Balance,76.5
 Alliance Dynamics,China,Llama 3.1 70B Instruct,Buck Pass,12.3
 Alliance Dynamics,China,Llama 3.1 70B Instruct,Bandwagon,8.9
-Alliance Dynamics,China,Claude 3.5 Sonnet,Refused to Answer,0.03
+Alliance Dynamics,China,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,China,Llama 3.1 70B Instruct,Balance,76.5
 Alliance Dynamics,China,Claude 3.5 Sonnet,Power Maximization,1.15
-Alliance Dynamics,China,Claude 3.5 Sonnet,Balance,77.11
 Alliance Dynamics,China,Claude 3.5 Sonnet,Buck Pass,12.82
 Alliance Dynamics,China,Claude 3.5 Sonnet,Bandwagon,8.89
-Alliance Dynamics,Russia,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,China,Claude 3.5 Sonnet,Refused to Answer,0.03
+Alliance Dynamics,China,Claude 3.5 Sonnet,Balance,77.11
+Alliance Dynamics,China,DeepSeek V3,Power Maximization,3.45
+Alliance Dynamics,China,DeepSeek V3,Buck Pass,13.66
+Alliance Dynamics,China,DeepSeek V3,Bandwagon,7.75
+Alliance Dynamics,China,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,China,DeepSeek V3,Balance,75.14
 Alliance Dynamics,Russia,Gemini 1.5 Pro-002,Power Maximization,5.19
-Alliance Dynamics,Russia,Gemini 1.5 Pro-002,Balance,63.58
 Alliance Dynamics,Russia,Gemini 1.5 Pro-002,Buck Pass,12.02
 Alliance Dynamics,Russia,Gemini 1.5 Pro-002,Bandwagon,19.2
-Alliance Dynamics,Russia,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Russia,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,Russia,Gemini 1.5 Pro-002,Balance,63.58
 Alliance Dynamics,Russia,Qwen2 72B,Power Maximization,6.49
-Alliance Dynamics,Russia,Qwen2 72B,Balance,78.72
 Alliance Dynamics,Russia,Qwen2 72B,Buck Pass,6.86
 Alliance Dynamics,Russia,Qwen2 72B,Bandwagon,7.92
-Alliance Dynamics,Russia,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,Russia,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Russia,Qwen2 72B,Balance,78.72
 Alliance Dynamics,Russia,Mixtral 8x22B,Power Maximization,0.0
-Alliance Dynamics,Russia,Mixtral 8x22B,Balance,79.99
 Alliance Dynamics,Russia,Mixtral 8x22B,Buck Pass,9.56
 Alliance Dynamics,Russia,Mixtral 8x22B,Bandwagon,10.45
-Alliance Dynamics,Russia,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Russia,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,Russia,Mixtral 8x22B,Balance,79.99
 Alliance Dynamics,Russia,GPT-4o,Power Maximization,3.9
-Alliance Dynamics,Russia,GPT-4o,Balance,74.02
 Alliance Dynamics,Russia,GPT-4o,Buck Pass,11.74
 Alliance Dynamics,Russia,GPT-4o,Bandwagon,10.35
-Alliance Dynamics,Russia,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Russia,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Russia,GPT-4o,Balance,74.02
 Alliance Dynamics,Russia,Llama 3.1 8B Instruct,Power Maximization,6.49
-Alliance Dynamics,Russia,Llama 3.1 8B Instruct,Balance,74.08
 Alliance Dynamics,Russia,Llama 3.1 8B Instruct,Buck Pass,9.36
 Alliance Dynamics,Russia,Llama 3.1 8B Instruct,Bandwagon,10.06
-Alliance Dynamics,Russia,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Russia,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Russia,Llama 3.1 8B Instruct,Balance,74.08
 Alliance Dynamics,Russia,Llama 3.1 70B Instruct,Power Maximization,2.6
-Alliance Dynamics,Russia,Llama 3.1 70B Instruct,Balance,77.78
 Alliance Dynamics,Russia,Llama 3.1 70B Instruct,Buck Pass,10.82
 Alliance Dynamics,Russia,Llama 3.1 70B Instruct,Bandwagon,8.8
-Alliance Dynamics,Russia,Claude 3.5 Sonnet,Refused to Answer,0.07
+Alliance Dynamics,Russia,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Russia,Llama 3.1 70B Instruct,Balance,77.78
 Alliance Dynamics,Russia,Claude 3.5 Sonnet,Power Maximization,2.6
-Alliance Dynamics,Russia,Claude 3.5 Sonnet,Balance,76.46
 Alliance Dynamics,Russia,Claude 3.5 Sonnet,Buck Pass,11.5
 Alliance Dynamics,Russia,Claude 3.5 Sonnet,Bandwagon,9.38
-Alliance Dynamics,United Kingdom,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,Russia,Claude 3.5 Sonnet,Refused to Answer,0.07
+Alliance Dynamics,Russia,Claude 3.5 Sonnet,Balance,76.46
+Alliance Dynamics,Russia,DeepSeek V3,Power Maximization,6.49
+Alliance Dynamics,Russia,DeepSeek V3,Buck Pass,11.72
+Alliance Dynamics,Russia,DeepSeek V3,Bandwagon,8.7
+Alliance Dynamics,Russia,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,Russia,DeepSeek V3,Balance,73.08
 Alliance Dynamics,United Kingdom,Gemini 1.5 Pro-002,Power Maximization,4.23
-Alliance Dynamics,United Kingdom,Gemini 1.5 Pro-002,Balance,73.71
 Alliance Dynamics,United Kingdom,Gemini 1.5 Pro-002,Buck Pass,8.31
 Alliance Dynamics,United Kingdom,Gemini 1.5 Pro-002,Bandwagon,13.76
-Alliance Dynamics,United Kingdom,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,Gemini 1.5 Pro-002,Balance,73.71
 Alliance Dynamics,United Kingdom,Qwen2 72B,Power Maximization,5.63
-Alliance Dynamics,United Kingdom,Qwen2 72B,Balance,77.64
 Alliance Dynamics,United Kingdom,Qwen2 72B,Buck Pass,6.21
 Alliance Dynamics,United Kingdom,Qwen2 72B,Bandwagon,10.52
-Alliance Dynamics,United Kingdom,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,Qwen2 72B,Balance,77.64
 Alliance Dynamics,United Kingdom,Mixtral 8x22B,Power Maximization,1.41
-Alliance Dynamics,United Kingdom,Mixtral 8x22B,Balance,83.5
 Alliance Dynamics,United Kingdom,Mixtral 8x22B,Buck Pass,5.24
 Alliance Dynamics,United Kingdom,Mixtral 8x22B,Bandwagon,9.86
-Alliance Dynamics,United Kingdom,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,Mixtral 8x22B,Balance,83.5
 Alliance Dynamics,United Kingdom,GPT-4o,Power Maximization,5.63
-Alliance Dynamics,United Kingdom,GPT-4o,Balance,76.17
 Alliance Dynamics,United Kingdom,GPT-4o,Buck Pass,8.6
 Alliance Dynamics,United Kingdom,GPT-4o,Bandwagon,9.6
-Alliance Dynamics,United Kingdom,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,GPT-4o,Balance,76.17
 Alliance Dynamics,United Kingdom,Llama 3.1 8B Instruct,Power Maximization,5.63
-Alliance Dynamics,United Kingdom,Llama 3.1 8B Instruct,Balance,73.35
 Alliance Dynamics,United Kingdom,Llama 3.1 8B Instruct,Buck Pass,6.93
 Alliance Dynamics,United Kingdom,Llama 3.1 8B Instruct,Bandwagon,14.08
-Alliance Dynamics,United Kingdom,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,Llama 3.1 8B Instruct,Balance,73.35
 Alliance Dynamics,United Kingdom,Llama 3.1 70B Instruct,Power Maximization,2.82
-Alliance Dynamics,United Kingdom,Llama 3.1 70B Instruct,Balance,77.97
 Alliance Dynamics,United Kingdom,Llama 3.1 70B Instruct,Buck Pass,9.46
 Alliance Dynamics,United Kingdom,Llama 3.1 70B Instruct,Bandwagon,9.75
-Alliance Dynamics,United Kingdom,Claude 3.5 Sonnet,Refused to Answer,0.04
+Alliance Dynamics,United Kingdom,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,Llama 3.1 70B Instruct,Balance,77.97
 Alliance Dynamics,United Kingdom,Claude 3.5 Sonnet,Power Maximization,4.23
-Alliance Dynamics,United Kingdom,Claude 3.5 Sonnet,Balance,79.61
 Alliance Dynamics,United Kingdom,Claude 3.5 Sonnet,Buck Pass,6.83
 Alliance Dynamics,United Kingdom,Claude 3.5 Sonnet,Bandwagon,9.3
-Alliance Dynamics,India,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,Claude 3.5 Sonnet,Refused to Answer,0.04
+Alliance Dynamics,United Kingdom,Claude 3.5 Sonnet,Balance,79.61
+Alliance Dynamics,United Kingdom,DeepSeek V3,Power Maximization,4.23
+Alliance Dynamics,United Kingdom,DeepSeek V3,Buck Pass,11.99
+Alliance Dynamics,United Kingdom,DeepSeek V3,Bandwagon,13.12
+Alliance Dynamics,United Kingdom,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,United Kingdom,DeepSeek V3,Balance,70.67
 Alliance Dynamics,India,Gemini 1.5 Pro-002,Power Maximization,3.75
-Alliance Dynamics,India,Gemini 1.5 Pro-002,Balance,77.13
 Alliance Dynamics,India,Gemini 1.5 Pro-002,Buck Pass,9.28
 Alliance Dynamics,India,Gemini 1.5 Pro-002,Bandwagon,9.84
-Alliance Dynamics,India,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,India,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,India,Gemini 1.5 Pro-002,Balance,77.13
 Alliance Dynamics,India,Qwen2 72B,Power Maximization,7.5
-Alliance Dynamics,India,Qwen2 72B,Balance,81.15
 Alliance Dynamics,India,Qwen2 72B,Buck Pass,7.34
 Alliance Dynamics,India,Qwen2 72B,Bandwagon,4.01
-Alliance Dynamics,India,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,India,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,India,Qwen2 72B,Balance,81.15
 Alliance Dynamics,India,Mixtral 8x22B,Power Maximization,2.5
-Alliance Dynamics,India,Mixtral 8x22B,Balance,86.15
 Alliance Dynamics,India,Mixtral 8x22B,Buck Pass,7.8
 Alliance Dynamics,India,Mixtral 8x22B,Bandwagon,3.54
-Alliance Dynamics,India,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,India,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,India,Mixtral 8x22B,Balance,86.15
 Alliance Dynamics,India,GPT-4o,Power Maximization,5.0
-Alliance Dynamics,India,GPT-4o,Balance,75.17
 Alliance Dynamics,India,GPT-4o,Buck Pass,10.82
 Alliance Dynamics,India,GPT-4o,Bandwagon,9.01
-Alliance Dynamics,India,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,India,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,India,GPT-4o,Balance,75.17
 Alliance Dynamics,India,Llama 3.1 8B Instruct,Power Maximization,6.25
-Alliance Dynamics,India,Llama 3.1 8B Instruct,Balance,78.97
 Alliance Dynamics,India,Llama 3.1 8B Instruct,Buck Pass,7.6
 Alliance Dynamics,India,Llama 3.1 8B Instruct,Bandwagon,7.19
-Alliance Dynamics,India,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,India,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,India,Llama 3.1 8B Instruct,Balance,78.97
 Alliance Dynamics,India,Llama 3.1 70B Instruct,Power Maximization,2.5
-Alliance Dynamics,India,Llama 3.1 70B Instruct,Balance,82.98
 Alliance Dynamics,India,Llama 3.1 70B Instruct,Buck Pass,7.65
 Alliance Dynamics,India,Llama 3.1 70B Instruct,Bandwagon,6.86
-Alliance Dynamics,India,Claude 3.5 Sonnet,Refused to Answer,0.03
+Alliance Dynamics,India,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,India,Llama 3.1 70B Instruct,Balance,82.98
 Alliance Dynamics,India,Claude 3.5 Sonnet,Power Maximization,3.75
-Alliance Dynamics,India,Claude 3.5 Sonnet,Balance,78.32
 Alliance Dynamics,India,Claude 3.5 Sonnet,Buck Pass,9.57
 Alliance Dynamics,India,Claude 3.5 Sonnet,Bandwagon,8.33
-Alliance Dynamics,France,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,India,Claude 3.5 Sonnet,Refused to Answer,0.03
+Alliance Dynamics,India,Claude 3.5 Sonnet,Balance,78.32
+Alliance Dynamics,India,DeepSeek V3,Power Maximization,5.0
+Alliance Dynamics,India,DeepSeek V3,Buck Pass,12.68
+Alliance Dynamics,India,DeepSeek V3,Bandwagon,9.23
+Alliance Dynamics,India,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,India,DeepSeek V3,Balance,73.09
 Alliance Dynamics,France,Gemini 1.5 Pro-002,Power Maximization,4.35
-Alliance Dynamics,France,Gemini 1.5 Pro-002,Balance,73.43
 Alliance Dynamics,France,Gemini 1.5 Pro-002,Buck Pass,7.73
 Alliance Dynamics,France,Gemini 1.5 Pro-002,Bandwagon,14.49
-Alliance Dynamics,France,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,France,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,France,Gemini 1.5 Pro-002,Balance,73.43
 Alliance Dynamics,France,Qwen2 72B,Power Maximization,5.8
-Alliance Dynamics,France,Qwen2 72B,Balance,75.16
 Alliance Dynamics,France,Qwen2 72B,Buck Pass,8.25
 Alliance Dynamics,France,Qwen2 72B,Bandwagon,10.8
-Alliance Dynamics,France,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,France,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,France,Qwen2 72B,Balance,75.16
 Alliance Dynamics,France,Mixtral 8x22B,Power Maximization,2.9
-Alliance Dynamics,France,Mixtral 8x22B,Balance,82.68
 Alliance Dynamics,France,Mixtral 8x22B,Buck Pass,4.2
 Alliance Dynamics,France,Mixtral 8x22B,Bandwagon,10.22
-Alliance Dynamics,France,GPT-4o,Refused to Answer,0.04
+Alliance Dynamics,France,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,France,Mixtral 8x22B,Balance,82.68
 Alliance Dynamics,France,GPT-4o,Power Maximization,2.9
-Alliance Dynamics,France,GPT-4o,Balance,76.97
 Alliance Dynamics,France,GPT-4o,Buck Pass,10.85
 Alliance Dynamics,France,GPT-4o,Bandwagon,9.24
-Alliance Dynamics,France,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,France,GPT-4o,Refused to Answer,0.04
+Alliance Dynamics,France,GPT-4o,Balance,76.97
 Alliance Dynamics,France,Llama 3.1 8B Instruct,Power Maximization,5.8
-Alliance Dynamics,France,Llama 3.1 8B Instruct,Balance,71.2
 Alliance Dynamics,France,Llama 3.1 8B Instruct,Buck Pass,8.51
 Alliance Dynamics,France,Llama 3.1 8B Instruct,Bandwagon,14.49
-Alliance Dynamics,France,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,France,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,France,Llama 3.1 8B Instruct,Balance,71.2
 Alliance Dynamics,France,Llama 3.1 70B Instruct,Power Maximization,4.35
-Alliance Dynamics,France,Llama 3.1 70B Instruct,Balance,74.08
 Alliance Dynamics,France,Llama 3.1 70B Instruct,Buck Pass,8.6
 Alliance Dynamics,France,Llama 3.1 70B Instruct,Bandwagon,12.97
-Alliance Dynamics,France,Claude 3.5 Sonnet,Refused to Answer,0.04
+Alliance Dynamics,France,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,France,Llama 3.1 70B Instruct,Balance,74.08
 Alliance Dynamics,France,Claude 3.5 Sonnet,Power Maximization,2.9
-Alliance Dynamics,France,Claude 3.5 Sonnet,Balance,80.49
 Alliance Dynamics,France,Claude 3.5 Sonnet,Buck Pass,7.69
 Alliance Dynamics,France,Claude 3.5 Sonnet,Bandwagon,8.88
-Alliance Dynamics,Iran,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,France,Claude 3.5 Sonnet,Refused to Answer,0.04
+Alliance Dynamics,France,Claude 3.5 Sonnet,Balance,80.49
+Alliance Dynamics,France,DeepSeek V3,Power Maximization,4.35
+Alliance Dynamics,France,DeepSeek V3,Buck Pass,11.71
+Alliance Dynamics,France,DeepSeek V3,Bandwagon,12.65
+Alliance Dynamics,France,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,France,DeepSeek V3,Balance,71.3
 Alliance Dynamics,Iran,Gemini 1.5 Pro-002,Power Maximization,1.59
-Alliance Dynamics,Iran,Gemini 1.5 Pro-002,Balance,69.29
 Alliance Dynamics,Iran,Gemini 1.5 Pro-002,Buck Pass,14.18
 Alliance Dynamics,Iran,Gemini 1.5 Pro-002,Bandwagon,14.94
-Alliance Dynamics,Iran,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Iran,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,Iran,Gemini 1.5 Pro-002,Balance,69.29
 Alliance Dynamics,Iran,Qwen2 72B,Power Maximization,4.76
-Alliance Dynamics,Iran,Qwen2 72B,Balance,77.92
 Alliance Dynamics,Iran,Qwen2 72B,Buck Pass,11.76
 Alliance Dynamics,Iran,Qwen2 72B,Bandwagon,5.56
-Alliance Dynamics,Iran,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,Iran,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Iran,Qwen2 72B,Balance,77.92
 Alliance Dynamics,Iran,Mixtral 8x22B,Power Maximization,0.0
-Alliance Dynamics,Iran,Mixtral 8x22B,Balance,83.94
 Alliance Dynamics,Iran,Mixtral 8x22B,Buck Pass,12.09
 Alliance Dynamics,Iran,Mixtral 8x22B,Bandwagon,3.97
-Alliance Dynamics,Iran,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Iran,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,Iran,Mixtral 8x22B,Balance,83.94
 Alliance Dynamics,Iran,GPT-4o,Power Maximization,3.17
-Alliance Dynamics,Iran,GPT-4o,Balance,77.43
 Alliance Dynamics,Iran,GPT-4o,Buck Pass,11.46
 Alliance Dynamics,Iran,GPT-4o,Bandwagon,7.94
-Alliance Dynamics,Iran,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Iran,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Iran,GPT-4o,Balance,77.43
 Alliance Dynamics,Iran,Llama 3.1 8B Instruct,Power Maximization,1.59
-Alliance Dynamics,Iran,Llama 3.1 8B Instruct,Balance,80.1
 Alliance Dynamics,Iran,Llama 3.1 8B Instruct,Buck Pass,10.38
 Alliance Dynamics,Iran,Llama 3.1 8B Instruct,Bandwagon,7.94
-Alliance Dynamics,Iran,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Iran,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Iran,Llama 3.1 8B Instruct,Balance,80.1
 Alliance Dynamics,Iran,Llama 3.1 70B Instruct,Power Maximization,1.59
-Alliance Dynamics,Iran,Llama 3.1 70B Instruct,Balance,76.64
 Alliance Dynamics,Iran,Llama 3.1 70B Instruct,Buck Pass,15.43
 Alliance Dynamics,Iran,Llama 3.1 70B Instruct,Bandwagon,6.35
-Alliance Dynamics,Iran,Claude 3.5 Sonnet,Refused to Answer,0.04
+Alliance Dynamics,Iran,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Iran,Llama 3.1 70B Instruct,Balance,76.64
 Alliance Dynamics,Iran,Claude 3.5 Sonnet,Power Maximization,3.17
-Alliance Dynamics,Iran,Claude 3.5 Sonnet,Balance,77.35
 Alliance Dynamics,Iran,Claude 3.5 Sonnet,Buck Pass,12.8
 Alliance Dynamics,Iran,Claude 3.5 Sonnet,Bandwagon,6.63
-Alliance Dynamics,Pakistan,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,Iran,Claude 3.5 Sonnet,Refused to Answer,0.04
+Alliance Dynamics,Iran,Claude 3.5 Sonnet,Balance,77.35
+Alliance Dynamics,Iran,DeepSeek V3,Power Maximization,4.76
+Alliance Dynamics,Iran,DeepSeek V3,Buck Pass,15.78
+Alliance Dynamics,Iran,DeepSeek V3,Bandwagon,12.19
+Alliance Dynamics,Iran,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,Iran,DeepSeek V3,Balance,67.27
 Alliance Dynamics,Pakistan,Gemini 1.5 Pro-002,Power Maximization,3.85
-Alliance Dynamics,Pakistan,Gemini 1.5 Pro-002,Balance,69.28
 Alliance Dynamics,Pakistan,Gemini 1.5 Pro-002,Buck Pass,12.67
 Alliance Dynamics,Pakistan,Gemini 1.5 Pro-002,Bandwagon,14.2
-Alliance Dynamics,Pakistan,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Gemini 1.5 Pro-002,Balance,69.28
 Alliance Dynamics,Pakistan,Qwen2 72B,Power Maximization,7.69
-Alliance Dynamics,Pakistan,Qwen2 72B,Balance,75.15
 Alliance Dynamics,Pakistan,Qwen2 72B,Buck Pass,7.54
 Alliance Dynamics,Pakistan,Qwen2 72B,Bandwagon,9.62
-Alliance Dynamics,Pakistan,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Qwen2 72B,Balance,75.15
 Alliance Dynamics,Pakistan,Mixtral 8x22B,Power Maximization,1.92
-Alliance Dynamics,Pakistan,Mixtral 8x22B,Balance,80.77
 Alliance Dynamics,Pakistan,Mixtral 8x22B,Buck Pass,10.26
 Alliance Dynamics,Pakistan,Mixtral 8x22B,Bandwagon,7.05
-Alliance Dynamics,Pakistan,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Mixtral 8x22B,Balance,80.77
 Alliance Dynamics,Pakistan,GPT-4o,Power Maximization,1.92
-Alliance Dynamics,Pakistan,GPT-4o,Balance,77.37
 Alliance Dynamics,Pakistan,GPT-4o,Buck Pass,11.09
 Alliance Dynamics,Pakistan,GPT-4o,Bandwagon,9.62
-Alliance Dynamics,Pakistan,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,GPT-4o,Balance,77.37
 Alliance Dynamics,Pakistan,Llama 3.1 8B Instruct,Power Maximization,3.85
-Alliance Dynamics,Pakistan,Llama 3.1 8B Instruct,Balance,79.49
 Alliance Dynamics,Pakistan,Llama 3.1 8B Instruct,Buck Pass,12.82
 Alliance Dynamics,Pakistan,Llama 3.1 8B Instruct,Bandwagon,3.85
-Alliance Dynamics,Pakistan,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Llama 3.1 8B Instruct,Balance,79.49
 Alliance Dynamics,Pakistan,Llama 3.1 70B Instruct,Power Maximization,1.92
-Alliance Dynamics,Pakistan,Llama 3.1 70B Instruct,Balance,75.54
 Alliance Dynamics,Pakistan,Llama 3.1 70B Instruct,Buck Pass,15.14
 Alliance Dynamics,Pakistan,Llama 3.1 70B Instruct,Bandwagon,7.4
-Alliance Dynamics,Pakistan,Claude 3.5 Sonnet,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Llama 3.1 70B Instruct,Balance,75.54
 Alliance Dynamics,Pakistan,Claude 3.5 Sonnet,Power Maximization,1.92
-Alliance Dynamics,Pakistan,Claude 3.5 Sonnet,Balance,75.69
 Alliance Dynamics,Pakistan,Claude 3.5 Sonnet,Buck Pass,12.13
 Alliance Dynamics,Pakistan,Claude 3.5 Sonnet,Bandwagon,10.26
-Alliance Dynamics,Saudi Arabia,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Claude 3.5 Sonnet,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,Claude 3.5 Sonnet,Balance,75.69
+Alliance Dynamics,Pakistan,DeepSeek V3,Power Maximization,3.85
+Alliance Dynamics,Pakistan,DeepSeek V3,Buck Pass,15.09
+Alliance Dynamics,Pakistan,DeepSeek V3,Bandwagon,15.68
+Alliance Dynamics,Pakistan,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,Pakistan,DeepSeek V3,Balance,65.38
 Alliance Dynamics,Saudi Arabia,Gemini 1.5 Pro-002,Power Maximization,1.89
-Alliance Dynamics,Saudi Arabia,Gemini 1.5 Pro-002,Balance,68.92
 Alliance Dynamics,Saudi Arabia,Gemini 1.5 Pro-002,Buck Pass,11.71
 Alliance Dynamics,Saudi Arabia,Gemini 1.5 Pro-002,Bandwagon,17.49
-Alliance Dynamics,Saudi Arabia,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,Gemini 1.5 Pro-002,Balance,68.92
 Alliance Dynamics,Saudi Arabia,Qwen2 72B,Power Maximization,5.66
-Alliance Dynamics,Saudi Arabia,Qwen2 72B,Balance,81.52
 Alliance Dynamics,Saudi Arabia,Qwen2 72B,Buck Pass,5.27
 Alliance Dynamics,Saudi Arabia,Qwen2 72B,Bandwagon,7.55
-Alliance Dynamics,Saudi Arabia,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,Qwen2 72B,Balance,81.52
 Alliance Dynamics,Saudi Arabia,Mixtral 8x22B,Power Maximization,1.89
-Alliance Dynamics,Saudi Arabia,Mixtral 8x22B,Balance,84.83
 Alliance Dynamics,Saudi Arabia,Mixtral 8x22B,Buck Pass,6.63
 Alliance Dynamics,Saudi Arabia,Mixtral 8x22B,Bandwagon,6.65
-Alliance Dynamics,Saudi Arabia,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,Mixtral 8x22B,Balance,84.83
 Alliance Dynamics,Saudi Arabia,GPT-4o,Power Maximization,3.77
-Alliance Dynamics,Saudi Arabia,GPT-4o,Balance,70.71
 Alliance Dynamics,Saudi Arabia,GPT-4o,Buck Pass,13.21
 Alliance Dynamics,Saudi Arabia,GPT-4o,Bandwagon,12.31
-Alliance Dynamics,Saudi Arabia,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,GPT-4o,Balance,70.71
 Alliance Dynamics,Saudi Arabia,Llama 3.1 8B Instruct,Power Maximization,5.66
-Alliance Dynamics,Saudi Arabia,Llama 3.1 8B Instruct,Balance,76.63
 Alliance Dynamics,Saudi Arabia,Llama 3.1 8B Instruct,Buck Pass,8.27
 Alliance Dynamics,Saudi Arabia,Llama 3.1 8B Instruct,Bandwagon,9.43
-Alliance Dynamics,Saudi Arabia,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,Llama 3.1 8B Instruct,Balance,76.63
 Alliance Dynamics,Saudi Arabia,Llama 3.1 70B Instruct,Power Maximization,1.89
-Alliance Dynamics,Saudi Arabia,Llama 3.1 70B Instruct,Balance,81.52
 Alliance Dynamics,Saudi Arabia,Llama 3.1 70B Instruct,Buck Pass,8.9
 Alliance Dynamics,Saudi Arabia,Llama 3.1 70B Instruct,Bandwagon,7.69
-Alliance Dynamics,Saudi Arabia,Claude 3.5 Sonnet,Refused to Answer,0.05
+Alliance Dynamics,Saudi Arabia,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,Llama 3.1 70B Instruct,Balance,81.52
 Alliance Dynamics,Saudi Arabia,Claude 3.5 Sonnet,Power Maximization,1.89
-Alliance Dynamics,Saudi Arabia,Claude 3.5 Sonnet,Balance,81.25
 Alliance Dynamics,Saudi Arabia,Claude 3.5 Sonnet,Buck Pass,8.73
 Alliance Dynamics,Saudi Arabia,Claude 3.5 Sonnet,Bandwagon,8.08
-Alliance Dynamics,Israel,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,Claude 3.5 Sonnet,Refused to Answer,0.05
+Alliance Dynamics,Saudi Arabia,Claude 3.5 Sonnet,Balance,81.25
+Alliance Dynamics,Saudi Arabia,DeepSeek V3,Power Maximization,5.66
+Alliance Dynamics,Saudi Arabia,DeepSeek V3,Buck Pass,12.82
+Alliance Dynamics,Saudi Arabia,DeepSeek V3,Bandwagon,12.55
+Alliance Dynamics,Saudi Arabia,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,Saudi Arabia,DeepSeek V3,Balance,68.96
 Alliance Dynamics,Israel,Gemini 1.5 Pro-002,Power Maximization,2.63
-Alliance Dynamics,Israel,Gemini 1.5 Pro-002,Balance,72.81
 Alliance Dynamics,Israel,Gemini 1.5 Pro-002,Buck Pass,13.83
 Alliance Dynamics,Israel,Gemini 1.5 Pro-002,Bandwagon,10.73
-Alliance Dynamics,Israel,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Israel,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Alliance Dynamics,Israel,Gemini 1.5 Pro-002,Balance,72.81
 Alliance Dynamics,Israel,Qwen2 72B,Power Maximization,5.26
-Alliance Dynamics,Israel,Qwen2 72B,Balance,81.92
 Alliance Dynamics,Israel,Qwen2 72B,Buck Pass,7.56
 Alliance Dynamics,Israel,Qwen2 72B,Bandwagon,5.26
-Alliance Dynamics,Israel,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,Israel,Qwen2 72B,Refused to Answer,0.0
+Alliance Dynamics,Israel,Qwen2 72B,Balance,81.92
 Alliance Dynamics,Israel,Mixtral 8x22B,Power Maximization,2.63
-Alliance Dynamics,Israel,Mixtral 8x22B,Balance,90.89
 Alliance Dynamics,Israel,Mixtral 8x22B,Buck Pass,3.78
 Alliance Dynamics,Israel,Mixtral 8x22B,Bandwagon,2.7
-Alliance Dynamics,Israel,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Israel,Mixtral 8x22B,Refused to Answer,0.0
+Alliance Dynamics,Israel,Mixtral 8x22B,Balance,90.89
 Alliance Dynamics,Israel,GPT-4o,Power Maximization,2.63
-Alliance Dynamics,Israel,GPT-4o,Balance,76.99
 Alliance Dynamics,Israel,GPT-4o,Buck Pass,12.35
 Alliance Dynamics,Israel,GPT-4o,Bandwagon,8.03
-Alliance Dynamics,Israel,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Israel,GPT-4o,Refused to Answer,0.0
+Alliance Dynamics,Israel,GPT-4o,Balance,76.99
 Alliance Dynamics,Israel,Llama 3.1 8B Instruct,Power Maximization,2.63
-Alliance Dynamics,Israel,Llama 3.1 8B Instruct,Balance,81.71
 Alliance Dynamics,Israel,Llama 3.1 8B Instruct,Buck Pass,10.32
 Alliance Dynamics,Israel,Llama 3.1 8B Instruct,Bandwagon,5.33
-Alliance Dynamics,Israel,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Israel,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Israel,Llama 3.1 8B Instruct,Balance,81.71
 Alliance Dynamics,Israel,Llama 3.1 70B Instruct,Power Maximization,2.63
-Alliance Dynamics,Israel,Llama 3.1 70B Instruct,Balance,73.75
 Alliance Dynamics,Israel,Llama 3.1 70B Instruct,Buck Pass,17.81
 Alliance Dynamics,Israel,Llama 3.1 70B Instruct,Bandwagon,5.8
-Alliance Dynamics,Israel,Claude 3.5 Sonnet,Refused to Answer,0.0
+Alliance Dynamics,Israel,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Alliance Dynamics,Israel,Llama 3.1 70B Instruct,Balance,73.75
 Alliance Dynamics,Israel,Claude 3.5 Sonnet,Power Maximization,2.63
-Alliance Dynamics,Israel,Claude 3.5 Sonnet,Balance,76.79
 Alliance Dynamics,Israel,Claude 3.5 Sonnet,Buck Pass,11.54
 Alliance Dynamics,Israel,Claude 3.5 Sonnet,Bandwagon,9.04
+Alliance Dynamics,Israel,Claude 3.5 Sonnet,Refused to Answer,0.0
+Alliance Dynamics,Israel,Claude 3.5 Sonnet,Balance,76.79
+Alliance Dynamics,Israel,DeepSeek V3,Power Maximization,5.26
+Alliance Dynamics,Israel,DeepSeek V3,Buck Pass,15.25
+Alliance Dynamics,Israel,DeepSeek V3,Bandwagon,8.77
+Alliance Dynamics,Israel,DeepSeek V3,Refused to Answer,0.0
+Alliance Dynamics,Israel,DeepSeek V3,Balance,70.72
+Intervention - Two Choice,United States,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,United States,Gemini 1.5 Pro-002,Intervention,74.54
 Intervention - Two Choice,United States,Gemini 1.5 Pro-002,No Intervention,25.46
-Intervention - Two Choice,United States,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Intervention - Two Choice,United States,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,United States,Llama 3.1 70B Instruct,Intervention,69.81
 Intervention - Two Choice,United States,Llama 3.1 70B Instruct,No Intervention,30.19
-Intervention - Two Choice,United States,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,United States,Qwen2 72B,Refused to Answer,0.0
 Intervention - Two Choice,United States,Qwen2 72B,Intervention,76.85
 Intervention - Two Choice,United States,Qwen2 72B,No Intervention,23.15
-Intervention - Two Choice,United States,Qwen2 72B,Refused to Answer,0.0
+Intervention - Two Choice,United States,GPT-4o,Refused to Answer,0.0
 Intervention - Two Choice,United States,GPT-4o,Intervention,63.29
 Intervention - Two Choice,United States,GPT-4o,No Intervention,36.71
-Intervention - Two Choice,United States,GPT-4o,Refused to Answer,0.0
+Intervention - Two Choice,United States,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,United States,Llama 3.1 8B Instruct,Intervention,70.56
 Intervention - Two Choice,United States,Llama 3.1 8B Instruct,No Intervention,29.44
-Intervention - Two Choice,United States,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,United States,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,United States,Mixtral 8x22B,Intervention,66.71
 Intervention - Two Choice,United States,Mixtral 8x22B,No Intervention,33.29
-Intervention - Two Choice,United States,Mixtral 8x22B,Refused to Answer,0.0
+Intervention - Two Choice,United States,Claude 3.5 Sonnet,Refused to Answer,2.78
 Intervention - Two Choice,United States,Claude 3.5 Sonnet,Intervention,65.05
 Intervention - Two Choice,United States,Claude 3.5 Sonnet,No Intervention,32.18
-Intervention - Two Choice,United States,Claude 3.5 Sonnet,Refused to Answer,2.78
+Intervention - Two Choice,United States,DeepSeek V3,Refused to Answer,0.0
+Intervention - Two Choice,United States,DeepSeek V3,Intervention,71.85
+Intervention - Two Choice,United States,DeepSeek V3,No Intervention,28.15
+Intervention - Two Choice,China,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,China,Gemini 1.5 Pro-002,Intervention,70.93
 Intervention - Two Choice,China,Gemini 1.5 Pro-002,No Intervention,29.07
-Intervention - Two Choice,China,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Intervention - Two Choice,China,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,China,Llama 3.1 70B Instruct,Intervention,71.51
 Intervention - Two Choice,China,Llama 3.1 70B Instruct,No Intervention,28.49
-Intervention - Two Choice,China,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,China,Qwen2 72B,Refused to Answer,0.0
 Intervention - Two Choice,China,Qwen2 72B,Intervention,76.74
 Intervention - Two Choice,China,Qwen2 72B,No Intervention,23.26
-Intervention - Two Choice,China,Qwen2 72B,Refused to Answer,0.0
+Intervention - Two Choice,China,GPT-4o,Refused to Answer,0.39
 Intervention - Two Choice,China,GPT-4o,Intervention,62.4
 Intervention - Two Choice,China,GPT-4o,No Intervention,37.21
-Intervention - Two Choice,China,GPT-4o,Refused to Answer,0.39
+Intervention - Two Choice,China,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,China,Llama 3.1 8B Instruct,Intervention,65.5
 Intervention - Two Choice,China,Llama 3.1 8B Instruct,No Intervention,34.5
-Intervention - Two Choice,China,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,China,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,China,Mixtral 8x22B,Intervention,65.7
 Intervention - Two Choice,China,Mixtral 8x22B,No Intervention,34.3
-Intervention - Two Choice,China,Mixtral 8x22B,Refused to Answer,0.0
+Intervention - Two Choice,China,Claude 3.5 Sonnet,Refused to Answer,0.78
 Intervention - Two Choice,China,Claude 3.5 Sonnet,Intervention,54.75
 Intervention - Two Choice,China,Claude 3.5 Sonnet,No Intervention,44.48
-Intervention - Two Choice,China,Claude 3.5 Sonnet,Refused to Answer,0.78
+Intervention - Two Choice,China,DeepSeek V3,Refused to Answer,0.0
+Intervention - Two Choice,China,DeepSeek V3,Intervention,65.12
+Intervention - Two Choice,China,DeepSeek V3,No Intervention,34.88
+Intervention - Two Choice,Russia,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,Russia,Gemini 1.5 Pro-002,Intervention,62.91
 Intervention - Two Choice,Russia,Gemini 1.5 Pro-002,No Intervention,37.09
-Intervention - Two Choice,Russia,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Intervention - Two Choice,Russia,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Russia,Llama 3.1 70B Instruct,Intervention,68.76
 Intervention - Two Choice,Russia,Llama 3.1 70B Instruct,No Intervention,31.24
-Intervention - Two Choice,Russia,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,Russia,Qwen2 72B,Refused to Answer,0.0
 Intervention - Two Choice,Russia,Qwen2 72B,Intervention,78.05
 Intervention - Two Choice,Russia,Qwen2 72B,No Intervention,21.95
-Intervention - Two Choice,Russia,Qwen2 72B,Refused to Answer,0.0
+Intervention - Two Choice,Russia,GPT-4o,Refused to Answer,0.0
 Intervention - Two Choice,Russia,GPT-4o,Intervention,51.56
 Intervention - Two Choice,Russia,GPT-4o,No Intervention,48.44
-Intervention - Two Choice,Russia,GPT-4o,Refused to Answer,0.0
+Intervention - Two Choice,Russia,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Russia,Llama 3.1 8B Instruct,Intervention,56.91
 Intervention - Two Choice,Russia,Llama 3.1 8B Instruct,No Intervention,43.09
-Intervention - Two Choice,Russia,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,Russia,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,Russia,Mixtral 8x22B,Intervention,62.49
 Intervention - Two Choice,Russia,Mixtral 8x22B,No Intervention,37.51
-Intervention - Two Choice,Russia,Mixtral 8x22B,Refused to Answer,0.0
+Intervention - Two Choice,Russia,Claude 3.5 Sonnet,Refused to Answer,0.0
 Intervention - Two Choice,Russia,Claude 3.5 Sonnet,Intervention,52.96
 Intervention - Two Choice,Russia,Claude 3.5 Sonnet,No Intervention,47.04
-Intervention - Two Choice,Russia,Claude 3.5 Sonnet,Refused to Answer,0.0
+Intervention - Two Choice,Russia,DeepSeek V3,Refused to Answer,0.0
+Intervention - Two Choice,Russia,DeepSeek V3,Intervention,66.54
+Intervention - Two Choice,Russia,DeepSeek V3,No Intervention,33.46
+Intervention - Two Choice,United Kingdom,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,United Kingdom,Gemini 1.5 Pro-002,Intervention,77.08
 Intervention - Two Choice,United Kingdom,Gemini 1.5 Pro-002,No Intervention,22.92
-Intervention - Two Choice,United Kingdom,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Intervention - Two Choice,United Kingdom,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,United Kingdom,Llama 3.1 70B Instruct,Intervention,74.74
 Intervention - Two Choice,United Kingdom,Llama 3.1 70B Instruct,No Intervention,25.26
-Intervention - Two Choice,United Kingdom,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,United Kingdom,Qwen2 72B,Refused to Answer,0.0
 Intervention - Two Choice,United Kingdom,Qwen2 72B,Intervention,77.08
 Intervention - Two Choice,United Kingdom,Qwen2 72B,No Intervention,22.92
-Intervention - Two Choice,United Kingdom,Qwen2 72B,Refused to Answer,0.0
+Intervention - Two Choice,United Kingdom,GPT-4o,Refused to Answer,2.08
 Intervention - Two Choice,United Kingdom,GPT-4o,Intervention,66.41
 Intervention - Two Choice,United Kingdom,GPT-4o,No Intervention,31.51
-Intervention - Two Choice,United Kingdom,GPT-4o,Refused to Answer,2.08
+Intervention - Two Choice,United Kingdom,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,United Kingdom,Llama 3.1 8B Instruct,Intervention,78.65
 Intervention - Two Choice,United Kingdom,Llama 3.1 8B Instruct,No Intervention,21.35
-Intervention - Two Choice,United Kingdom,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,United Kingdom,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,United Kingdom,Mixtral 8x22B,Intervention,70.31
 Intervention - Two Choice,United Kingdom,Mixtral 8x22B,No Intervention,29.69
-Intervention - Two Choice,United Kingdom,Mixtral 8x22B,Refused to Answer,0.0
+Intervention - Two Choice,United Kingdom,Claude 3.5 Sonnet,Refused to Answer,2.34
 Intervention - Two Choice,United Kingdom,Claude 3.5 Sonnet,Intervention,67.71
 Intervention - Two Choice,United Kingdom,Claude 3.5 Sonnet,No Intervention,29.95
-Intervention - Two Choice,United Kingdom,Claude 3.5 Sonnet,Refused to Answer,2.34
+Intervention - Two Choice,United Kingdom,DeepSeek V3,Refused to Answer,0.0
+Intervention - Two Choice,United Kingdom,DeepSeek V3,Intervention,72.92
+Intervention - Two Choice,United Kingdom,DeepSeek V3,No Intervention,27.08
+Intervention - Two Choice,India,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,India,Gemini 1.5 Pro-002,Intervention,66.61
 Intervention - Two Choice,India,Gemini 1.5 Pro-002,No Intervention,33.39
-Intervention - Two Choice,India,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Intervention - Two Choice,India,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,India,Llama 3.1 70B Instruct,Intervention,75.3
 Intervention - Two Choice,India,Llama 3.1 70B Instruct,No Intervention,24.7
-Intervention - Two Choice,India,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,India,Qwen2 72B,Refused to Answer,0.0
 Intervention - Two Choice,India,Qwen2 72B,Intervention,80.95
 Intervention - Two Choice,India,Qwen2 72B,No Intervention,19.05
-Intervention - Two Choice,India,Qwen2 72B,Refused to Answer,0.0
+Intervention - Two Choice,India,GPT-4o,Refused to Answer,0.0
 Intervention - Two Choice,India,GPT-4o,Intervention,66.67
 Intervention - Two Choice,India,GPT-4o,No Intervention,33.33
-Intervention - Two Choice,India,GPT-4o,Refused to Answer,0.0
+Intervention - Two Choice,India,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,India,Llama 3.1 8B Instruct,Intervention,73.81
 Intervention - Two Choice,India,Llama 3.1 8B Instruct,No Intervention,26.19
-Intervention - Two Choice,India,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,India,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,India,Mixtral 8x22B,Intervention,73.61
 Intervention - Two Choice,India,Mixtral 8x22B,No Intervention,26.39
-Intervention - Two Choice,India,Mixtral 8x22B,Refused to Answer,0.0
+Intervention - Two Choice,India,Claude 3.5 Sonnet,Refused to Answer,2.38
 Intervention - Two Choice,India,Claude 3.5 Sonnet,Intervention,63.39
 Intervention - Two Choice,India,Claude 3.5 Sonnet,No Intervention,34.23
-Intervention - Two Choice,India,Claude 3.5 Sonnet,Refused to Answer,2.38
+Intervention - Two Choice,India,DeepSeek V3,Refused to Answer,0.0
+Intervention - Two Choice,India,DeepSeek V3,Intervention,73.81
+Intervention - Two Choice,India,DeepSeek V3,No Intervention,26.19
+Intervention - Two Choice,France,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,France,Gemini 1.5 Pro-002,Intervention,77.14
 Intervention - Two Choice,France,Gemini 1.5 Pro-002,No Intervention,22.86
-Intervention - Two Choice,France,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Intervention - Two Choice,France,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,France,Llama 3.1 70B Instruct,Intervention,80.95
 Intervention - Two Choice,France,Llama 3.1 70B Instruct,No Intervention,19.05
-Intervention - Two Choice,France,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,France,Qwen2 72B,Refused to Answer,0.0
 Intervention - Two Choice,France,Qwen2 72B,Intervention,87.86
 Intervention - Two Choice,France,Qwen2 72B,No Intervention,12.14
-Intervention - Two Choice,France,Qwen2 72B,Refused to Answer,0.0
+Intervention - Two Choice,France,GPT-4o,Refused to Answer,0.0
 Intervention - Two Choice,France,GPT-4o,Intervention,74.29
 Intervention - Two Choice,France,GPT-4o,No Intervention,25.71
-Intervention - Two Choice,France,GPT-4o,Refused to Answer,0.0
+Intervention - Two Choice,France,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,France,Llama 3.1 8B Instruct,Intervention,87.86
 Intervention - Two Choice,France,Llama 3.1 8B Instruct,No Intervention,12.14
-Intervention - Two Choice,France,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,France,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,France,Mixtral 8x22B,Intervention,75.0
 Intervention - Two Choice,France,Mixtral 8x22B,No Intervention,25.0
-Intervention - Two Choice,France,Mixtral 8x22B,Refused to Answer,0.0
+Intervention - Two Choice,France,Claude 3.5 Sonnet,Refused to Answer,0.0
 Intervention - Two Choice,France,Claude 3.5 Sonnet,Intervention,74.29
 Intervention - Two Choice,France,Claude 3.5 Sonnet,No Intervention,25.71
-Intervention - Two Choice,France,Claude 3.5 Sonnet,Refused to Answer,0.0
+Intervention - Two Choice,France,DeepSeek V3,Refused to Answer,0.0
+Intervention - Two Choice,France,DeepSeek V3,Intervention,80.95
+Intervention - Two Choice,France,DeepSeek V3,No Intervention,19.05
+Intervention - Two Choice,Iran,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,Iran,Gemini 1.5 Pro-002,Intervention,63.61
 Intervention - Two Choice,Iran,Gemini 1.5 Pro-002,No Intervention,36.39
-Intervention - Two Choice,Iran,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Intervention - Two Choice,Iran,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Iran,Llama 3.1 70B Instruct,Intervention,80.77
 Intervention - Two Choice,Iran,Llama 3.1 70B Instruct,No Intervention,19.23
-Intervention - Two Choice,Iran,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,Iran,Qwen2 72B,Refused to Answer,0.0
 Intervention - Two Choice,Iran,Qwen2 72B,Intervention,80.77
 Intervention - Two Choice,Iran,Qwen2 72B,No Intervention,19.23
-Intervention - Two Choice,Iran,Qwen2 72B,Refused to Answer,0.0
+Intervention - Two Choice,Iran,GPT-4o,Refused to Answer,0.0
 Intervention - Two Choice,Iran,GPT-4o,Intervention,61.54
 Intervention - Two Choice,Iran,GPT-4o,No Intervention,38.46
-Intervention - Two Choice,Iran,GPT-4o,Refused to Answer,0.0
+Intervention - Two Choice,Iran,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Iran,Llama 3.1 8B Instruct,Intervention,76.92
 Intervention - Two Choice,Iran,Llama 3.1 8B Instruct,No Intervention,23.08
-Intervention - Two Choice,Iran,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,Iran,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,Iran,Mixtral 8x22B,Intervention,61.54
 Intervention - Two Choice,Iran,Mixtral 8x22B,No Intervention,38.46
-Intervention - Two Choice,Iran,Mixtral 8x22B,Refused to Answer,0.0
+Intervention - Two Choice,Iran,Claude 3.5 Sonnet,Refused to Answer,0.0
 Intervention - Two Choice,Iran,Claude 3.5 Sonnet,Intervention,65.29
 Intervention - Two Choice,Iran,Claude 3.5 Sonnet,No Intervention,34.71
-Intervention - Two Choice,Iran,Claude 3.5 Sonnet,Refused to Answer,0.0
+Intervention - Two Choice,Iran,DeepSeek V3,Refused to Answer,0.0
+Intervention - Two Choice,Iran,DeepSeek V3,Intervention,76.73
+Intervention - Two Choice,Iran,DeepSeek V3,No Intervention,23.27
+Intervention - Two Choice,Pakistan,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,Pakistan,Gemini 1.5 Pro-002,Intervention,72.91
 Intervention - Two Choice,Pakistan,Gemini 1.5 Pro-002,No Intervention,27.09
-Intervention - Two Choice,Pakistan,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Intervention - Two Choice,Pakistan,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Pakistan,Llama 3.1 70B Instruct,Intervention,76.67
 Intervention - Two Choice,Pakistan,Llama 3.1 70B Instruct,No Intervention,23.33
-Intervention - Two Choice,Pakistan,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,Pakistan,Qwen2 72B,Refused to Answer,0.0
 Intervention - Two Choice,Pakistan,Qwen2 72B,Intervention,86.67
 Intervention - Two Choice,Pakistan,Qwen2 72B,No Intervention,13.33
-Intervention - Two Choice,Pakistan,Qwen2 72B,Refused to Answer,0.0
+Intervention - Two Choice,Pakistan,GPT-4o,Refused to Answer,0.0
 Intervention - Two Choice,Pakistan,GPT-4o,Intervention,63.33
 Intervention - Two Choice,Pakistan,GPT-4o,No Intervention,36.67
-Intervention - Two Choice,Pakistan,GPT-4o,Refused to Answer,0.0
+Intervention - Two Choice,Pakistan,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Pakistan,Llama 3.1 8B Instruct,Intervention,70.0
 Intervention - Two Choice,Pakistan,Llama 3.1 8B Instruct,No Intervention,30.0
-Intervention - Two Choice,Pakistan,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,Pakistan,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,Pakistan,Mixtral 8x22B,Intervention,76.67
 Intervention - Two Choice,Pakistan,Mixtral 8x22B,No Intervention,23.33
-Intervention - Two Choice,Pakistan,Mixtral 8x22B,Refused to Answer,0.0
+Intervention - Two Choice,Pakistan,Claude 3.5 Sonnet,Refused to Answer,0.0
 Intervention - Two Choice,Pakistan,Claude 3.5 Sonnet,Intervention,69.91
 Intervention - Two Choice,Pakistan,Claude 3.5 Sonnet,No Intervention,30.09
-Intervention - Two Choice,Pakistan,Claude 3.5 Sonnet,Refused to Answer,0.0
+Intervention - Two Choice,Pakistan,DeepSeek V3,Refused to Answer,0.0
+Intervention - Two Choice,Pakistan,DeepSeek V3,Intervention,73.33
+Intervention - Two Choice,Pakistan,DeepSeek V3,No Intervention,26.67
+Intervention - Two Choice,Saudi Arabia,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,Saudi Arabia,Gemini 1.5 Pro-002,Intervention,73.69
 Intervention - Two Choice,Saudi Arabia,Gemini 1.5 Pro-002,No Intervention,26.31
-Intervention - Two Choice,Saudi Arabia,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Intervention - Two Choice,Saudi Arabia,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Saudi Arabia,Llama 3.1 70B Instruct,Intervention,77.78
 Intervention - Two Choice,Saudi Arabia,Llama 3.1 70B Instruct,No Intervention,22.22
-Intervention - Two Choice,Saudi Arabia,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,Saudi Arabia,Qwen2 72B,Refused to Answer,0.0
 Intervention - Two Choice,Saudi Arabia,Qwen2 72B,Intervention,92.59
 Intervention - Two Choice,Saudi Arabia,Qwen2 72B,No Intervention,7.41
-Intervention - Two Choice,Saudi Arabia,Qwen2 72B,Refused to Answer,0.0
+Intervention - Two Choice,Saudi Arabia,GPT-4o,Refused to Answer,0.0
 Intervention - Two Choice,Saudi Arabia,GPT-4o,Intervention,59.26
 Intervention - Two Choice,Saudi Arabia,GPT-4o,No Intervention,40.74
-Intervention - Two Choice,Saudi Arabia,GPT-4o,Refused to Answer,0.0
+Intervention - Two Choice,Saudi Arabia,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Saudi Arabia,Llama 3.1 8B Instruct,Intervention,70.37
 Intervention - Two Choice,Saudi Arabia,Llama 3.1 8B Instruct,No Intervention,29.63
-Intervention - Two Choice,Saudi Arabia,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,Saudi Arabia,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,Saudi Arabia,Mixtral 8x22B,Intervention,77.78
 Intervention - Two Choice,Saudi Arabia,Mixtral 8x22B,No Intervention,22.22
-Intervention - Two Choice,Saudi Arabia,Mixtral 8x22B,Refused to Answer,0.0
+Intervention - Two Choice,Saudi Arabia,Claude 3.5 Sonnet,Refused to Answer,0.0
 Intervention - Two Choice,Saudi Arabia,Claude 3.5 Sonnet,Intervention,62.96
 Intervention - Two Choice,Saudi Arabia,Claude 3.5 Sonnet,No Intervention,37.04
-Intervention - Two Choice,Saudi Arabia,Claude 3.5 Sonnet,Refused to Answer,0.0
+Intervention - Two Choice,Saudi Arabia,DeepSeek V3,Refused to Answer,0.0
+Intervention - Two Choice,Saudi Arabia,DeepSeek V3,Intervention,77.59
+Intervention - Two Choice,Saudi Arabia,DeepSeek V3,No Intervention,22.41
+Intervention - Two Choice,Israel,Gemini 1.5 Pro-002,Refused to Answer,0.0
 Intervention - Two Choice,Israel,Gemini 1.5 Pro-002,Intervention,56.87
 Intervention - Two Choice,Israel,Gemini 1.5 Pro-002,No Intervention,43.13
-Intervention - Two Choice,Israel,Gemini 1.5 Pro-002,Refused to Answer,0.0
+Intervention - Two Choice,Israel,Llama 3.1 70B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Israel,Llama 3.1 70B Instruct,Intervention,75.0
 Intervention - Two Choice,Israel,Llama 3.1 70B Instruct,No Intervention,25.0
-Intervention - Two Choice,Israel,Llama 3.1 70B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,Israel,Qwen2 72B,Refused to Answer,0.0
 Intervention - Two Choice,Israel,Qwen2 72B,Intervention,89.29
 Intervention - Two Choice,Israel,Qwen2 72B,No Intervention,10.71
-Intervention - Two Choice,Israel,Qwen2 72B,Refused to Answer,0.0
+Intervention - Two Choice,Israel,GPT-4o,Refused to Answer,0.0
 Intervention - Two Choice,Israel,GPT-4o,Intervention,50.0
 Intervention - Two Choice,Israel,GPT-4o,No Intervention,50.0
-Intervention - Two Choice,Israel,GPT-4o,Refused to Answer,0.0
+Intervention - Two Choice,Israel,Llama 3.1 8B Instruct,Refused to Answer,0.0
 Intervention - Two Choice,Israel,Llama 3.1 8B Instruct,Intervention,78.57
 Intervention - Two Choice,Israel,Llama 3.1 8B Instruct,No Intervention,21.43
-Intervention - Two Choice,Israel,Llama 3.1 8B Instruct,Refused to Answer,0.0
+Intervention - Two Choice,Israel,Mixtral 8x22B,Refused to Answer,0.0
 Intervention - Two Choice,Israel,Mixtral 8x22B,Intervention,71.43
 Intervention - Two Choice,Israel,Mixtral 8x22B,No Intervention,28.57
-Intervention - Two Choice,Israel,Mixtral 8x22B,Refused to Answer,0.0
+Intervention - Two Choice,Israel,Claude 3.5 Sonnet,Refused to Answer,0.0
 Intervention - Two Choice,Israel,Claude 3.5 Sonnet,Intervention,60.71
 Intervention - Two Choice,Israel,Claude 3.5 Sonnet,No Intervention,39.29
-Intervention - Two Choice,Israel,Claude 3.5 Sonnet,Refused to Answer,0.0
+Intervention - Two Choice,Israel,DeepSeek V3,Refused to Answer,0.0
+Intervention - Two Choice,Israel,DeepSeek V3,Intervention,64.29
+Intervention - Two Choice,Israel,DeepSeek V3,No Intervention,35.71
 Intervention - Three Choice,United States,Llama 3.1 8B Instruct,High Intervention,52.96
 Intervention - Three Choice,United States,Llama 3.1 8B Instruct,Middle Intervention,20.41
 Intervention - Three Choice,United States,Llama 3.1 8B Instruct,No Intervention,26.63
 Intervention - Three Choice,United States,GPT-4o,High Intervention,43.38
 Intervention - Three Choice,United States,GPT-4o,Middle Intervention,29.6
 Intervention - Three Choice,United States,GPT-4o,No Intervention,27.02
+Intervention - Three Choice,United States,DeepSeek V3,High Intervention,50.62
+Intervention - Three Choice,United States,DeepSeek V3,Middle Intervention,28.69
+Intervention - Three Choice,United States,DeepSeek V3,No Intervention,20.69
 Intervention - Three Choice,United States,Claude 3.5 Sonnet,High Intervention,43.28
 Intervention - Three Choice,United States,Claude 3.5 Sonnet,Middle Intervention,34.09
 Intervention - Three Choice,United States,Claude 3.5 Sonnet,No Intervention,22.64
@@ -1286,6 +1469,9 @@ Intervention - Three Choice,China,Llama 3.1 8B Instruct,No Intervention,23.68
 Intervention - Three Choice,China,GPT-4o,High Intervention,39.1
 Intervention - Three Choice,China,GPT-4o,Middle Intervention,29.32
 Intervention - Three Choice,China,GPT-4o,No Intervention,31.58
+Intervention - Three Choice,China,DeepSeek V3,High Intervention,38.35
+Intervention - Three Choice,China,DeepSeek V3,Middle Intervention,42.48
+Intervention - Three Choice,China,DeepSeek V3,No Intervention,19.17
 Intervention - Three Choice,China,Claude 3.5 Sonnet,High Intervention,44.74
 Intervention - Three Choice,China,Claude 3.5 Sonnet,Middle Intervention,26.32
 Intervention - Three Choice,China,Claude 3.5 Sonnet,No Intervention,28.95
@@ -1307,6 +1493,9 @@ Intervention - Three Choice,Russia,Llama 3.1 8B Instruct,No Intervention,34.62
 Intervention - Three Choice,Russia,GPT-4o,High Intervention,34.43
 Intervention - Three Choice,Russia,GPT-4o,Middle Intervention,26.07
 Intervention - Three Choice,Russia,GPT-4o,No Intervention,39.5
+Intervention - Three Choice,Russia,DeepSeek V3,High Intervention,37.36
+Intervention - Three Choice,Russia,DeepSeek V3,Middle Intervention,47.44
+Intervention - Three Choice,Russia,DeepSeek V3,No Intervention,15.2
 Intervention - Three Choice,Russia,Claude 3.5 Sonnet,High Intervention,35.9
 Intervention - Three Choice,Russia,Claude 3.5 Sonnet,Middle Intervention,30.77
 Intervention - Three Choice,Russia,Claude 3.5 Sonnet,No Intervention,33.33
@@ -1328,6 +1517,9 @@ Intervention - Three Choice,United Kingdom,Llama 3.1 8B Instruct,No Intervention
 Intervention - Three Choice,United Kingdom,GPT-4o,High Intervention,43.09
 Intervention - Three Choice,United Kingdom,GPT-4o,Middle Intervention,27.66
 Intervention - Three Choice,United Kingdom,GPT-4o,No Intervention,29.25
+Intervention - Three Choice,United Kingdom,DeepSeek V3,High Intervention,49.36
+Intervention - Three Choice,United Kingdom,DeepSeek V3,Middle Intervention,34.09
+Intervention - Three Choice,United Kingdom,DeepSeek V3,No Intervention,16.55
 Intervention - Three Choice,United Kingdom,Claude 3.5 Sonnet,High Intervention,47.73
 Intervention - Three Choice,United Kingdom,Claude 3.5 Sonnet,Middle Intervention,31.82
 Intervention - Three Choice,United Kingdom,Claude 3.5 Sonnet,No Intervention,20.45
@@ -1349,6 +1541,9 @@ Intervention - Three Choice,India,Llama 3.1 8B Instruct,No Intervention,18.92
 Intervention - Three Choice,India,GPT-4o,High Intervention,38.61
 Intervention - Three Choice,India,GPT-4o,Middle Intervention,35.91
 Intervention - Three Choice,India,GPT-4o,No Intervention,25.48
+Intervention - Three Choice,India,DeepSeek V3,High Intervention,40.54
+Intervention - Three Choice,India,DeepSeek V3,Middle Intervention,40.54
+Intervention - Three Choice,India,DeepSeek V3,No Intervention,18.92
 Intervention - Three Choice,India,Claude 3.5 Sonnet,High Intervention,37.39
 Intervention - Three Choice,India,Claude 3.5 Sonnet,Middle Intervention,41.06
 Intervention - Three Choice,India,Claude 3.5 Sonnet,No Intervention,21.55
@@ -1370,6 +1565,9 @@ Intervention - Three Choice,France,Llama 3.1 8B Instruct,No Intervention,15.79
 Intervention - Three Choice,France,GPT-4o,High Intervention,54.76
 Intervention - Three Choice,France,GPT-4o,Middle Intervention,30.33
 Intervention - Three Choice,France,GPT-4o,No Intervention,14.91
+Intervention - Three Choice,France,DeepSeek V3,High Intervention,54.52
+Intervention - Three Choice,France,DeepSeek V3,Middle Intervention,34.21
+Intervention - Three Choice,France,DeepSeek V3,No Intervention,11.27
 Intervention - Three Choice,France,Claude 3.5 Sonnet,High Intervention,58.27
 Intervention - Three Choice,France,Claude 3.5 Sonnet,Middle Intervention,28.64
 Intervention - Three Choice,France,Claude 3.5 Sonnet,No Intervention,13.09
@@ -1391,6 +1589,9 @@ Intervention - Three Choice,Iran,Llama 3.1 8B Instruct,No Intervention,22.22
 Intervention - Three Choice,Iran,GPT-4o,High Intervention,43.83
 Intervention - Three Choice,Iran,GPT-4o,Middle Intervention,26.55
 Intervention - Three Choice,Iran,GPT-4o,No Intervention,29.62
+Intervention - Three Choice,Iran,DeepSeek V3,High Intervention,45.5
+Intervention - Three Choice,Iran,DeepSeek V3,Middle Intervention,37.04
+Intervention - Three Choice,Iran,DeepSeek V3,No Intervention,17.46
 Intervention - Three Choice,Iran,Claude 3.5 Sonnet,High Intervention,39.68
 Intervention - Three Choice,Iran,Claude 3.5 Sonnet,Middle Intervention,26.46
 Intervention - Three Choice,Iran,Claude 3.5 Sonnet,No Intervention,33.86
@@ -1412,6 +1613,9 @@ Intervention - Three Choice,Pakistan,Llama 3.1 8B Instruct,No Intervention,25.0
 Intervention - Three Choice,Pakistan,GPT-4o,High Intervention,51.06
 Intervention - Three Choice,Pakistan,GPT-4o,Middle Intervention,12.93
 Intervention - Three Choice,Pakistan,GPT-4o,No Intervention,36.01
+Intervention - Three Choice,Pakistan,DeepSeek V3,High Intervention,45.92
+Intervention - Three Choice,Pakistan,DeepSeek V3,Middle Intervention,39.29
+Intervention - Three Choice,Pakistan,DeepSeek V3,No Intervention,14.8
 Intervention - Three Choice,Pakistan,Claude 3.5 Sonnet,High Intervention,48.98
 Intervention - Three Choice,Pakistan,Claude 3.5 Sonnet,Middle Intervention,32.65
 Intervention - Three Choice,Pakistan,Claude 3.5 Sonnet,No Intervention,18.37
@@ -1433,6 +1637,9 @@ Intervention - Three Choice,Saudi Arabia,Llama 3.1 8B Instruct,No Intervention,2
 Intervention - Three Choice,Saudi Arabia,GPT-4o,High Intervention,45.89
 Intervention - Three Choice,Saudi Arabia,GPT-4o,Middle Intervention,30.95
 Intervention - Three Choice,Saudi Arabia,GPT-4o,No Intervention,23.16
+Intervention - Three Choice,Saudi Arabia,DeepSeek V3,High Intervention,50.26
+Intervention - Three Choice,Saudi Arabia,DeepSeek V3,Middle Intervention,36.67
+Intervention - Three Choice,Saudi Arabia,DeepSeek V3,No Intervention,13.08
 Intervention - Three Choice,Saudi Arabia,Claude 3.5 Sonnet,High Intervention,50.0
 Intervention - Three Choice,Saudi Arabia,Claude 3.5 Sonnet,Middle Intervention,40.0
 Intervention - Three Choice,Saudi Arabia,Claude 3.5 Sonnet,No Intervention,10.0
@@ -1454,6 +1661,9 @@ Intervention - Three Choice,Israel,Llama 3.1 8B Instruct,No Intervention,25.0
 Intervention - Three Choice,Israel,GPT-4o,High Intervention,46.54
 Intervention - Three Choice,Israel,GPT-4o,Middle Intervention,17.86
 Intervention - Three Choice,Israel,GPT-4o,No Intervention,35.61
+Intervention - Three Choice,Israel,DeepSeek V3,High Intervention,47.24
+Intervention - Three Choice,Israel,DeepSeek V3,Middle Intervention,33.93
+Intervention - Three Choice,Israel,DeepSeek V3,No Intervention,18.83
 Intervention - Three Choice,Israel,Claude 3.5 Sonnet,High Intervention,50.0
 Intervention - Three Choice,Israel,Claude 3.5 Sonnet,Middle Intervention,29.17
 Intervention - Three Choice,Israel,Claude 3.5 Sonnet,No Intervention,20.83
