@@ -169,7 +169,7 @@ def main():
 ### Using This Dashboard  
 This interactive dashboard presents results from CSIS and Scale AI’s benchmarking of Large Language Models’ preferences in international relations. 
 The evaluation spans four key domains including – *Escalation, Intervention, Cooperation, and Alliance Dynamics* – 
-across an initial seven foundation models: *Llama 3.1 8B Instruct, Llama 3.1 70B Instruct, GPT-4o, Gemini 1.5 Pro-002, Mixtral 8x22B, Claude 3.5 Sonnet, and Qwen2 72B.*  
+across an initial seven foundation models: *Llama 3.1 8B Instruct, Llama 3.1 70B Instruct, GPT-4o, Gemini 1.5 Pro-002, DeepSeek-V3, Mixtral 8x22B, Claude 3.5 Sonnet, and Qwen2 72B.*  
 
 **How to Use the Dashboard:**  
 1. **Select Level of Analysis**: Choose between Domain-Level or Country-Level variation (below).  
