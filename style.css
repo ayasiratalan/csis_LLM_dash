@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Publico';
+    src: url('fonts/Publico-Regular.woff2') format('woff2'),
+         url('fonts/Publico-Regular.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Publico';
+    src: url('fonts/Publico-Bold.woff2') format('woff2'),
+         url('fonts/Publico-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Apply Publico font globally */
+html, body, [class*="css"] {
+    font-family: 'Publico', sans-serif !important;
+}
