@@ -10,8 +10,6 @@ def local_css(file_name):
 # Inject CSS
 local_css("style.css")
 
-st.title("Hello with Publico Font!")
-st.write("This text is styled with Publico font.")
 ###############################################################################
 # 1) Domain Explanations
 ###############################################################################
