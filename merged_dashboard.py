@@ -2,7 +2,16 @@ import streamlit as st
 import pandas as pd
 from streamlit_echarts import st_echarts
 
+# Function to load custom CSS
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
+# Inject CSS
+local_css("style.css")
+
+st.title("Hello with Publico Font!")
+st.write("This text is styled with Publico font.")
 ###############################################################################
 # 1) Domain Explanations
 ###############################################################################
